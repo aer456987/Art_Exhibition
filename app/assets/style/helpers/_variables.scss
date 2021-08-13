@@ -1119,7 +1119,7 @@ $pagination-border-radius-lg:       $border-radius-lg !default;
 
 // scss-docs-start card-variables
 $card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
+$card-spacer-x:                     0 !default; // $spacer
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 0 !default; // $border-width
 $card-border-radius:                0 !default; // $border-radius
