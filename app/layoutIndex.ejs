@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    >
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    >
+    <link
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+
+  <body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light
+      position-fixed z-index-999
+      w-100 py-0"
+      >
+      <%- include('./components/layout/navbar.ejs') %>
+    </nav>
+
+    <header class="banner">
+      <div class="container">
+        <div class="d-flex
+          align-items-center
+          vh-100
+          text-light"
+        >
+          <div class="offset-lg-1">
+            <h2 class="index__title mb-8">
+              台北當代藝術展
+              <span class="d-block
+                mt-4
+                pages__text__2"
+              >
+                01 JUN - 31 OCT
+              </span>
+            </h2>
+    
+            <div>
+              <button
+                type="button"
+                class="btn btn-secondary
+                  me-sm-8 me-md-4
+                  py-5
+                  px-14 px-sm-5xl px-md-4xxl"
+              >
+                購買票券
+              </button>
+              <a
+                href="./designExhibitionPage.html"
+                class="btn btn-outline-light
+                  py-5
+                  px-14 px-sm-5xl px-md-4xxl"
+              >
+                詳細資訊
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="h-5 overflow-y-hidden
+      border-top border-bottom"
+    >
+      <%- include('./components/layout/navbarCategoryFilter.ejs') %>
+    </nav>
+    
+    
+    <%- contents %>
+    <%- include('./components/seeeeeeeModel.ejs') %>
+    
+    
+    <%- include('./components/layout/moreExhibition.ejs') %>
+    <%- include('./components/layout/subscription.ejs') %>
+    <%- include('./components/layout/footer.ejs') %>
+
+    <%- include('./components/offcanvas.ejs') %>
+
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+  </body>
+
+</html>

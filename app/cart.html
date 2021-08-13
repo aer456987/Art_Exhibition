@@ -1,0 +1,473 @@
+---
+title: 購物車
+layout: ./app/layoutCart.ejs
+engine: ejs
+current: cart
+---
+
+<div class="container pt-10 pb-20">
+  <div class="row mb-10 mb-md-14 pb-12">
+    <div class="col-lg-8">
+      <div class="progressBar d-flex justify-content-around mt-7 bg-secondary">
+        <p class="progressBar__text fw-normal">確認訂單</p>
+        <p class="progressBar__text progressBar__text__undone fw-light">填寫訂購資料</p>
+        <p class="progressBar__text progressBar__text__undone fw-light">填寫付款資料</p>
+        <p class="progressBar__text progressBar__text__undone fw-light">完成訂購</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-between
+    mb-8xxl mb-md-16xl"
+  >
+    <div class="col-lg-8 pt-12 pt-0">
+      <ul>
+        <li class="mb-10">
+          <div class="card">
+            <div class="row g-0">
+              <!-- 圖片 -->
+              <div class="col-6 col-md-3
+                img-position-center"
+              >
+                <img
+                  src="./assets/images/exhibition/exhibition-3.jpg"
+                  alt="購物車-2020 台味設計展-預覽圖"
+                  class="w-100 h-auto"
+                >
+              </div>
+
+              <div class="col-6 col-md-9">
+                <div class="card-body pe-0 py-0">
+                  <div class="row
+                    justify-content-center
+                    align-items-center"
+                  >
+                    <!-- 主內容 -->
+                    <div class="col-md-4 col-lg-4 col-xl-4
+                      pe-lg-0"
+                    >
+
+                      <div class="d-flex
+                        justify-content-between
+                        align-items-center"
+                      >
+                        <!-- 標題 -->
+                        <h3 class="fs-7 lh-base fw-bold mb-2">
+                          2020 台味設計展
+                        </h3>
+
+                        <!-- sm 刪除按鈕 -->
+                        <button class="fs-12 btn-close
+                          d-inline d-md-none"
+                        ></button>
+                      </div>
+
+                      <!-- 日期 -->
+                      <p class="fw-normal mb-2">
+                        01 JUN — 31 OCT
+                      </p>
+
+                      <!-- 票種 -->
+                      <p class="d-none d-md-block
+                        mb-2
+                        fs-7 lh-base
+                        text-gray-300"
+                      >
+                        全票
+                      </p>
+                    </div>
+
+                    <!-- sm 價格 -->
+                    <div class="col-12 d-md-none
+                      d-flex justify-content-between"
+                    >
+                      <p class="fs-7 lh-base
+                        mb-2
+                        text-gray-300"
+                      >
+                        全票
+                        <span class="pages__text__2
+                          ms-2
+                          fw-bold text-end text-dark"
+                        >
+                          1
+                        </span>
+                      </p>
+
+                      <p class="pages__text__2 fw-bold">
+                        NT$350
+                      </p>
+                    </div>
+
+                    <!-- md 價格 -->
+                    <div class="col-md-3 col-xl-2 d-md-block px-lg-0
+                      d-none
+                      text-center"
+                    >
+                      <p class="pages__text__2 fw-bold">
+                        NT$350
+                      </p>
+                    </div>
+
+                    <!-- md 數量 -->
+                    <div class="col-md-3 col-xl-3 d-md-block d-none"
+                    >
+                      <div class="d-flex
+                        justify-content-center
+                        align-items-center"
+                      >
+
+                        <button
+                          type="button"
+                          class="btn btn-outline-dark
+                            border-0 rounded-0
+                            pages__text__2 fw-bold"
+                        >
+                            -
+                        </button>
+                        
+                        <p class="pages__text__2 fw-bold
+                          px-6"
+                        >
+                          01
+                        </p>
+
+                        <button
+                          type="button"
+                          class="btn btn-outline-dark
+                            border-0 rounded-0
+                            pages__text__2 fw-bold"
+                        >
+                          +
+                        </button>
+
+                      </div>
+                    </div>
+
+                    <!-- md 刪除 -->
+                    <div class="col-md-2 col-xl-3
+                      d-md-flex d-none justify-content-end"
+                    >
+                      <button class="fs-12 btn-close
+                        d-none d-md-block"
+                      ></button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="mb-10">
+          <div class="card">
+            <div class="row g-0">
+              <!-- 圖片 -->
+              <div class="col-6 col-md-3
+                img-position-center"
+              >
+                <img
+                  src="./assets/images/exhibition/exhibition-1.jpg"
+                  alt="購物車-2020 台味設計展-預覽圖"
+                  class="w-100 h-auto"
+                >
+              </div>
+
+              <div class="col-6 col-md-9">
+                <div class="card-body pe-0 py-0">
+                  <div class="row
+                    justify-content-center
+                    align-items-center"
+                  >
+                    <!-- 主內容 -->
+                    <div class="col-md-4 col-lg-4 col-xl-4
+                      pe-lg-0"
+                    >
+
+                      <div class="d-flex
+                        justify-content-between
+                        align-items-center"
+                      >
+                        <!-- 標題 -->
+                        <h3 class="fs-7 lh-base fw-bold mb-2">
+                          No.22 線上設計展
+                        </h3>
+
+                        <!-- sm 刪除按鈕 -->
+                        <button class="fs-12 btn-close
+                          d-inline d-md-none"
+                        ></button>
+                      </div>
+
+                      <!-- 日期 -->
+                      <p class="fw-normal mb-2">
+                        01 JUN — 31 OCT
+                      </p>
+
+                      <!-- 票種 -->
+                      <p class="d-none d-md-block
+                        mb-2
+                        fs-7 lh-base
+                        text-gray-300"
+                      >
+                        全票
+                      </p>
+                    </div>
+
+                    <!-- sm 價格 -->
+                    <div class="col-12 d-md-none
+                      d-flex justify-content-between"
+                    >
+                      <p class="fs-7 lh-base
+                        mb-2
+                        text-gray-300"
+                      >
+                        全票
+                        <span class="pages__text__2
+                          ms-2
+                          fw-bold text-end text-dark"
+                        >
+                          1
+                        </span>
+                      </p>
+
+                      <p class="pages__text__2 fw-bold">
+                        NT$350
+                      </p>
+                    </div>
+
+                    <!-- md 價格 -->
+                    <div class="col-md-3 col-xl-2 d-md-block px-lg-0
+                      d-none
+                      text-center"
+                    >
+                      <p class="pages__text__2 fw-bold">
+                        NT$350
+                      </p>
+                    </div>
+
+                    <!-- md 數量 -->
+                    <div class="col-md-3 col-xl-3 d-md-block d-none"
+                    >
+                      <div class="d-flex
+                        justify-content-center
+                        align-items-center"
+                      >
+
+                        <button
+                          type="button"
+                          class="btn btn-outline-dark
+                            border-0 rounded-0
+                            pages__text__2 fw-bold"
+                        >
+                            -
+                        </button>
+                        
+                        <p class="pages__text__2 fw-bold
+                          px-6"
+                        >
+                          01
+                        </p>
+
+                        <button
+                          type="button"
+                          class="btn btn-outline-dark
+                            border-0 rounded-0
+                            pages__text__2 fw-bold"
+                        >
+                          +
+                        </button>
+
+                      </div>
+                    </div>
+
+                    <!-- md 刪除 -->
+                    <div class="col-md-2 col-xl-3
+                      d-md-flex d-none justify-content-end"
+                    >
+                      <button class="fs-12 btn-close
+                        d-none d-md-block"
+                      ></button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="card">
+            <div class="row g-0">
+              <!-- 圖片 -->
+              <div class="col-6 col-md-3
+                img-position-center"
+              >
+                <img
+                  src="./assets/images/exhibition/exhibition-2.jpg"
+                  alt="購物車-2020 台味設計展-預覽圖"
+                  class="w-100 h-auto"
+                >
+              </div>
+
+              <div class="col-6 col-md-9">
+                <div class="card-body pe-0 py-0">
+                  <div class="row
+                    justify-content-center
+                    align-items-center"
+                  >
+                    <!-- 主內容 -->
+                    <div class="col-md-4 col-lg-4 col-xl-4
+                      pe-lg-0"
+                    >
+
+                      <div class="d-flex
+                        justify-content-between
+                        align-items-center"
+                      >
+                        <!-- 標題 -->
+                        <h3 class="fs-7 lh-base fw-bold mb-2">
+                          高雄設計節
+                        </h3>
+
+                        <!-- sm 刪除按鈕 -->
+                        <button class="fs-12 btn-close
+                          d-inline d-md-none"
+                        ></button>
+                      </div>
+
+                      <!-- 日期 -->
+                      <p class="fw-normal mb-2">
+                        01 JUN — 31 OCT
+                      </p>
+
+                      <!-- 票種 -->
+                      <p class="d-none d-md-block
+                        mb-2
+                        fs-7 lh-base
+                        text-gray-300"
+                      >
+                        全票
+                      </p>
+                    </div>
+
+                    <!-- sm 價格 -->
+                    <div class="col-12 d-md-none
+                      d-flex justify-content-between"
+                    >
+                      <p class="fs-7 lh-base
+                        mb-2
+                        text-gray-300"
+                      >
+                        全票
+                        <span class="pages__text__2
+                          ms-2
+                          fw-bold text-end text-dark"
+                        >
+                          1
+                        </span>
+                      </p>
+
+                      <p class="pages__text__2 fw-bold">
+                        NT$350
+                      </p>
+                    </div>
+
+                    <!-- md 價格 -->
+                    <div class="col-md-3 col-xl-2 d-md-block px-lg-0
+                      d-none
+                      text-center"
+                    >
+                      <p class="pages__text__2 fw-bold">
+                        NT$350
+                      </p>
+                    </div>
+
+                    <!-- md 數量 -->
+                    <div class="col-md-3 col-xl-3 d-md-block d-none"
+                    >
+                      <div class="d-flex
+                        justify-content-center
+                        align-items-center"
+                      >
+
+                        <button
+                          type="button"
+                          class="btn btn-outline-dark
+                            border-0 rounded-0
+                            pages__text__2 fw-bold"
+                        >
+                            -
+                        </button>
+                        
+                        <p class="pages__text__2 fw-bold
+                          px-6"
+                        >
+                          01
+                        </p>
+
+                        <button
+                          type="button"
+                          class="btn btn-outline-dark
+                            border-0 rounded-0
+                            pages__text__2 fw-bold"
+                        >
+                          +
+                        </button>
+
+                      </div>
+                    </div>
+
+                    <!-- md 刪除 -->
+                    <div class="col-md-2 col-xl-3
+                      d-md-flex d-none justify-content-end"
+                    >
+                      <button class="fs-12 btn-close
+                        d-none d-md-block"
+                      ></button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <ul class="col-6 offset-6
+      col-lg-4 offset-lg-8
+      mb-6"
+    >
+      <li class="d-flex
+        justify-content-between
+        pages__text__2 fw-normal"
+      >
+        <p class="me-auto fw-normal">
+          小計
+        </p>
+        <p>
+          NT$1050
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="row justify-content-between">
+    <div class="col-6 offset-6
+      col-lg-4 offset-lg-8"
+    >
+      <a
+        href="./order.html"
+        class="btn btn-secondary w-100"
+      >
+        下一步
+      </a>
+    </div>
+  </div>
+</div>
