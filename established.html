@@ -1,4 +1,346 @@
-<div
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>填寫付款資訊</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    >
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    >
+    <link
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light
+      py-0"
+    >
+      <div class="container">
+  <h1 class="order-lg-first flex-grow-1 fw-light">
+    <a
+      href="./index.html"
+      class="navbar-brand
+        d-block h-100
+        m-0 py-10
+        fs-5 lh-1
+        text-center text-primary"
+    >
+      EXHIBINECTION
+    </a>
+  </h1>
+
+  <button
+    type="button"
+    class="btn
+      order-lg-last
+      position-relative
+      me-0 me-lg-n8
+      px-3 px-md-8 my-10
+      text-center"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasRight"
+    aria-controls="offcanvasRight"
+  >
+    <span class="material-icons d-block align-middle">
+      confirmation_number
+    </span>
+    <span class="badge
+      position-absolute
+      top-0 start-50
+      rounded-pill
+      text-light bg-secondary"
+    >
+      3
+    </span>
+  </button>
+
+  <button
+    type="button"
+    class="navbar-toggler order-first
+    py-7 px-3 px-md-8
+    border-0"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarList"
+    aria-controls="navbarList"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    id="navbarList"
+    class="collapse navbar-collapse flex-grow-0"
+  >
+    <ul class="navbar-nav align-items-center">
+      <li class="nav-item mx-1">
+        <a
+          href="javascript:;"
+          class="nav-link
+            border__bottom__secondary
+            border__bottom__secondary--hover
+            my-3 px-6
+            fs-7 lh-lg"
+          aria-current="page"
+        >
+          Sign in
+        </a>
+      </li>
+      <li class="nav-item mx-1">
+        <a
+          href="javascript:;"
+          class="nav-link
+            border__bottom__secondary
+            border__bottom__secondary--hover
+            my-3 px-6
+            fs-7 lh-lg"
+        >
+          Sign up
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+    </nav>
+    <nav class="position-sticky top-0
+      z-index-999
+      h-5 overflow-y-hidden
+      border-top border-bottom"
+    >
+      <ul class="nav
+  justify-content-between
+  justify-content-md-center
+  align-items-center
+  overflow-x-auto
+  py-2
+  flex-nowrap
+  bg-light"
+>
+<!-- scrollbar -->
+  <li class="nav-item
+    py-2 mx-1
+    text-nowrap"
+  >
+    <a
+      href="javascript:;"
+      class="nav-link active
+        px-8 py-3
+        border__bottom__secondary
+        border__bottom__secondary--hover"
+    >
+      音樂
+    </a>
+  </li>
+
+  <li class="nav-item
+    py-2 mx-1
+    text-nowrap"
+  >
+    <a
+      href="javascript:;"
+      class="nav-link active
+        px-8 py-3
+        border__bottom__secondary
+        border__bottom__secondary--hover"
+    >
+      戲劇
+    </a>
+  </li>
+
+  <li class="nav-item
+    py-2 mx-1
+    text-nowrap"
+  >
+    <a
+      href="./designExhibitionPage.html"
+      class="nav-link active
+        px-8 py-3
+        border__bottom__secondary
+        border__bottom__secondary--hover
+         "
+    >
+      設計
+    </a>
+  </li>
+
+  <li class="nav-item
+    py-2 mx-1
+    text-nowrap"
+  >
+    <a
+      href="javascript:;"
+      class="nav-link active
+        px-8 py-3
+        border__bottom__secondary
+        border__bottom__secondary--hover"
+    >
+      藝術
+    </a>
+  </li>
+
+  <li class="nav-item
+    py-2 mx-1
+    text-nowrap"
+  >
+    <a
+      href="javascript:;"
+      class="nav-link active
+        px-8 py-3
+        border__bottom__secondary
+        border__bottom__secondary--hover"
+    >
+      美食
+    </a>
+  </li>
+
+  <li class="nav-item
+    py-2 mx-1
+    text-nowrap"
+  >
+    <a
+      href="javascript:;"
+      class="nav-link active
+        px-8 py-3
+        border__bottom__secondary
+        border__bottom__secondary--hover"
+    >
+      旅遊
+    </a>
+  </li>
+
+  <li class="nav-item
+    py-2 mx-1
+    text-nowrap"
+  >
+    <a
+      href="javascript:;"
+      class="nav-link active
+        px-8 py-3
+        border__bottom__secondary
+        border__bottom__secondary--hover"
+    >
+      電影
+    </a>
+  </li>
+
+  <li class="nav-item
+    py-2 mx-1
+    text-nowrap"
+  >
+    <a
+      href="javascript:;"
+      class="nav-link active
+        px-8 py-3
+        border__bottom__secondary
+        border__bottom__secondary--hover"
+    >
+      親子
+    </a>
+  </li>
+
+  <li class="nav-item
+    py-2 mx-1
+    text-nowrap"
+  >
+    <a
+      href="javascript:;"
+      class="nav-link active
+        px-8 py-3
+        border__bottom__secondary
+        border__bottom__secondary--hover"
+    >
+      期間限定
+    </a>
+  </li>
+</ul>
+</nav>
+    </nav>
+
+
+    <div>
+  <h1 class="d-block d-sm-none p-11 border text-secondary">ssm 模式</h1>
+  <h1 class="d-none d-sm-block d-md-none p-11 border text-secondary">sm 模式</h1>
+  <h1 class="d-none d-md-block d-lg-none p-11 border text-secondary">md 模式</h1>
+  <h1 class="d-none d-lg-block d-xl-none p-11 border text-secondary">lg 模式</h1>
+  <h1 class="d-none d-xl-block d-xxl-none p-11 border text-secondary">xl 模式</h1>
+  <h1 class="d-none d-xxl-block d-none p-11 border text-secondary">xxl 模式</h1>
+</div>
+    
+<div class="container">
+  <div class="row justify-content-center ailgn-item-center
+  pt-10xl">
+
+    <div class="col-md-10 col-lg-6">
+
+      <div class="text-primary text-center">
+        <i class="material-icons-outlined fs-1">
+          check_circle
+        </i>
+
+        <h2 class="pages__text__2 pt-5 pb-12">
+          完成訂購
+        </h2>
+      </div>
+
+      <ul class="mb-8xl mb-md-9xxl">
+        <li>
+          <p>您的展覽憑證代碼為：</p>
+        </li>
+        <li class="mt-20 mb-21 mb-md-4xxl">
+          <p class="pages__text__3
+            text-primary text-center"
+          >
+            qr147352
+          </p>
+        </li>
+        <li>
+          <p>
+            恭喜您已完成「2020 台味設計展」的購票手續，請於 2020/06/01 ~ 2020/10/31 於展覽入口頁面輸入「展覽憑證代碼」，經驗證無誤即可瀏覽。
+          </p>
+        </li>
+      </ul>
+
+      <div class="row">
+        <div class="col-6">
+          <a
+            href="./index.html"
+            class="btn btn-outline-primary w-100 py-5"
+          >
+            繼續瀏覽
+          </a>
+        </div>
+
+        <div class="col-6">
+          <a
+          href="./designExhibitionPage.html"
+            class="btn btn-secondary w-100 py-5"
+          >
+            看展去
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div
   id="offcanvasRight"
   class="offcanvas offcanvas-end top-78
     w-md-5xl
@@ -389,3 +731,11 @@
     </a>
   </div>
 </div>
+
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+  </body>
+
+</html>

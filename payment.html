@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>填寫付款資訊</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light
+      position-sticky top-0 z-index-999
+      w-100 py-0
+      bg-light"
+    >
+      <div class="container">
+  <h1 class="order-lg-first flex-grow-1 fw-light">
+    <a
+      href="./index.html"
+      class="navbar-brand
+        d-block h-100
+        m-0 py-10
+        fs-5 lh-1
+        text-center text-primary"
+    >
+      EXHIBINECTION
+    </a>
+  </h1>
+
+  <button
+    type="button"
+    class="btn
+      order-lg-last
+      position-relative
+      me-0 me-lg-n8
+      px-3 px-md-8 my-10
+      text-center"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasRight"
+    aria-controls="offcanvasRight"
+  >
+    <span class="material-icons d-block align-middle">
+      confirmation_number
+    </span>
+    <span class="badge
+      position-absolute
+      top-0 start-50
+      rounded-pill
+      text-light bg-secondary"
+    >
+      3
+    </span>
+  </button>
+
+  <button
+    type="button"
+    class="navbar-toggler order-first
+    py-7 px-3 px-md-8
+    border-0"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarList"
+    aria-controls="navbarList"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    id="navbarList"
+    class="collapse navbar-collapse flex-grow-0"
+  >
+    <ul class="navbar-nav align-items-center">
+      <li class="nav-item mx-1">
+        <a
+          href="javascript:;"
+          class="nav-link
+            border__bottom__secondary
+            border__bottom__secondary--hover
+            my-3 px-6
+            fs-7 lh-lg"
+          aria-current="page"
+        >
+          Sign in
+        </a>
+      </li>
+      <li class="nav-item mx-1">
+        <a
+          href="javascript:;"
+          class="nav-link
+            border__bottom__secondary
+            border__bottom__secondary--hover
+            my-3 px-6
+            fs-7 lh-lg"
+        >
+          Sign up
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+    </nav>
+
+
+    <div>
+  <h1 class="d-block d-sm-none p-11 border text-secondary">ssm 模式</h1>
+  <h1 class="d-none d-sm-block d-md-none p-11 border text-secondary">sm 模式</h1>
+  <h1 class="d-none d-md-block d-lg-none p-11 border text-secondary">md 模式</h1>
+  <h1 class="d-none d-lg-block d-xl-none p-11 border text-secondary">lg 模式</h1>
+  <h1 class="d-none d-xl-block d-xxl-none p-11 border text-secondary">xl 模式</h1>
+  <h1 class="d-none d-xxl-block d-none p-11 border text-secondary">xxl 模式</h1>
+</div>
+    
+<div class="container pt-10 pb-20">
+  <div class="row mb-10 mb-md-14 pb-12">
+    <div class="col-lg-8">
+      <div class="progressBar d-flex justify-content-around mt-7 bg-secondary">
+        <p class="progressBar__text fw-normal">確認訂單</p>
+        <p class="progressBar__text fw-normal">填寫訂購資料</p>
+        <p class="progressBar__text fw-normal">填寫付款資料</p>
+        <p class="progressBar__text progressBar__text__undone fw-light">完成訂購</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-between
+    mb-4xxl mb-md-6"
+  >
+    <div class="col-md-6 col-lg-4 order-md-last">
+      <h2 class="pages__text__2 fw-normal
+        mb-8 mb-md-10"
+      >
+        付款資訊
+      </h2>
+
+      <form action="./payment.html">
+        <ul class="mb-5xl mb-md-16xl">
+          <li class="mb-10">
+            <label
+              for="subscriberEmail"
+              class="form-label lh-lg"
+            >
+              信用卡帳號
+            </label>
+            <input
+              type="text" 
+              class="form-control border-gray-200"
+              id="subscriberEmail"
+              placeholder="Xxxx-xxxx-xxxx-xxxx"
+            >
+          </li>
+
+          <li class="mb-10">
+            <label
+              for="creditCardNumber"
+              class="form-label lh-lg"
+            >
+              有效日期
+            </label>
+            <input
+              type="text"
+              class="form-control border-gray-200"
+              id="creditCardDate"
+              placeholder="(MM/YY)"
+            >
+          </li>
+
+          <li>
+            <label
+              for="subscriberPassword"
+              class="form-label lh-lg"
+            >
+              安全碼
+            </label>
+            <input
+              type="text"
+              class="form-control border-gray-200"
+              id="subscriberPassword"
+              placeholder="***"
+            >
+          </li>
+        </ul>
+
+        <ul class="mt-8xl">
+          <li class="mb-2 mb-md-3
+            d-flex justify-content-between"
+          >
+            <p class="me-auto fw-normal">
+              小計
+            </p>
+            <p class="fw-lighter">
+              NT$1050
+            </p>
+          </li>
+
+          <li class="mb-4 mb-md-3
+            d-flex justify-content-between"
+          >
+            <p class="fw-normal">
+              折扣
+            </p>
+            <p class="fw-lighter">
+              -NT$50
+            </p>
+          </li>
+
+          
+          <li class="pages__text__2 fw-normal
+            d-flex justify-content-between"
+          >
+            <p>總金額</p>
+            <p>NT$1000</p>
+          </li>
+        </ul>
+      </form>
+    </div>
+
+    <div class="col-md-6 pt-12 pt-0">
+      <ul>
+        <li class="mb-10">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-6 col-md-4
+                img-position-center"
+              >
+                <img
+                  src="./assets/images/exhibition/exhibition-3.jpg"
+                  alt="購物車-2020 台味設計展-預覽圖"
+                  class="w-100 h-auto
+                    w-md-auto h-md-100
+                    w-lg-100 h-lg-auto"
+                >
+              </div>
+              <div class="col-6 col-md-8">
+                <div class="card-body pe-0 py-0">
+
+                  <div class="row
+                    justify-content-center
+                    align-items-center"
+                  >
+
+                    <div class="col-lg-7">
+                      <h3 class="fs-7 lh-base fw-bold mb-2">
+                        2020 台味設計展
+                      </h3>
+                      <p class="fw-normal mb-2">
+                        01 JUN — 31 OCT
+                      </p>
+
+                      <p class="d-none d-lg-block
+                        mb-2
+                        fs-7 lh-base
+                        text-gray-300"
+                      >
+                        全票
+                      </p>
+
+                    </div>
+
+                    <div class="col-12 d-lg-none
+                      d-flex justify-content-between"
+                    >
+                      <p class="fs-7 lh-base
+                        mb-2
+                        text-gray-300"
+                      >
+                        全票
+                        <span class="pages__text__2
+                          ms-2
+                          fw-bold text-end text-dark"
+                        >
+                          1
+                        </span>
+                      </p>
+
+                      <p class="pages__text__2 fw-bold">
+                        NT$350
+                      </p>
+                    </div>
+
+                    <div class="col-md-4 d-lg-block pe-0
+                      d-none"
+                    >
+                      <p class="pages__text__2 fw-bold">
+                        NT$350
+                      </p>
+                    </div>
+
+                    <div class="col-md-1 d-lg-block p-0
+                      d-none"
+                    >
+                      <p class="pages__text__2
+                        fw-bold text-end"
+                      >
+                        1
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="mb-10">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-6 col-md-4
+                img-position-center"
+              >
+                <img
+                  src="./assets/images/exhibition/exhibition-1.jpg"
+                  alt="購物車-2020 台味設計展-預覽圖"
+                  class="w-100 h-auto
+                    w-md-auto h-md-100
+                    w-lg-100 h-lg-auto"
+                >
+              </div>
+              <div class="col-6 col-md-8">
+                <div class="card-body pe-0 py-0">
+
+                  <div class="row
+                    justify-content-center
+                    align-items-center"
+                  >
+
+                    <div class="col-lg-7">
+                      <h3 class="fs-7 lh-base fw-bold mb-2">
+                        No.22 線上設計展
+                      </h3>
+                      <p class="fw-normal mb-2">
+                        01 JUN — 31 OCT
+                      </p>
+
+                      <p class="d-none d-lg-block
+                        mb-2
+                        fs-7 lh-base
+                        text-gray-300"
+                      >
+                        全票
+                      </p>
+
+                    </div>
+
+                    <div class="col-12 d-lg-none
+                      d-flex justify-content-between"
+                    >
+                      <p class="fs-7 lh-base
+                        mb-2
+                        text-gray-300"
+                      >
+                        全票
+                        <span class="pages__text__2
+                          ms-2
+                          fw-bold text-end text-dark"
+                        >
+                          1
+                        </span>
+                      </p>
+
+                      <p class="pages__text__2 fw-bold">
+                        NT$350
+                      </p>
+                    </div>
+
+                    <div class="col-md-4 d-lg-block pe-0
+                      d-none"
+                    >
+                      <p class="pages__text__2 fw-bold">
+                        NT$350
+                      </p>
+                    </div>
+
+                    <div class="col-md-1 d-lg-block p-0
+                      d-none"
+                    >
+                      <p class="pages__text__2
+                        fw-bold text-end"
+                      >
+                        1
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        
+        <li>
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-6 col-md-4
+                img-position-center"
+              >
+                <img
+                  src="./assets/images/exhibition/exhibition-2.jpg"
+                  alt="購物車-2020 台味設計展-預覽圖"
+                  class="w-100 h-auto
+                    w-md-auto h-md-100
+                    w-lg-100 h-lg-auto"
+                >
+              </div>
+              <div class="col-6 col-md-8">
+                <div class="card-body pe-0 py-0">
+
+                  <div class="row
+                    justify-content-center
+                    align-items-center"
+                  >
+
+                    <div class="col-lg-7">
+                      <h3 class="fs-7 lh-base fw-bold mb-2">
+                        高雄設計節
+                      </h3>
+                      <p class="fw-normal mb-2">
+                        01 JUN — 31 OCT
+                      </p>
+
+                      <p class="d-none d-lg-block
+                        mb-2
+                        fs-7 lh-base
+                        text-gray-300"
+                      >
+                        全票
+                      </p>
+
+                    </div>
+
+                    <div class="col-12 d-lg-none
+                      d-flex justify-content-between"
+                    >
+                      <p class="fs-7 lh-base
+                        mb-2
+                        text-gray-300"
+                      >
+                        全票
+                        <span class="pages__text__2
+                          ms-2
+                          fw-bold text-end text-dark"
+                        >
+                          1
+                        </span>
+                      </p>
+
+                      <p class="pages__text__2 fw-bold">
+                        NT$350
+                      </p>
+                    </div>
+
+                    <div class="col-md-4 d-lg-block pe-0
+                      d-none"
+                    >
+                      <p class="pages__text__2 fw-bold">
+                        NT$350
+                      </p>
+                    </div>
+
+                    <div class="col-md-1 d-lg-block p-0
+                      d-none"
+                    >
+                      <p class="pages__text__2
+                        fw-bold text-end"
+                      >
+                        1
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="row justify-content-between">
+    <div class="col-6 col-md-3 col-lg-2">
+      <a
+        href="./order.html"
+        class="btn btn-outline-primary w-100"
+      >
+        返回
+      </a>
+    </div>
+
+    <div class="col-6 col-lg-4">
+      <a
+        href="./established.html"
+        class="btn btn-secondary w-100"
+      >
+        下一步
+      </a>
+    </div>
+  </div>
+</div>
+
+    <div
+  id="offcanvasRight"
+  class="offcanvas offcanvas-end top-78
+    w-md-5xl
+    ps-8 ps-md-16
+    pe-8
+    bg-dark"
+  tabindex="-1"
+  data-bs-scroll="true"
+  aria-labelledby="offcanvasRightLabel"
+>
+  <div class="offcanvas-header
+    ps-0
+    pe-8 pe-md-16
+    pt-10 pt-md-16
+    pb-6"
+  >
+    <h3 id="offcanvasRightLabel"
+      class="fs-3 text-light"
+    >
+      Cart List
+    </h3>
+  </div>
+  <div class="offcanvas-body
+    p-0 pe-8
+    overflow-y-scroll
+    scrollbar"
+  >
+
+
+    <div class="card mb-4 mb-md-6 rounded-1">
+      <button
+        type="button"
+        class="btn-close mt-2 ms-2"
+        aria-label="Close"
+      ></button>
+
+      <div class="px-8 px-md-16
+        pb-8 pb-md-12"
+      >
+
+        <div class="row g-0"
+        >
+          <div class="col-4
+            position-relative
+            overflow-hidden
+            h-md-1xl"
+          >
+            <img
+              src="../assets/images/exhibition/exhibition-3.jpg"
+              alt="購部車清單商品預覽圖_1"
+              class="position-absolute
+                top-50 start-50 translate-middle
+                h-100 w-auto"
+            >
+          </div>
+          <div class="col-6 col-md-5">
+            <div class="card-body py-0">
+          
+              <h4 class="card-title
+                fs-7 fs-fw-bold
+                mb-2"
+              >
+                2020 台味設計展
+              </h4>
+          
+              <p class="fw-normal mb-7">
+                01 JUN — 31 OCT
+                <span class="fw-light text-gray-300
+                  mt-2
+                  d-block"
+                >
+                  全票
+                </span>
+              </p>
+          
+              <p class="pages__text__2 fw-bold">
+                NT$350
+              </p>
+          
+            </div>
+          </div>
+          <div class="col-2 col-md-3
+            d-md-flex
+            flex-md-row-reverse
+            justify-content-center
+            align-items-center"
+          >
+            <button class="btn btn-outline-dark
+              border-0
+              pages__text__2 fw-bold
+              w-100 px-0"
+            >
+              ＋
+            </button>
+          
+            <p class="pages__text__2 fw-bold text-center
+              p-2"
+            >
+              01
+            </p>
+          
+            <button class="btn btn-outline-dark
+              border-0
+              pages__text__2 fw-bold
+              w-100 px-0"
+            >
+              —
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 mb-md-6 rounded-1">
+      <button
+        type="button"
+        class="btn-close mt-2 ms-2"
+        aria-label="Close"
+      ></button>
+
+      <div class="px-8 px-md-16
+        pb-8 pb-md-12"
+      >
+
+        <div class="row g-0"
+        >
+          <div class="col-4
+            position-relative
+            overflow-hidden
+            h-md-1xl"
+          >
+            <img
+              src="../assets/images/exhibition/exhibition-5.jpg"
+              alt="購部車清單商品預覽圖_1"
+              class="position-absolute
+                top-50 start-50 translate-middle
+                h-100 w-auto"
+            >
+          </div>
+          <div class="col-6 col-md-5">
+            <div class="card-body py-0">
+          
+              <h4 class="card-title
+                fs-7 fs-fw-bold
+                mb-2"
+              >
+                No.22 線上設計展
+              </h4>
+          
+              <p class="fw-normal mb-7">
+                01 JUN — 31 OCT
+                <span class="fw-light text-gray-300
+                  mt-2
+                  d-block"
+                >
+                  全票
+                </span>
+              </p>
+          
+              <p class="pages__text__2 fw-bold">
+                NT$350
+              </p>
+          
+            </div>
+          </div>
+          <div class="col-2 col-md-3
+            d-md-flex
+            flex-md-row-reverse
+            justify-content-center
+            align-items-center"
+          >
+            <button class="btn btn-outline-dark
+              border-0
+              pages__text__2 fw-bold
+              w-100 px-0"
+            >
+              ＋
+            </button>
+          
+            <p class="pages__text__2 fw-bold text-center
+              p-2"
+            >
+              01
+            </p>
+          
+            <button class="btn btn-outline-dark
+              border-0
+              pages__text__2 fw-bold
+              w-100 px-0"
+            >
+              —
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-4 mb-md-6 rounded-1">
+      <button
+        type="button"
+        class="btn-close mt-2 ms-2"
+        aria-label="Close"
+      ></button>
+
+      <div class="px-8 px-md-16
+        pb-8 pb-md-12"
+      >
+
+        <div class="row g-0"
+        >
+          <div class="col-4
+            position-relative
+            overflow-hidden
+            h-md-1xl"
+          >
+            <img
+              src="../assets/images/exhibition/exhibition-1.jpg"
+              alt="購部車清單商品預覽圖_1"
+              class="position-absolute
+                top-50 start-50 translate-middle
+                h-100 w-auto"
+            >
+          </div>
+          <div class="col-6 col-md-5">
+            <div class="card-body py-0">
+          
+              <h4 class="card-title
+                fs-7 fs-fw-bold
+                mb-2"
+              >
+                No.22 線上設計展
+              </h4>
+          
+              <p class="fw-normal mb-7">
+                01 JUN — 31 OCT
+                <span class="fw-light text-gray-300
+                  mt-2
+                  d-block"
+                >
+                  全票
+                </span>
+              </p>
+          
+              <p class="pages__text__2 fw-bold">
+                NT$350
+              </p>
+          
+            </div>
+          </div>
+          <div class="col-2 col-md-3
+            d-md-flex
+            flex-md-row-reverse
+            justify-content-center
+            align-items-center"
+          >
+            <button class="btn btn-outline-dark
+              border-0
+              pages__text__2 fw-bold
+              w-100 px-0"
+            >
+              ＋
+            </button>
+          
+            <p class="pages__text__2 fw-bold text-center
+              p-2"
+            >
+              01
+            </p>
+          
+            <button class="btn btn-outline-dark
+              border-0
+              pages__text__2 fw-bold
+              w-100 px-0"
+            >
+              —
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card rounded-1">
+      <button
+        type="button"
+        class="btn-close mt-2 ms-2"
+        aria-label="Close"
+      ></button>
+
+      <div class="px-8 px-md-16
+        pb-8 pb-md-12"
+      >
+
+        <div class="row g-0"
+        >
+          <div class="col-4
+            position-relative
+            overflow-hidden
+            h-md-1xl"
+          >
+            <img
+              src="../assets/images/exhibition/exhibition-2.jpg"
+              alt="購部車清單商品預覽圖_1"
+              class="position-absolute
+                top-50 start-50 translate-middle
+                h-100 w-auto"
+            >
+          </div>
+          <div class="col-6 col-md-5">
+            <div class="card-body py-0">
+          
+              <h4 class="card-title
+                fs-7 fs-fw-bold
+                mb-2"
+              >
+                高雄設計節
+              </h4>
+          
+              <p class="fw-normal mb-7">
+                01 JUN — 31 OCT
+                <span class="fw-light text-gray-300
+                  mt-2
+                  d-block"
+                >
+                  全票
+                </span>
+              </p>
+          
+              <p class="pages__text__2 fw-bold">
+                NT$350
+              </p>
+          
+            </div>
+          </div>
+          <div class="col-2 col-md-3
+            d-md-flex
+            flex-md-row-reverse
+            justify-content-center
+            align-items-center"
+          >
+            <button class="btn btn-outline-dark
+              border-0
+              pages__text__2 fw-bold
+              w-100 px-0"
+            >
+              ＋
+            </button>
+          
+            <p class="pages__text__2 fw-bold text-center
+              p-2"
+            >
+              01
+            </p>
+          
+            <button class="btn btn-outline-dark
+              border-0
+              pages__text__2 fw-bold
+              w-100 px-0"
+            >
+              —
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="d-flex
+    justify-content-between
+    align-items-center
+    pages__text__2
+    pe-8 pe-md-16
+    pt-10 pt-md-9
+    pb-14 pb-md-12"
+  >
+    <p class="fw-normal text-light">
+      <span class="pe-12">
+        小計
+      </span>
+      NT$1050
+    </p>
+    <a
+      href="../cart.html"
+      class="btn btn-light text-primary
+      py-5 px-14"
+    >
+      前往結帳
+    </a>
+  </div>
+</div>
+
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+
+  </body>
+
+</html>
