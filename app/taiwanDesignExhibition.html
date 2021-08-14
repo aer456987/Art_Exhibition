@@ -4,6 +4,30 @@ layout: ./app/layoutPage.ejs
 engine: ejs
 current: index
 ---
+<!-- <div class="card">
+  <div class="img-position-center w-100
+    min-height-md-3 min-height-3"
+  >
+    <img 
+      src="./assets/images/exhibition/exhibition-4.jpg"
+      alt="No.22 線上設計展"
+      class="card-img-top
+        min-height-md-3 min-height-3"
+    />
+  </div>
+
+  <div class="card-body pt-4 pt-md-2">
+    <h3 class="pages__text__2 fw-bold">
+      No.22 線上設計展
+      <span class="d-block mt-2 fw-light">
+        $350
+      </span>
+    </h3>
+  </div>
+</div> -->
+
+
+
 
 <section>
   <div class="container  border">
@@ -11,177 +35,179 @@ current: index
       pt-22 pt-lg-8xl
       mb-20"
     >
-      <ul class="col-lg-6">
-        <li class="img-position-center
-          exhibition__img__md
-          h-2xl"
-        >
-          <img
-            src="./assets/images/exhibition/exhibition-3.jpg"
-            alt="展覽資訊_小圖"
-            class="h-auto"
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="img-position-center w-100
+            h-2xl"
           >
-          <span class="d-none d-lg-block
-            position-absolute
-            top-25 end-0
-            pages__text__2 fw-bold
-            pe-14
-            text-light"
-          >
-            01 <br>
-            JUN <br>
-            | <br>
-            31 <br>
-            OCT
-          </span>
-        </li>
+            <img
+              src="./assets/images/exhibition/exhibition-3.jpg"
+              alt="展覽資訊_小圖"
+              class="h-auto"
+            >
+            <span class="d-none d-lg-block
+              position-absolute
+              top-25 end-0
+              pages__text__2 fw-bold
+              pe-10
+              text-light"
+            >
+              01 <br>
+              JUN <br>
+              | <br>
+              31 <br>
+              OCT
+            </span>
+          </div>
+        
+          <div class="card-body pt-4">
+            <div class="d-flex mb-2">
+              <h3 class="pages__text__2 fw-bold
+                d-inline-block d-lg-block"
+              >
+                2020 台味設計展
+              </h3>
+              <a
+                href="javascript:;"
+                class="bi bi-facebook
+                  link__dark--hover
+                  ms-4
+                  fs-6"
+              ></a>
+              <span class="d-lg-none ms-auto fw-normal">
+                01 JUN — 31 OCT
+              </span>
+            </div>
 
-        <li class="d-flex mt-4">
-          <h3 class="pages__text__2 fw-bold
-            d-inline-block d-lg-block"
-          >
-            2020 台味設計展
-          </h3>
-          <a
-            href="javascript:;"
-            class="bi bi-facebook
-              link__dark--hover
-              ms-4
-              fs-6"
-          ></a>
-          <span class="d-lg-none ms-auto fw-normal">
-            01 JUN — 31 OCT
-          </span>
-        </li>
-
-        <li class="mt-2">
-          <p>
-            一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
-          </p>
-        </li>
-      </ul>
-
+            <p class="fw-lighter">
+              一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+            </p>
+          </div>
+        </div>
+      </div>
 
       <div class="col-lg-6">
-
-        <form action="./taiwanDesignExhibition.html">
-          <div class="row">
-            <div class="col-lg-6
-              d-flex
-              flex-column
+        <div class="row">
+          <!-- V -->
+          <div class="col-lg-6
+            d-flex
+            flex-column
+            align-items-center
+            pt-20 pt-md-7xl pb-0
+            border-gray-300 border-end"
+          >
+            <div class="d-flex
+              justify-content-center
               align-items-center
-              pt-6xl pb-0
-              border-gray-300 border-end"
+              mb-11"
             >
-              <div class="d-flex
-                justify-content-center
-                align-items-center
-                mb-9"
-              >
-                <button
-                  type="button"
-                  class="btn
-                    pages__text__5 fw-bold"
-                >
-                  -
-                </button>
-                <p class="mx-20
-                  pages__text__5 fw-bold"
-                >
-                  01
-                </p>
-                <button
-                  type="button"
-                  class="btn
-                    pages__text__5 fw-bold"
-                >
-                  +
-                </button>
-              </div>
-
-              <p>張</p>
-            </div>
-
-            <div class="col-lg-6
-              d-flex
-              flex-column
-              align-items-center
-              pt-7xl pb-16"
-            >
-              <p class="mb-12
-                pages__text__5 fw-bold"
-              >
-                NT$350
-              </p>
-
-              <p class="mb-4">張</p>
-
-              <div>
-                <input
-                  type="radio"
-                  name="ticketTypes"
-                  id="studentTicket"
-                  class="form__radio"
-                >
-                <label
-                  for="studentTicket"
-                  class="form__radio__label
-                    px-8 py-2"
-                >
-                  學生
-                </label>
-
-                <input
-                  type="radio"
-                  name="ticketTypes"
-                  id="adultTicket"
-                  class="form__radio"
-                  checked
-                >
-                <label
-                  for="adultTicket"
-                  class="form__radio__label
-                    px-8 py-2"
-                >
-                  全票
-                </label>
-
-                <input
-                  type="radio"
-                  name="ticketTypes"
-                  id="discountTicket"
-                  class="form__radio"
-                >
-                <label
-                  for="discountTicket"
-                  class="form__radio__label
-                    px-8 py-2"
-                >
-                  愛心
-                </label>
-              </div>
-
-            </div>
-
-            <div class="col-6 mt-21 border">
               <button
                 type="button"
-                class="btn btn-outline-primary w-100 py-5"
+                class="btn
+                  pages__text__5 fw-bold
+                  lh-1"
               >
-                收藏展覽
+                -
+              </button>
+              <p class="mx-14
+                pages__text__5 fw-bold"
+              >
+                01
+              </p>
+              <button
+                type="button"
+                class="btn
+                  pages__text__5 fw-bold
+                  lh-1"
+              >
+                +
               </button>
             </div>
 
-            <div class="col-6 mt-21 border">
-              <button
-                type="submit"
-                class="btn btn-secondary w-100 py-5"
-              >
-                購買票券
-              </button>
-            </div>
+            <p class="fw-lighter">張</p>
           </div>
-        </form>
+
+          
+          <div class="col-lg-6   border
+            d-flex
+            flex-column
+            align-items-center
+            pt-20 pt-md-7xl pb-16"
+          >
+            <p class="mb-12
+              pages__text__5 fw-bold"
+            >
+              NT$350
+            </p>
+
+            <p class="mb-4">張</p>
+
+            <div>
+              <input
+                type="radio"
+                name="ticketTypes"
+                id="studentTicket"
+                class="form__radio"
+              >
+              <label
+                for="studentTicket"
+                class="form__radio__label
+                  px-8 py-2"
+              >
+                學生
+              </label>
+
+              <input
+                type="radio"
+                name="ticketTypes"
+                id="adultTicket"
+                class="form__radio"
+                checked
+              >
+              <label
+                for="adultTicket"
+                class="form__radio__label
+                  px-8 py-2"
+              >
+                全票
+              </label>
+
+              <input
+                type="radio"
+                name="ticketTypes"
+                id="discountTicket"
+                class="form__radio"
+              >
+              <label
+                for="discountTicket"
+                class="form__radio__label
+                  px-8 py-2"
+              >
+                愛心
+              </label>
+            </div>
+
+          </div>
+
+          <div class="col-6 mt-21 border ">
+            <button
+              type="button"
+              class="btn btn-outline-primary w-100 py-5"
+            >
+              收藏展覽
+            </button>
+          </div>
+
+          <div class="col-6 mt-21 border">
+            <button
+              type="submit"
+              class="btn btn-secondary w-100 py-5"
+            >
+              購買票券
+            </button>
+          </div>
+        </div>
+
 
       </div>
     </div>
