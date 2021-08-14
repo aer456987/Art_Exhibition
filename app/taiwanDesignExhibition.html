@@ -88,13 +88,12 @@ current: index
 
       <div class="col-lg-6">
         <div class="row">
-          <!-- V -->
           <div class="col-lg-6
             d-flex
             flex-column
             align-items-center
-            pt-20 pt-md-7xl pb-0
-            border-gray-300 border-end"
+            pt-20 pt-lg-7xl pb-0
+            border-lg-end border-gray-300"
           >
             <div class="d-flex
               justify-content-center
@@ -127,69 +126,74 @@ current: index
             <p class="fw-lighter">張</p>
           </div>
 
-          
-          <div class="col-lg-6   border
+          <div class="col-lg-6
             d-flex
             flex-column
+            justify-content-center
             align-items-center
-            pt-20 pt-md-7xl pb-16"
+            h-2xl
+            pt-0 pt-lg-21"
           >
-            <p class="mb-12
-              pages__text__5 fw-bold"
-            >
-              NT$350
-            </p>
-
-            <p class="mb-4">張</p>
-
             <div>
-              <input
-                type="radio"
-                name="ticketTypes"
-                id="studentTicket"
-                class="form__radio"
+              <p class="mb-12 pages__text__5
+                fw-bold text-center"
               >
-              <label
-                for="studentTicket"
-                class="form__radio__label
-                  px-8 py-2"
-              >
-                學生
-              </label>
+                NT$350
+              </p>
 
-              <input
-                type="radio"
-                name="ticketTypes"
-                id="adultTicket"
-                class="form__radio"
-                checked
-              >
-              <label
-                for="adultTicket"
-                class="form__radio__label
-                  px-8 py-2"
-              >
-                全票
-              </label>
+              <p class="mb-4 fw-lighter text-center">張</p>
 
-              <input
-                type="radio"
-                name="ticketTypes"
-                id="discountTicket"
-                class="form__radio"
-              >
-              <label
-                for="discountTicket"
-                class="form__radio__label
-                  px-8 py-2"
-              >
-                愛心
-              </label>
+              <div>
+                <input
+                  type="radio"
+                  name="ticketTypes"
+                  value="學生票"
+                  id="studentTicket"
+                  class="form__radio"
+                >
+                <label
+                  for="studentTicket"
+                  class="form__radio__label
+                    px-8 py-2"
+                >
+                  學生
+                </label>
+
+                <input
+                  type="radio"
+                  name="ticketTypes"
+                  value="全票"
+                  id="adultTicket"
+                  class="form__radio"
+                  checked
+                >
+                <label
+                  for="adultTicket"
+                  class="form__radio__label
+                    px-8 py-2"
+                >
+                  全票
+                </label>
+
+                <input
+                  type="radio"
+                  name="ticketTypes"
+                  value="愛心票"
+                  id="discountTicket"
+                  class="form__radio"
+                >
+                <label
+                  for="discountTicket"
+                  class="form__radio__label
+                    px-8 py-2"
+                >
+                  愛心
+                </label>
+              </div>
             </div>
-
           </div>
 
-          <div class="col-6 mt-21 border ">
+          <div class="col-6 mt-lg-21">
             <button
               type="button"
               class="btn btn-outline-primary w-100 py-5"
@@ -198,7 +202,7 @@ current: index
             </button>
           </div>
 
-          <div class="col-6 mt-21 border">
+          <div class="col-6 mt-lg-21">
             <button
               type="submit"
               class="btn btn-secondary w-100 py-5"
