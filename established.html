@@ -272,32 +272,33 @@
     </nav>
 
 
-    <div>
+    <!-- <div>
   <h1 class="d-block d-sm-none p-11 border text-secondary">ssm 模式</h1>
   <h1 class="d-none d-sm-block d-md-none p-11 border text-secondary">sm 模式</h1>
   <h1 class="d-none d-md-block d-lg-none p-11 border text-secondary">md 模式</h1>
   <h1 class="d-none d-lg-block d-xl-none p-11 border text-secondary">lg 模式</h1>
   <h1 class="d-none d-xl-block d-xxl-none p-11 border text-secondary">xl 模式</h1>
   <h1 class="d-none d-xxl-block d-none p-11 border text-secondary">xxl 模式</h1>
-</div>
+</div> -->
     
 <div class="container">
   <div class="row justify-content-center ailgn-item-center
-  pt-10xl">
+  my-10xl">
 
     <div class="col-md-10 col-lg-6">
 
-      <div class="text-primary text-center">
-        <i class="material-icons-outlined fs-1">
-          check_circle
-        </i>
-
-        <h2 class="pages__text__2 pt-5 pb-12">
-          完成訂購
-        </h2>
-      </div>
-
       <ul class="mb-8xl mb-md-9xxl">
+        <li class="text-primary text-center">
+          <i class="material-icons-outlined fs-1">
+            check_circle
+          </i>
+
+          <h2 class="pages__text__2 pt-5 pb-12">
+            完成訂購
+          </h2>
+        </li>
+
+      
         <li>
           <p>您的展覽憑證代碼為：</p>
         </li>
@@ -343,7 +344,7 @@
     <div
   id="offcanvasRight"
   class="offcanvas offcanvas-end top-78
-    w-md-5xl
+    w-5xl
     ps-8 ps-md-16
     pe-8
     bg-dark"
@@ -363,14 +364,13 @@
       Cart List
     </h3>
   </div>
-  <div class="offcanvas-body
+  <ul class="offcanvas-body
     p-0 pe-8
     overflow-y-scroll
     scrollbar"
   >
 
-
-    <div class="card mb-4 mb-md-6 rounded-1">
+    <li class="card mb-4 mb-md-6 rounded-1">
       <button
         type="button"
         class="btn-close mt-2 ms-2"
@@ -378,34 +378,30 @@
       ></button>
 
       <div class="px-8 px-md-16
+        pt-4 pt-md-2
         pb-8 pb-md-12"
       >
+        <div class="card flex-row align-items-center">
 
-        <div class="row g-0"
-        >
-          <div class="col-4
-            position-relative
-            overflow-hidden
-            h-md-1xl"
+          <div class="ratio ratio-1x1
+            img-position-center w-1xl h-1xl"
           >
             <img
               src="../assets/images/exhibition/exhibition-3.jpg"
               alt="購部車清單商品預覽圖_1"
-              class="position-absolute
-                top-50 start-50 translate-middle
-                h-100 w-auto"
+              class="w-100"
             >
           </div>
-          <div class="col-6 col-md-5">
-            <div class="card-body py-0">
-          
+
+          <div class="card-body d-flex ms-8">
+            <div>
               <h4 class="card-title
-                fs-7 fs-fw-bold
+                fs-7 fw-bold
                 mb-2"
               >
                 2020 台味設計展
               </h4>
-          
+
               <p class="fw-normal mb-7">
                 01 JUN — 31 OCT
                 <span class="fw-light text-gray-300
@@ -415,46 +411,47 @@
                   全票
                 </span>
               </p>
-          
+
               <p class="pages__text__2 fw-bold">
                 NT$350
               </p>
-          
+            </div>
+
+            <div class="d-md-flex
+              flex-md-row-reverse
+              justify-content-center
+              align-items-center
+              ms-auto"
+            >
+              <button class="btn btn-outline-dark
+                border-0
+                pages__text__2 fw-bold
+                w-100"
+              >
+                +
+              </button>
+
+              <p class="pages__text__2 fw-bold text-center
+                p-4"
+              >
+                01
+              </p>
+
+              <button class="btn btn-outline-dark
+                border-0
+                pages__text__2 fw-bold
+                w-100 px-5"
+              >
+                —
+              </button>
             </div>
           </div>
-          <div class="col-2 col-md-3
-            d-md-flex
-            flex-md-row-reverse
-            justify-content-center
-            align-items-center"
-          >
-            <button class="btn btn-outline-dark
-              border-0
-              pages__text__2 fw-bold
-              w-100 px-0"
-            >
-              ＋
-            </button>
-          
-            <p class="pages__text__2 fw-bold text-center
-              p-2"
-            >
-              01
-            </p>
-          
-            <button class="btn btn-outline-dark
-              border-0
-              pages__text__2 fw-bold
-              w-100 px-0"
-            >
-              —
-            </button>
-          </div>
+
         </div>
       </div>
-    </div>
+    </li>
 
-    <div class="card mb-4 mb-md-6 rounded-1">
+    <li class="card mb-4 mb-md-6 rounded-1">
       <button
         type="button"
         class="btn-close mt-2 ms-2"
@@ -462,34 +459,30 @@
       ></button>
 
       <div class="px-8 px-md-16
+        pt-4 pt-md-2
         pb-8 pb-md-12"
       >
+        <div class="card flex-row align-items-center">
 
-        <div class="row g-0"
-        >
-          <div class="col-4
-            position-relative
-            overflow-hidden
-            h-md-1xl"
+          <div class="ratio ratio-1x1
+            img-position-center w-1xl h-1xl"
           >
             <img
               src="../assets/images/exhibition/exhibition-5.jpg"
-              alt="購部車清單商品預覽圖_1"
-              class="position-absolute
-                top-50 start-50 translate-middle
-                h-100 w-auto"
+              alt="購部車清單商品預覽圖_2"
+              class="w-100"
             >
           </div>
-          <div class="col-6 col-md-5">
-            <div class="card-body py-0">
-          
+
+          <div class="card-body d-flex ms-8">
+            <div>
               <h4 class="card-title
-                fs-7 fs-fw-bold
+                fs-7 fw-bold
                 mb-2"
               >
                 No.22 線上設計展
               </h4>
-          
+
               <p class="fw-normal mb-7">
                 01 JUN — 31 OCT
                 <span class="fw-light text-gray-300
@@ -499,46 +492,47 @@
                   全票
                 </span>
               </p>
-          
+
               <p class="pages__text__2 fw-bold">
                 NT$350
               </p>
-          
+            </div>
+
+            <div class="d-md-flex
+              flex-md-row-reverse
+              justify-content-center
+              align-items-center
+              ms-auto"
+            >
+              <button class="btn btn-outline-dark
+                border-0
+                pages__text__2 fw-bold
+                w-100"
+              >
+                +
+              </button>
+
+              <p class="pages__text__2 fw-bold text-center
+                p-4"
+              >
+                01
+              </p>
+
+              <button class="btn btn-outline-dark
+                border-0
+                pages__text__2 fw-bold
+                w-100 px-5"
+              >
+                —
+              </button>
             </div>
           </div>
-          <div class="col-2 col-md-3
-            d-md-flex
-            flex-md-row-reverse
-            justify-content-center
-            align-items-center"
-          >
-            <button class="btn btn-outline-dark
-              border-0
-              pages__text__2 fw-bold
-              w-100 px-0"
-            >
-              ＋
-            </button>
-          
-            <p class="pages__text__2 fw-bold text-center
-              p-2"
-            >
-              01
-            </p>
-          
-            <button class="btn btn-outline-dark
-              border-0
-              pages__text__2 fw-bold
-              w-100 px-0"
-            >
-              —
-            </button>
-          </div>
+
         </div>
       </div>
-    </div>
+    </li>
 
-    <div class="card mb-4 mb-md-6 rounded-1">
+    <li class="card mb-4 mb-md-6 rounded-1">
       <button
         type="button"
         class="btn-close mt-2 ms-2"
@@ -546,118 +540,30 @@
       ></button>
 
       <div class="px-8 px-md-16
+        pt-4 pt-md-2
         pb-8 pb-md-12"
       >
+        <div class="card flex-row align-items-center">
 
-        <div class="row g-0"
-        >
-          <div class="col-4
-            position-relative
-            overflow-hidden
-            h-md-1xl"
+          <div class="ratio ratio-1x1
+            img-position-center w-1xl h-1xl"
           >
             <img
               src="../assets/images/exhibition/exhibition-1.jpg"
-              alt="購部車清單商品預覽圖_1"
-              class="position-absolute
-                top-50 start-50 translate-middle
-                h-100 w-auto"
+              alt="購部車清單商品預覽圖_3"
+              class="w-100"
             >
           </div>
-          <div class="col-6 col-md-5">
-            <div class="card-body py-0">
-          
+
+          <div class="card-body d-flex ms-8">
+            <div>
               <h4 class="card-title
-                fs-7 fs-fw-bold
-                mb-2"
-              >
-                No.22 線上設計展
-              </h4>
-          
-              <p class="fw-normal mb-7">
-                01 JUN — 31 OCT
-                <span class="fw-light text-gray-300
-                  mt-2
-                  d-block"
-                >
-                  全票
-                </span>
-              </p>
-          
-              <p class="pages__text__2 fw-bold">
-                NT$350
-              </p>
-          
-            </div>
-          </div>
-          <div class="col-2 col-md-3
-            d-md-flex
-            flex-md-row-reverse
-            justify-content-center
-            align-items-center"
-          >
-            <button class="btn btn-outline-dark
-              border-0
-              pages__text__2 fw-bold
-              w-100 px-0"
-            >
-              ＋
-            </button>
-          
-            <p class="pages__text__2 fw-bold text-center
-              p-2"
-            >
-              01
-            </p>
-          
-            <button class="btn btn-outline-dark
-              border-0
-              pages__text__2 fw-bold
-              w-100 px-0"
-            >
-              —
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card rounded-1">
-      <button
-        type="button"
-        class="btn-close mt-2 ms-2"
-        aria-label="Close"
-      ></button>
-
-      <div class="px-8 px-md-16
-        pb-8 pb-md-12"
-      >
-
-        <div class="row g-0"
-        >
-          <div class="col-4
-            position-relative
-            overflow-hidden
-            h-md-1xl"
-          >
-            <img
-              src="../assets/images/exhibition/exhibition-2.jpg"
-              alt="購部車清單商品預覽圖_1"
-              class="position-absolute
-                top-50 start-50 translate-middle
-                h-100 w-auto"
-            >
-          </div>
-          <div class="col-6 col-md-5">
-            <div class="card-body py-0">
-          
-              <h4 class="card-title
-                fs-7 fs-fw-bold
+                fs-7 fw-bold
                 mb-2"
               >
                 高雄設計節
               </h4>
-          
+
               <p class="fw-normal mb-7">
                 01 JUN — 31 OCT
                 <span class="fw-light text-gray-300
@@ -667,47 +573,129 @@
                   全票
                 </span>
               </p>
-          
+
               <p class="pages__text__2 fw-bold">
                 NT$350
               </p>
-          
+            </div>
+
+            <div class="d-md-flex
+              flex-md-row-reverse
+              justify-content-center
+              align-items-center
+              ms-auto"
+            >
+              <button class="btn btn-outline-dark
+                border-0
+                pages__text__2 fw-bold
+                w-100"
+              >
+                +
+              </button>
+
+              <p class="pages__text__2 fw-bold text-center
+                p-4"
+              >
+                01
+              </p>
+
+              <button class="btn btn-outline-dark
+                border-0
+                pages__text__2 fw-bold
+                w-100 px-5"
+              >
+                —
+              </button>
             </div>
           </div>
-          <div class="col-2 col-md-3
-            d-md-flex
-            flex-md-row-reverse
-            justify-content-center
-            align-items-center"
-          >
-            <button class="btn btn-outline-dark
-              border-0
-              pages__text__2 fw-bold
-              w-100 px-0"
-            >
-              ＋
-            </button>
-          
-            <p class="pages__text__2 fw-bold text-center
-              p-2"
-            >
-              01
-            </p>
-          
-            <button class="btn btn-outline-dark
-              border-0
-              pages__text__2 fw-bold
-              w-100 px-0"
-            >
-              —
-            </button>
-          </div>
+
         </div>
       </div>
-    </div>
+    </li>
 
+    <li class="card rounded-1">
+      <button
+        type="button"
+        class="btn-close mt-2 ms-2"
+        aria-label="Close"
+      ></button>
 
-  </div>
+      <div class="px-8 px-md-16
+        pt-4 pt-md-2
+        pb-8 pb-md-12"
+      >
+        <div class="card flex-row align-items-center">
+
+          <div class="ratio ratio-1x1
+            img-position-center w-1xl h-1xl"
+          >
+            <img
+              src="../assets/images/exhibition/exhibition-6.jpg"
+              alt="購部車清單商品預覽圖_4"
+              class="w-100"
+            >
+          </div>
+
+          <div class="card-body d-flex ms-8">
+            <div>
+              <h4 class="card-title
+                fs-7 fw-bold
+                mb-2"
+              >
+                裝置藝術設計展
+              </h4>
+
+              <p class="fw-normal mb-7">
+                01 JUN — 31 OCT
+                <span class="fw-light text-gray-300
+                  mt-2
+                  d-block"
+                >
+                  全票
+                </span>
+              </p>
+
+              <p class="pages__text__2 fw-bold">
+                NT$350
+              </p>
+            </div>
+
+            <div class="d-md-flex
+              flex-md-row-reverse
+              justify-content-center
+              align-items-center
+              ms-auto"
+            >
+              <button class="btn btn-outline-dark
+                border-0
+                pages__text__2 fw-bold
+                w-100"
+              >
+                +
+              </button>
+
+              <p class="pages__text__2 fw-bold text-center
+                p-4"
+              >
+                01
+              </p>
+
+              <button class="btn btn-outline-dark
+                border-0
+                pages__text__2 fw-bold
+                w-100 px-5"
+              >
+                —
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </li>
+
+  </ul>
+
   <div class="d-flex
     justify-content-between
     align-items-center
