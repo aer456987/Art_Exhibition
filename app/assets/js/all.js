@@ -3,17 +3,14 @@
 // });
 
 const swiper = new Swiper('.swiper-container', {
-  // slidesPerView: 3,
+  slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
   autoplay: {
-    delay: 10000,
+    delay: 35000,
     disableOnInteraction: false,
   },
   breakpoints: {
-    480: {
-      slidesPerView: 3,
-    },
     767: {
       slidesPerView: 2,
     },
