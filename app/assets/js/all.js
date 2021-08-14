@@ -1,6 +1,4 @@
-// $(function() {
-
-// });
+// $(function() { });
 
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
