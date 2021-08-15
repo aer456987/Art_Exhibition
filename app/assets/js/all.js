@@ -1,12 +1,17 @@
+// import AOS from 'aos';
+AOS.init();
+
+
+
 // $(function() { });
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
   spaceBetween: 30,
-  // loop: true,
-  // autoplay: {
-  //   delay: 3500,
-  //   disableOnInteraction: false,
-  // },
+  loop: true,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     767: {
       slidesPerView: 2,
@@ -29,4 +34,4 @@ function getDirection() {
   const direction = window.innerWidth <= 767 ? 'vertical' : 'horizontal';
 
   return direction;
-}
+};

@@ -6,30 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    >
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    >
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-      rel="stylesheet"
-    >
-    <link
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
 
   <body>
-
-    
     <nav class="navbar navbar-expand-lg navbar-light bg-light
       position-fixed z-index-999
       w-100 py-0"
@@ -44,7 +30,9 @@
           vh-100
           text-light"
         >
-          <div class="offset-lg-1">
+          <div class="offset-lg-1"
+            data-aos="zoom-in-up"
+          >
             <h2 class="index__title mb-8">
               台北當代藝術展
               <span class="d-block
@@ -88,8 +76,8 @@
     
     <%- contents %>
     <!-- <%- include('./components/seeeeeeeModel.ejs') %> -->
-    
-    
+
+
     <%- include('./components/layout/moreExhibition.ejs') %>
     <%- include('./components/layout/subscription.ejs') %>
     <%- include('./components/layout/footer.ejs') %>
@@ -97,6 +85,8 @@
     <%- include('./components/offcanvas.ejs') %>
 
 
+    <!-- <script src="../node_modules/aos/dist/aos.js"></script> -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
