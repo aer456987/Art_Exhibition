@@ -1,7 +1,4 @@
-// import AOS from 'aos';
 AOS.init();
-
-
 
 // $(function() { });
 const swiper = new Swiper('.swiper-container', {
