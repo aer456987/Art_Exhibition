@@ -1,12 +1,13 @@
 "use strict";
 
-// $(function() { });
+AOS.init(); // $(function() { });
+
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
   autoplay: {
-    delay: 35000,
+    delay: 3500,
     disableOnInteraction: false
   },
   breakpoints: {
@@ -31,4 +32,6 @@ function getDirection() {
   var direction = window.innerWidth <= 767 ? 'vertical' : 'horizontal';
   return direction;
 }
+
+;
 //# sourceMappingURL=all.js.map
