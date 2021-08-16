@@ -1,4 +1,6 @@
-AOS.init();
+AOS.init({
+  once: true,
+});
 
 // $(function() { });
 const swiper = new Swiper('.swiper-container', {
