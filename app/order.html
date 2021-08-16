@@ -5,14 +5,70 @@ engine: ejs
 current: order
 ---
 
-<div class="container pt-10 pb-20">
-  <div class="row mb-10 mb-md-16 pb-12">
+<section class="container pt-10 pb-20">
+  <div class="row
+    mb-20 mb-md-16
+    pb-20 pb-md-12"
+  >
     <div class="col-lg-8">
-      <div class="progressBar d-flex justify-content-around mt-7 bg-secondary">
-        <p class="progressBar__text fw-normal">確認訂單</p>
-        <p class="progressBar__text fw-normal">填寫訂購資料</p>
-        <p class="progressBar__text progressBar__text__undone fw-light">填寫付款資料</p>
-        <p class="progressBar__text progressBar__text__undone fw-light">完成訂購</p>
+      <div
+        class="progressBar d-flex justify-content-around mt-7 bg-secondary"
+        data-aos="fade"
+        data-aos-duration="1500"
+        data-aos-easing="ease"
+      >
+        <p
+          class="progressBar__text fw-light"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+        >
+          <span class="d-none d-md-block">
+            確認訂單
+          </span>
+          <span class="d-block d-md-none">
+            確認 <br>
+            訂單
+          </span>
+        </p>
+        <p
+          class="progressBar__text fw-normal"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          <span class="d-none d-md-block">
+            填寫訂購資料
+          </span>
+          <span class="d-block d-md-none text-center">
+            填寫 <br>
+            訂購資料
+          </span>
+        </p>
+        <p
+          class="progressBar__text progressBar__text__undone fw-light"
+          data-aos="fade-up"
+          data-aos-duration="1300"
+        >
+          <span class="d-none d-md-block">
+            填寫付款資料
+          </span>
+          <span class="d-block d-md-none text-center">
+            填寫 <br>
+            付款資料
+          </span>
+        </p>
+        <p
+          class="progressBar__text progressBar__text__undone fw-light"
+          data-aos="fade-up"
+          data-aos-duration="1400"
+        >
+          <span class="d-none d-md-block">
+            完成訂購
+          </span>
+          <span class="d-block d-md-none text-center">
+            完成 <br>
+            訂購
+          </span>
+        </p>
       </div>
     </div>
   </div>
@@ -23,8 +79,13 @@ current: order
     <div class="col-md-6 col-lg-4 order-md-last
       mb-12 mb-md-0"
     >
-      <h2 class="pages__text__2 fw-normal
-        mb-8 mb-md-10"
+      <h2
+        class="pages__text__2 fw-normal
+          mb-8 mb-md-10"
+        data-aos="fade-up"
+        data-aos-duration="1100"
+        data-aos-easing="ease"
+        data-aos-delay="100"
       >
         訂購人資訊
       </h2>
@@ -35,6 +96,10 @@ current: order
             <label
               for="subscriberEmail"
               class="form-label lh-lg"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="150"
             >
               Email
             </label>
@@ -43,6 +108,10 @@ current: order
               class="form-control border-gray-200"
               id="subscriberEmail"
               placeholder="example@gmail.com"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="200"
             >
           </li>
 
@@ -50,6 +119,10 @@ current: order
             <label
               for="subscriberName"
               class="form-label lh-lg"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="250"
             >
               姓名
             </label>
@@ -58,6 +131,10 @@ current: order
               class="form-control border-gray-200"
               id="subscriberName"
               placeholder="請輸入姓名"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="300"
             >
           </li>
 
@@ -65,6 +142,10 @@ current: order
             <label
               for="subscriberTel"
               class="form-label lh-lg"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="350"
             >
               聯絡電話
             </label>
@@ -73,6 +154,10 @@ current: order
               class="form-control border-gray-200"
               id="subscriberTel"
               placeholder="請輸入電話"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="400"
             >
           </li>
 
@@ -80,6 +165,10 @@ current: order
             <label
               for="couponNumber"
               class="form-label lh-lg"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="450"
             >
               優惠碼
             </label>
@@ -88,10 +177,18 @@ current: order
               class="form-control border-gray-200"
               id="couponNumber"
               placeholder="TG87526"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="500"
             >
             <p class="mt-2
               fs-8 lh-base text-end
               text-primary"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="550"
             >
               優惠碼已生效
             </p>
@@ -102,10 +199,22 @@ current: order
           <li class="mb-2 mb-md-3
             d-flex justify-content-between"
           >
-            <p class="me-auto fw-normal">
+            <p
+              class="me-auto fw-normal"
+              data-aos="zoom-in"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="100"
+            >
               小計
             </p>
-            <p class="fw-lighter">
+            <p
+              class="fw-lighter"
+              data-aos="zoom-in"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="100"
+            >
               NT$1050
             </p>
           </li>
@@ -113,10 +222,22 @@ current: order
           <li class="mb-4 mb-md-3
             d-flex justify-content-between"
           >
-            <p class="fw-normal">
+            <p
+              class="me-auto fw-normal"
+              data-aos="zoom-in"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="100"
+            >
               折扣
             </p>
-            <p class="fw-lighter">
+            <p
+              class="fw-lighter"
+              data-aos="zoom-in"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="100"
+            >
               -NT$50
             </p>
           </li>
@@ -124,8 +245,22 @@ current: order
           <li class="pages__text__2 fw-normal
             d-flex justify-content-between"
           >
-            <p>總金額</p>
-            <p>NT$1000</p>
+            <p
+              data-aos="zoom-in"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="100"
+            >
+              總金額
+            </p>
+            <p
+              data-aos="zoom-in"
+              data-aos-duration="1100"
+              data-aos-easing="ease"
+              data-aos-delay="100"
+            >
+              NT$1000
+            </p>
           </li>
         </ul>
       </form>
@@ -133,10 +268,17 @@ current: order
 
     <div class="col-md-6">
       <ul>
-        <li class="mb-10">
+        <li
+          class="mb-10"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+          data-aos-easing="ease"
+          data-aos-delay="100"
+        >
           <div class="card">
             <div class="row ms-0">
               <div class="col-6 col-md-4
+                d-none d-sm-block
                 img-position-center"
               >
                 <img
@@ -146,26 +288,35 @@ current: order
                 >
               </div>
 
-              <div class="col-6 col-md-8">
+              <div class="col-3 my-auto
+                d-block d-sm-none
+                img-position-center p-0"
+              >
+                <div class="ratio ratio-1x1 w-100">
+                  <img
+                    src="./assets/images/exhibition/exhibition-3.jpg"
+                    alt="購物車-2020 台味設計展-預覽圖"
+                    class="w-100"
+                  >
+                </div>
+              </div>
+
+              <div class="col-9 col-sm-6 col-md-8  my-auto">
                 <div class="card-body">
                   <div class="row
                     justify-content-center
                     align-items-center"
                   >
-                    <!-- 主內容 -->
                     <div class="col-lg-7">
 
-                      <!-- 標題 -->
                       <h3 class="fs-7 lh-base fw-bold mb-3 mb-md-2">
                         2020 台味設計展
                       </h3>
 
-                      <!-- 日期 -->
                       <p class="fw-normal mb-2">
                         01 JUN — 31 OCT
                       </p>
 
-                      <!-- 票種 -->
                       <p class="d-none d-lg-block
                         mb-2
                         text-gray-300"
@@ -174,7 +325,6 @@ current: order
                       </p>
                     </div>
 
-                    <!-- sm 價格 -->
                     <div class="col-12 d-lg-none
                       d-flex justify-content-between"
                     >
@@ -195,7 +345,6 @@ current: order
                       </p>
                     </div>
 
-                    <!-- md 價格 -->
                     <div class="col-md-4 d-lg-block pe-0
                       d-none"
                     >
@@ -204,7 +353,6 @@ current: order
                       </p>
                     </div>
 
-                    <!-- md 數量 -->
                     <div class="col-md-1 d-lg-block p-0
                       d-none"
                     >
@@ -213,7 +361,7 @@ current: order
                       >
                         1
                       </p>
-
+                    </div>
                   </div>
                 </div>
               </div>
@@ -221,10 +369,17 @@ current: order
           </div>
         </li>
 
-        <li class="mb-10">
+        <li
+          class="mb-10"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+          data-aos-easing="ease"
+          data-aos-delay="150"
+        >
           <div class="card">
             <div class="row ms-0">
               <div class="col-6 col-md-4
+                d-none d-sm-block
                 img-position-center"
               >
                 <img
@@ -234,26 +389,35 @@ current: order
                 >
               </div>
 
-              <div class="col-6 col-md-8">
+              <div class="col-3 my-auto
+                d-block d-sm-none
+                img-position-center p-0"
+              >
+                <div class="ratio ratio-1x1 w-100">
+                  <img
+                    src="./assets/images/exhibition/exhibition-5.jpg"
+                    alt="No.22 線上設計展-預覽圖"
+                    class="w-100"
+                  >
+                </div>
+              </div>
+
+              <div class="col-9 col-sm-6 col-md-8  my-auto">
                 <div class="card-body">
                   <div class="row
                     justify-content-center
                     align-items-center"
                   >
-                    <!-- 主內容 -->
                     <div class="col-lg-7">
 
-                      <!-- 標題 -->
                       <h3 class="fs-7 lh-base fw-bold mb-3 mb-md-2">
                         No.22 線上設計展
                       </h3>
 
-                      <!-- 日期 -->
                       <p class="fw-normal mb-2">
                         01 JUN — 31 OCT
                       </p>
 
-                      <!-- 票種 -->
                       <p class="d-none d-lg-block
                         mb-2
                         text-gray-300"
@@ -262,7 +426,6 @@ current: order
                       </p>
                     </div>
 
-                    <!-- sm 價格 -->
                     <div class="col-12 d-lg-none
                       d-flex justify-content-between"
                     >
@@ -283,7 +446,6 @@ current: order
                       </p>
                     </div>
 
-                    <!-- md 價格 -->
                     <div class="col-md-4 d-lg-block pe-0
                       d-none"
                     >
@@ -292,7 +454,6 @@ current: order
                       </p>
                     </div>
 
-                    <!-- md 數量 -->
                     <div class="col-md-1 d-lg-block p-0
                       d-none"
                     >
@@ -301,7 +462,7 @@ current: order
                       >
                         1
                       </p>
-
+                    </div>
                   </div>
                 </div>
               </div>
@@ -309,10 +470,17 @@ current: order
           </div>
         </li>
 
-        <li class="mb-10">
+        <li
+          class="mb-10"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+          data-aos-easing="ease"
+          data-aos-delay="200"
+        >
           <div class="card">
             <div class="row ms-0">
               <div class="col-6 col-md-4
+                d-none d-sm-block
                 img-position-center"
               >
                 <img
@@ -322,26 +490,35 @@ current: order
                 >
               </div>
 
-              <div class="col-6 col-md-8">
+              <div class="col-3 my-auto
+                d-block d-sm-none
+                img-position-center p-0"
+              >
+                <div class="ratio ratio-1x1 w-100">
+                  <img
+                    src="./assets/images/exhibition/exhibition-1.jpg"
+                    alt="高雄設計節-預覽圖"
+                    class="w-100"
+                  >
+                </div>
+              </div>
+
+              <div class="col-9 col-sm-6 col-md-8  my-auto">
                 <div class="card-body">
                   <div class="row
                     justify-content-center
                     align-items-center"
                   >
-                    <!-- 主內容 -->
                     <div class="col-lg-7">
 
-                      <!-- 標題 -->
                       <h3 class="fs-7 lh-base fw-bold mb-3 mb-md-2">
                         高雄設計節
                       </h3>
 
-                      <!-- 日期 -->
                       <p class="fw-normal mb-2">
                         01 JUN — 31 OCT
                       </p>
 
-                      <!-- 票種 -->
                       <p class="d-none d-lg-block
                         mb-2
                         text-gray-300"
@@ -350,7 +527,6 @@ current: order
                       </p>
                     </div>
 
-                    <!-- sm 價格 -->
                     <div class="col-12 d-lg-none
                       d-flex justify-content-between"
                     >
@@ -371,7 +547,6 @@ current: order
                       </p>
                     </div>
 
-                    <!-- md 價格 -->
                     <div class="col-md-4 d-lg-block pe-0
                       d-none"
                     >
@@ -380,7 +555,6 @@ current: order
                       </p>
                     </div>
 
-                    <!-- md 數量 -->
                     <div class="col-md-1 d-lg-block p-0
                       d-none"
                     >
@@ -389,7 +563,7 @@ current: order
                       >
                         1
                       </p>
-
+                    </div>
                   </div>
                 </div>
               </div>
@@ -397,10 +571,16 @@ current: order
           </div>
         </li>
 
-        <li>
+        <li
+          data-aos="fade-up"
+          data-aos-duration="1100"
+          data-aos-easing="ease"
+          data-aos-delay="250"
+        >
           <div class="card">
             <div class="row ms-0">
               <div class="col-6 col-md-4
+                d-none d-sm-block
                 img-position-center"
               >
                 <img
@@ -410,26 +590,35 @@ current: order
                 >
               </div>
 
-              <div class="col-6 col-md-8">
+              <div class="col-3 my-auto
+                d-block d-sm-none
+                img-position-center p-0"
+              >
+                <div class="ratio ratio-1x1 w-100">
+                  <img
+                    src="./assets/images/exhibition/exhibition-6.jpg"
+                    alt="裝置藝術設計展-預覽圖"
+                    class="w-100"
+                  >
+                </div>
+              </div>
+
+              <div class="col-9 col-sm-6 col-md-8  my-auto">
                 <div class="card-body">
                   <div class="row
                     justify-content-center
                     align-items-center"
                   >
-                    <!-- 主內容 -->
                     <div class="col-lg-7">
 
-                      <!-- 標題 -->
                       <h3 class="fs-7 lh-base fw-bold mb-3 mb-md-2">
                         裝置藝術設計展
                       </h3>
 
-                      <!-- 日期 -->
                       <p class="fw-normal mb-2">
                         01 JUN — 31 OCT
                       </p>
 
-                      <!-- 票種 -->
                       <p class="d-none d-lg-block
                         mb-2
                         text-gray-300"
@@ -438,7 +627,6 @@ current: order
                       </p>
                     </div>
 
-                    <!-- sm 價格 -->
                     <div class="col-12 d-lg-none
                       d-flex justify-content-between"
                     >
@@ -459,7 +647,6 @@ current: order
                       </p>
                     </div>
 
-                    <!-- md 價格 -->
                     <div class="col-md-4 d-lg-block pe-0
                       d-none"
                     >
@@ -468,7 +655,6 @@ current: order
                       </p>
                     </div>
 
-                    <!-- md 數量 -->
                     <div class="col-md-1 d-lg-block p-0
                       d-none"
                     >
@@ -477,7 +663,7 @@ current: order
                       >
                         1
                       </p>
-
+                    </div>
                   </div>
                 </div>
               </div>
@@ -493,6 +679,11 @@ current: order
       <a
         href="./cart.html"
         class="btn btn-outline-primary w-100"
+        data-aos="fade"
+        data-aos-duration="1800"
+        data-aos-easing="ease"
+        data-aos-delay="350"
+        data-aos-offset="0"
       >
         返回
       </a>
@@ -502,10 +693,15 @@ current: order
       <a
         href="./payment.html"
         class="btn btn-secondary w-100"
+        data-aos="fade"
+        data-aos-duration="1800"
+        data-aos-easing="ease"
+        data-aos-delay="350"
+        data-aos-offset="0"
       >
         下一步
       </a>
     </div>
   </div>
 
-</div>
+</section>
