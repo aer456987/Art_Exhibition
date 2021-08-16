@@ -1,6 +1,8 @@
 "use strict";
 
-AOS.init(); // $(function() { });
+AOS.init({
+  once: true
+}); // $(function() { });
 
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,

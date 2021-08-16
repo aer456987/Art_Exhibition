@@ -23,6 +23,7 @@
     <nav class="navbar navbar-expand-lg navbar-light
       position-sticky top-0 z-index-999
       w-100 py-0
+      border-bottom
       bg-light"
     >
       <div
@@ -116,23 +117,79 @@
     </nav>
 
 
-    <!-- <div>
+    <div>
   <h1 class="d-block d-sm-none p-11 border text-secondary">ssm 模式</h1>
   <h1 class="d-none d-sm-block d-md-none p-11 border text-secondary">sm 模式</h1>
   <h1 class="d-none d-md-block d-lg-none p-11 border text-secondary">md 模式</h1>
   <h1 class="d-none d-lg-block d-xl-none p-11 border text-secondary">lg 模式</h1>
   <h1 class="d-none d-xl-block d-xxl-none p-11 border text-secondary">xl 模式</h1>
   <h1 class="d-none d-xxl-block d-none p-11 border text-secondary">xxl 模式</h1>
-</div> -->
+</div>
     
-<div class="container pt-10 pb-20">
-  <div class="row mb-10 mb-md-16 pb-12">
+<section class="container pt-10 pb-20">
+  <div class="row
+    mb-20 mb-md-16
+    pb-20 pb-md-12"
+  >
     <div class="col-lg-8">
-      <div class="progressBar d-flex justify-content-around mt-7 bg-secondary">
-        <p class="progressBar__text fw-normal">確認訂單</p>
-        <p class="progressBar__text progressBar__text__undone fw-light">填寫訂購資料</p>
-        <p class="progressBar__text progressBar__text__undone fw-light">填寫付款資料</p>
-        <p class="progressBar__text progressBar__text__undone fw-light">完成訂購</p>
+      <div
+        class="progressBar d-flex justify-content-around mt-7 bg-secondary"
+        data-aos="fade"
+        data-aos-duration="1500"
+        data-aos-easing="ease"
+      >
+        <p
+          class="progressBar__text fw-normal"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+        >
+          <span class="d-none d-md-block">
+            確認訂單
+          </span>
+          <span class="d-block d-md-none">
+            確認 <br>
+            訂單
+          </span>
+        </p>
+        <p
+          class="progressBar__text progressBar__text__undone fw-light"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          <span class="d-none d-md-block">
+            填寫訂購資料
+          </span>
+          <span class="d-block d-md-none text-center">
+            填寫 <br>
+            訂購資料
+          </span>
+        </p>
+        <p
+          class="progressBar__text progressBar__text__undone fw-light"
+          data-aos="fade-up"
+          data-aos-duration="1300"
+        >
+          <span class="d-none d-md-block">
+            填寫付款資料
+          </span>
+          <span class="d-block d-md-none text-center">
+            填寫 <br>
+            付款資料
+          </span>
+        </p>
+        <p
+          class="progressBar__text progressBar__text__undone fw-light"
+          data-aos="fade-up"
+          data-aos-duration="1400"
+        >
+          <span class="d-none d-md-block">
+            完成訂購
+          </span>
+          <span class="d-block d-md-none text-center">
+            完成 <br>
+            訂購
+          </span>
+        </p>
       </div>
     </div>
   </div>
@@ -142,10 +199,17 @@
   >
     <div class="col-lg-8">
       <ul>
-        <li class="mb-10">
+        <li
+          class="mb-10"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+          data-aos-easing="ease"
+          data-aos-delay="100"
+        >
           <div class="card">
             <div class="row ms-0">
               <div class="col-6 col-md-3
+                d-none d-sm-block
                 img-position-center"
               >
                 <img
@@ -155,13 +219,25 @@
                 >
               </div>
 
-              <div class="col-6 col-md-9">
+              <div class="col-3 my-auto
+                d-block d-sm-none
+                img-position-center p-0"
+              >
+                <div class="ratio ratio-1x1 w-100">
+                  <img
+                    src="./assets/images/exhibition/exhibition-3.jpg"
+                    alt="購物車-2020 台味設計展-預覽圖"
+                    class="w-100"
+                  >
+                </div>
+              </div>
+
+              <div class="col-9 col-sm-6 col-md-9  my-auto">
                 <div class="card-body">
                   <div class="row
                     justify-content-center
                     align-items-center"
                   >
-                    <!-- 主內容 -->
                     <div class="col-md-4 col-lg-4 col-xxl-3
                       pe-lg-7 pe-xl-auto"
                     >
@@ -170,23 +246,19 @@
                         justify-content-between
                         align-items-center"
                       >
-                        <!-- 標題 -->
                         <h3 class="fs-7 lh-base fw-bold mb-3 mb-md-2">
                           2020 台味設計展
                         </h3>
 
-                        <!-- sm 刪除按鈕 -->
                         <button class="fs-12 btn-close
                           d-inline d-md-none"
                         ></button>
                       </div>
 
-                      <!-- 日期 -->
                       <p class="fw-normal mb-2">
                         01 JUN — 31 OCT
                       </p>
 
-                      <!-- 票種 -->
                       <p class="d-none d-md-block
                         mb-2
                         text-gray-300"
@@ -195,7 +267,6 @@
                       </p>
                     </div>
 
-                    <!-- sm 價格 -->
                     <div class="col-12 d-md-none
                       d-flex justify-content-between"
                     >
@@ -216,7 +287,6 @@
                       </p>
                     </div>
 
-                    <!-- md 價格 -->
                     <div class="col-md-3 col-xl-3 
                       d-none d-md-block
                       text-center"
@@ -226,7 +296,6 @@
                       </p>
                     </div>
 
-                    <!-- md 數量 -->
                     <div class="col-md-3 col-xl-3
                       d-md-block d-none"
                     >
@@ -262,7 +331,6 @@
                       </div>
                     </div>
 
-                    <!-- md 刪除 -->
                     <div class="col-md-2 col-xl-2 col-xxl-3
                       d-md-flex d-none 
                       justify-content-end"
@@ -279,10 +347,17 @@
           </div>
         </li>
 
-        <li class="mb-10">
+        <li
+          class="mb-10"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+          data-aos-easing="ease"
+          data-aos-delay="150"
+        >
           <div class="card">
             <div class="row ms-0">
               <div class="col-6 col-md-3
+                d-none d-sm-block
                 img-position-center"
               >
                 <img
@@ -292,13 +367,25 @@
                 >
               </div>
 
-              <div class="col-6 col-md-9">
+              <div class="col-3 my-auto
+                d-block d-sm-none
+                img-position-center p-0"
+              >
+                <div class="ratio ratio-1x1 w-100">
+                  <img
+                    src="./assets/images/exhibition/exhibition-5.jpg"
+                    alt="No.22 線上設計展-預覽圖"
+                    class="w-100"
+                  >
+                </div>
+              </div>
+
+              <div class="col-9 col-sm-6 col-md-9  my-auto">
                 <div class="card-body">
                   <div class="row
                     justify-content-center
                     align-items-center"
                   >
-                    <!-- 主內容 -->
                     <div class="col-md-4 col-lg-4 col-xxl-3
                       pe-lg-7 pe-xl-auto"
                     >
@@ -307,23 +394,19 @@
                         justify-content-between
                         align-items-center"
                       >
-                        <!-- 標題 -->
                         <h3 class="fs-7 lh-base fw-bold mb-3 mb-md-2">
                           No.22 線上設計展
                         </h3>
 
-                        <!-- sm 刪除按鈕 -->
                         <button class="fs-12 btn-close
                           d-inline d-md-none"
                         ></button>
                       </div>
 
-                      <!-- 日期 -->
                       <p class="fw-normal mb-2">
                         01 JUN — 31 OCT
                       </p>
 
-                      <!-- 票種 -->
                       <p class="d-none d-md-block
                         mb-2
                         text-gray-300"
@@ -332,7 +415,6 @@
                       </p>
                     </div>
 
-                    <!-- sm 價格 -->
                     <div class="col-12 d-md-none
                       d-flex justify-content-between"
                     >
@@ -353,7 +435,6 @@
                       </p>
                     </div>
 
-                    <!-- md 價格 -->
                     <div class="col-md-3 col-xl-3 
                       d-none d-md-block
                       text-center"
@@ -363,7 +444,6 @@
                       </p>
                     </div>
 
-                    <!-- md 數量 -->
                     <div class="col-md-3 col-xl-3
                       d-md-block d-none"
                     >
@@ -399,7 +479,6 @@
                       </div>
                     </div>
 
-                    <!-- md 刪除 -->
                     <div class="col-md-2 col-xl-2 col-xxl-3
                       d-md-flex d-none 
                       justify-content-end"
@@ -416,10 +495,17 @@
           </div>
         </li>
 
-        <li class="mb-10">
+        <li
+          class="mb-10"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+          data-aos-easing="ease"
+          data-aos-delay="200"
+        >
           <div class="card">
             <div class="row ms-0">
               <div class="col-6 col-md-3
+                d-none d-sm-block
                 img-position-center"
               >
                 <img
@@ -429,13 +515,25 @@
                 >
               </div>
 
-              <div class="col-6 col-md-9">
+              <div class="col-3 my-auto
+                d-block d-sm-none
+                img-position-center p-0"
+              >
+                <div class="ratio ratio-1x1 w-100">
+                  <img
+                    src="./assets/images/exhibition/exhibition-1.jpg"
+                    alt="高雄設計節-預覽圖"
+                    class="w-100"
+                  >
+                </div>
+              </div>
+
+              <div class="col-9 col-sm-6 col-md-9  my-auto">
                 <div class="card-body">
                   <div class="row
                     justify-content-center
                     align-items-center"
                   >
-                    <!-- 主內容 -->
                     <div class="col-md-4 col-lg-4 col-xxl-3
                       pe-lg-7 pe-xl-auto"
                     >
@@ -444,23 +542,19 @@
                         justify-content-between
                         align-items-center"
                       >
-                        <!-- 標題 -->
                         <h3 class="fs-7 lh-base fw-bold mb-3 mb-md-2">
                           高雄設計節
                         </h3>
 
-                        <!-- sm 刪除按鈕 -->
                         <button class="fs-12 btn-close
                           d-inline d-md-none"
                         ></button>
                       </div>
 
-                      <!-- 日期 -->
                       <p class="fw-normal mb-2">
                         01 JUN — 31 OCT
                       </p>
 
-                      <!-- 票種 -->
                       <p class="d-none d-md-block
                         mb-2
                         text-gray-300"
@@ -469,7 +563,6 @@
                       </p>
                     </div>
 
-                    <!-- sm 價格 -->
                     <div class="col-12 d-md-none
                       d-flex justify-content-between"
                     >
@@ -490,7 +583,6 @@
                       </p>
                     </div>
 
-                    <!-- md 價格 -->
                     <div class="col-md-3 col-xl-3 
                       d-none d-md-block
                       text-center"
@@ -500,7 +592,6 @@
                       </p>
                     </div>
 
-                    <!-- md 數量 -->
                     <div class="col-md-3 col-xl-3
                       d-md-block d-none"
                     >
@@ -536,7 +627,6 @@
                       </div>
                     </div>
 
-                    <!-- md 刪除 -->
                     <div class="col-md-2 col-xl-2 col-xxl-3
                       d-md-flex d-none 
                       justify-content-end"
@@ -553,10 +643,16 @@
           </div>
         </li>
 
-        <li>
+        <li
+          data-aos="fade-up"
+          data-aos-duration="1100"
+          data-aos-easing="ease"
+          data-aos-delay="250"
+        >
           <div class="card">
             <div class="row ms-0">
               <div class="col-6 col-md-3
+                d-none d-sm-block
                 img-position-center"
               >
                 <img
@@ -566,13 +662,25 @@
                 >
               </div>
 
-              <div class="col-6 col-md-9">
+              <div class="col-3 my-auto
+                d-block d-sm-none
+                img-position-center p-0"
+              >
+                <div class="ratio ratio-1x1 w-100">
+                  <img
+                    src="./assets/images/exhibition/exhibition-6.jpg"
+                    alt="裝置藝術設計展-預覽圖"
+                    class="w-100"
+                  >
+                </div>
+              </div>
+
+              <div class="col-9 col-sm-6 col-md-9  my-auto">
                 <div class="card-body">
                   <div class="row
                     justify-content-center
                     align-items-center"
                   >
-                    <!-- 主內容 -->
                     <div class="col-md-4 col-lg-4 col-xxl-3
                       pe-lg-7 pe-xl-auto"
                     >
@@ -581,23 +689,19 @@
                         justify-content-between
                         align-items-center"
                       >
-                        <!-- 標題 -->
                         <h3 class="fs-7 lh-base fw-bold mb-3 mb-md-2">
                           裝置藝術設計展
                         </h3>
 
-                        <!-- sm 刪除按鈕 -->
                         <button class="fs-12 btn-close
                           d-inline d-md-none"
                         ></button>
                       </div>
 
-                      <!-- 日期 -->
                       <p class="fw-normal mb-2">
                         01 JUN — 31 OCT
                       </p>
 
-                      <!-- 票種 -->
                       <p class="d-none d-md-block
                         mb-2
                         text-gray-300"
@@ -606,7 +710,6 @@
                       </p>
                     </div>
 
-                    <!-- sm 價格 -->
                     <div class="col-12 d-md-none
                       d-flex justify-content-between"
                     >
@@ -627,7 +730,6 @@
                       </p>
                     </div>
 
-                    <!-- md 價格 -->
                     <div class="col-md-3 col-xl-3 
                       d-none d-md-block
                       text-center"
@@ -637,7 +739,6 @@
                       </p>
                     </div>
 
-                    <!-- md 數量 -->
                     <div class="col-md-3 col-xl-3
                       d-md-block d-none"
                     >
@@ -673,7 +774,6 @@
                       </div>
                     </div>
 
-                    <!-- md 刪除 -->
                     <div class="col-md-2 col-xl-2 col-xxl-3
                       d-md-flex d-none 
                       justify-content-end"
@@ -694,7 +794,7 @@
   </div>
 
   <div class="row">
-    <ul class="col-6 offset-6
+    <ul class="col-md-6 offset-md-6
       col-lg-4 offset-lg-8
       mb-6"
     >
@@ -702,10 +802,19 @@
         justify-content-between
         pages__text__2 fw-normal"
       >
-        <p class="me-auto fw-normal">
+        <p
+          class="me-auto fw-normal"
+          data-aos="zoom-in"
+          data-aos-duration="1100"
+          data-aos-easing="ease"
+        >
           小計
         </p>
-        <p>
+        <p
+          data-aos="zoom-in"
+          data-aos-duration="1100"
+          data-aos-easing="ease"
+        >
           NT$1050
         </p>
       </li>
@@ -713,18 +822,23 @@
   </div>
 
   <div class="row justify-content-between">
-    <div class="col-6 offset-6
+    <div class="col-md-6 offset-md-6
       col-lg-4 offset-lg-8"
     >
       <a
         href="./order.html"
         class="btn btn-secondary w-100"
+        data-aos="fade"
+        data-aos-duration="1800"
+        data-aos-easing="ease"
+        data-aos-delay="350"
+        data-aos-offset="0"
       >
         下一步
       </a>
     </div>
   </div>
-</div>
+</section>
 
     <div
   id="offcanvasRight"
