@@ -23312,9 +23312,9 @@ img {
 
 @media (min-width: 992px) {
   .swiper-container {
-    -webkit-transform: translateX(120px);
-        -ms-transform: translateX(120px);
-            transform: translateX(120px);
+    -webkit-transform: translateX(100px) !important;
+        -ms-transform: translateX(100px) !important;
+            transform: translateX(100px) !important;
   }
 }
 
