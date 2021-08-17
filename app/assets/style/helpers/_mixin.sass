@@ -1,32 +1,13 @@
-@mixin mobile() // sm以下
-  @media ( min-width: 576px )
-    @content
-
-
 @mixin pad() // md以上
   @media ( min-width: 768px )
     @content
 
-// @mixin mobile()
-// @media ( max-width: 767px )
-
 @mixin pc() // lg 以上
   @media ( min-width: 992px )
     @content
-// @mixin pad()
-  // @media ( max-width: 992px )
-
-
-
-// (min-width: 992px) // lg 以上
-// (min-width: 768px) // md以上
-// (min-width: 576px) // sm以下
 
 
 
 @mixin font($fs, $lh)
   font-size: $fs
   line-height: $lh
-
-// mobile
-//   lh-lg:   1.313  
