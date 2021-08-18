@@ -16,9 +16,12 @@
 
 
   <body>
+    <!-- position-fixed z-index-999 w-100 ] -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light
-      position-fixed z-index-999
-      w-100 py-0"
+      w-100 py-0
+      border-bottom
+      z-index-999
+      position-fixed"
       >
       <div
   class="container"
@@ -41,11 +44,13 @@
   <button
     type="button"
     class="btn
+      border__bottom__secondary
       order-lg-last
       position-relative
       me-0 me-lg-n8
       px-3 px-md-8 my-10
-      text-center"
+      text-center
+      shadow-none"
     data-bs-toggle="offcanvas"
     data-bs-target="#offcanvasRight"
     aria-controls="offcanvasRight"
@@ -85,7 +90,7 @@
       <li class="nav-item mx-1">
         <a
           href="javascript:;"
-          class="nav-link
+          class="js-sign-in nav-link
             border__bottom__secondary
             my-3 px-6
             fs-7 lh-lg"
@@ -97,7 +102,7 @@
       <li class="nav-item mx-1">
         <a
           href="javascript:;"
-          class="nav-link
+          class="js-sign-up nav-link
             border__bottom__secondary
             my-3 px-6
             fs-7 lh-lg"
@@ -110,7 +115,8 @@
 </div>
     </nav>
 
-    <header class="banner">
+    <header  >
+      <section class="banner">
   <div class="container">
     <div class="d-flex
       align-items-center
@@ -163,10 +169,15 @@
       </div>
     </div>
   </div>
-</header>
+</section>
+    </header>
 
-    <nav class="h-5 overflow-y-hidden
-      border-top border-bottom"
+    <nav
+      class="h-5 top-0 
+        overflow-y-hidden border-bottom
+        z-index-999
+        "
+      
     >
       <ul
   class="nav
@@ -343,8 +354,8 @@
 </ul>
 </nav>
     </nav>
-    
-    
+
+
     
 <section class="pt-10 pt-md-6xl">
   <div class="container">
@@ -967,9 +978,9 @@
   <h1 class="d-none d-xxl-block d-none p-11 border text-secondary">xxl 模式</h1>
 </div> -->
 
-
-    <section class="py-12 py-md-6xl">
-  <div class="container">
+    <div  >
+      <section>
+  <div class="container py-12 py-md-6xl">
     <h2
       class="index__title"
       data-aos="fade-right"
@@ -1174,7 +1185,7 @@
 
   </div>
 </section>
-    <section class="subscription position-relative">
+      <section class="subscription position-relative">
   <div class="container h-100">
     <div class="row align-items-end
       pb-18 h-100"
@@ -1223,7 +1234,7 @@
 
   </div>
 </section>
-    <footer>
+      <footer>
   <div class="container">
     <div
       class="d-flex justify-content-between align-items-center"
@@ -1256,7 +1267,7 @@
         <li class="nav-item mx-1">
           <a
             href="javascript:;"
-            class="nav-link
+            class="js-sign-in nav-link
               border__bottom__secondary
               px-6
               fs-7 lh-lg"
@@ -1268,7 +1279,7 @@
         <li class="nav-item mx-1">
           <a
             href="javascript:;"
-            class="nav-link
+            class="js-sign-up nav-link
               border__bottom__secondary
               px-6
               fs-7 lh-lg"
@@ -1280,9 +1291,306 @@
 
     </div>
   </div>
-</nav>
 </footer>
+    </div>
 
+
+    <div
+  class="modal fade js-sign-in-modal"
+  tabindex="-1"
+  aria-labelledby="signInModal"
+  aria-hidden="true"
+>
+
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border">
+      <div class="modal-header border-bottom">
+        <h3 class="modal-title
+          pages__text__2 fw-bold text-center
+          w-100"
+        >
+          登入
+          <span class="fw-light">
+            sign in
+          </span>
+        </h3>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form>
+          <ul class="row mb-10">
+            <li class="col-12 mb-10">
+              <label
+                for="userEmail"
+                class="form-label mb-2"
+              >
+                帳號
+              </label>
+              <input
+                type="email"
+                placeholder="請輸入 Email"
+                id="userEmail"
+                class="form-control"
+              >
+            </li>
+
+            <li class="col-12">
+              <label
+                for="userPassword"
+                class="form-label mb-2"
+              >
+                密碼
+              </label>
+
+              <input
+                type="password"
+                placeholder="請輸入密碼"
+                id="userPassword"
+                class="form-control"
+              >
+              <div class="text-end">
+                <button
+                  type="button"
+                  class="btn btn-sm
+                    border__bottom__secondary
+                    border-0 p-0 
+                    shadow-none"
+                >
+                  忘記密碼 ?
+                </button>
+              </div>
+            </li>
+
+            <!-- <li class="col-12 text-center">
+              <p class="text-danger py-4">
+                登入失敗，請確認帳號密碼。
+              </p>
+            </li> -->
+          </ul>
+
+          <ul class="row mb-10">
+            <li class="col-12  mb-4">
+              <button
+                type="submit"
+                class="btn btn-secondary
+                  w-100 py-5"
+              >
+                登入
+              </button>
+            </li>
+
+            <li class="col-12 mb-4">
+              <a
+                href="https://www.google.com.tw/"
+                class="btn btn-outline-secondary
+                  w-100 py-5"
+              >
+                Google 快速登入
+              </a>
+            </li>
+
+            <li class="col-12">
+              <a
+                href="http://zh-tw.facebook.com/"
+                class="btn btn-outline-secondary
+                  w-100 py-5"
+              >
+                Facebook 快速登入
+              </a>
+            </li>
+          </ul>
+
+          <ul class="row">
+            <li class="col-12">
+              <h3 class="modal-title
+                pages__text__2 fw-bold text-center
+                border-top py-5
+                w-100"
+              >
+                沒有帳號？
+              </h3>
+            </li>
+
+            <li class="col-12">
+              <button 
+                type="button"
+                class="btn btn-outline-primary
+                  js-sign-up
+                  w-100 py-5"
+              >
+                前往註冊
+              </button>
+            </li>
+          </ul>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div
+  class="modal fade js-sign-up-modal"
+  tabindex="-1"
+  aria-labelledby="signInModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border">
+      <div class="modal-header border-bottom">
+        <h3 class="modal-title pages__text__2 fw-bold text-center w-100"
+        >
+          註冊
+          <span class="fw-light">
+            sign up
+          </span>
+        </h3>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form>
+          <ul class="row mb-10">
+            <li class="col-12 mb-10">
+              <label
+                for="singUpUserEmail"
+                class="form-label mb-2"
+              >
+                帳號
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="email"
+                placeholder="請輸入 Email"
+                id="singUpUserEmail"
+                class="form-control"
+              >
+            </li>
+
+            <li class="col-12 mb-10">
+              <label
+                for="singUpUserPassword"
+                class="form-label mb-2"
+              >
+                密碼
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="email"
+                placeholder="請輸入密碼"
+                id="singUpUserPassword"
+                class="form-control"
+              >
+            </li>
+
+            <li class="col-12 mb-10">
+              <label
+                for="singUpUserName"
+                class="form-label mb-2"
+              >
+                用戶名稱
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="email"
+                placeholder="請輸入用戶名稱"
+                id="singUpUserName"
+                class="form-control"
+              >
+            </li>
+
+            <li class="col-12">
+              <label
+                for="singUpUserPhone"
+                class="form-label mb-2"
+              >
+                手機
+                <span class="text-danger">*</span>
+              </label>
+
+              <input
+                type="tel"
+                placeholder="請輸入手機號碼"
+                id="singUpUserPhone"
+                class="form-control"
+              >
+            </li>
+          </ul>
+
+          <ul class="row mb-10">
+            <li class="col-12  mb-4">
+              <button
+                type="submit"
+                class="btn btn-secondary
+                  w-100 py-5"
+              >
+                註冊
+              </button>
+            </li>
+
+            <li class="col-12 mb-4">
+              <a
+                href="https://www.google.com.tw/"
+                class="btn btn-outline-secondary
+                  w-100 py-5"
+              >
+                Google 快速註冊
+              </a>
+            </li>
+
+            <li class="col-12">
+              <a
+                href="http://zh-tw.facebook.com/"
+                class="btn btn-outline-secondary
+                  w-100 py-5"
+              >
+                Facebook 快速註冊
+              </a>
+            </li>
+          </ul>
+
+          <ul class="row">
+            <li class="col-12">
+              <h3 class="modal-title
+                pages__text__2 fw-bold text-center
+                border-top py-5
+                w-100"
+              >
+                已有帳號？
+              </h3>
+            </li>
+
+            <li class="col-12">
+              <button 
+                type="button"
+                class="btn btn-outline-primary
+                  js-sign-in
+                  w-100 py-5"
+              >
+                前往登入
+              </button>
+            </li>
+          </ul>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
     <div
   id="offcanvasRight"
   class="offcanvas offcanvas-end top-78
@@ -1365,10 +1673,12 @@
               align-items-center
               ms-auto"
             >
-              <button class="btn btn-outline-dark
-                border-0
-                pages__text__2 fw-bold
-                w-100"
+              <button
+                type="button"
+                class="btn btn-outline-dark
+                  border-0
+                  pages__text__2 fw-bold
+                  w-100"
               >
                 +
               </button>
@@ -1379,10 +1689,12 @@
                 01
               </p>
 
-              <button class="btn btn-outline-dark
-                border-0
-                pages__text__2 fw-bold
-                w-100 px-5"
+              <button
+                type="button"
+                class="btn btn-outline-dark
+                  border-0
+                  pages__text__2 fw-bold
+                  w-100 px-5"
               >
                 —
               </button>
@@ -1446,10 +1758,12 @@
               align-items-center
               ms-auto"
             >
-              <button class="btn btn-outline-dark
-                border-0
-                pages__text__2 fw-bold
-                w-100"
+              <button
+                type="button"
+                class="btn btn-outline-dark
+                  border-0
+                  pages__text__2 fw-bold
+                  w-100"
               >
                 +
               </button>
@@ -1460,10 +1774,12 @@
                 01
               </p>
 
-              <button class="btn btn-outline-dark
-                border-0
-                pages__text__2 fw-bold
-                w-100 px-5"
+              <button
+                type="button"
+                class="btn btn-outline-dark
+                  border-0
+                  pages__text__2 fw-bold
+                  w-100 px-5"
               >
                 —
               </button>
@@ -1527,10 +1843,12 @@
               align-items-center
               ms-auto"
             >
-              <button class="btn btn-outline-dark
-                border-0
-                pages__text__2 fw-bold
-                w-100"
+              <button
+                type="button"
+                class="btn btn-outline-dark
+                  border-0
+                  pages__text__2 fw-bold
+                  w-100"
               >
                 +
               </button>
@@ -1541,10 +1859,12 @@
                 01
               </p>
 
-              <button class="btn btn-outline-dark
-                border-0
-                pages__text__2 fw-bold
-                w-100 px-5"
+              <button
+                type="button"
+                class="btn btn-outline-dark
+                  border-0
+                  pages__text__2 fw-bold
+                  w-100 px-5"
               >
                 —
               </button>
@@ -1608,10 +1928,12 @@
               align-items-center
               ms-auto"
             >
-              <button class="btn btn-outline-dark
-                border-0
-                pages__text__2 fw-bold
-                w-100"
+              <button
+                type="button"
+                class="btn btn-outline-dark
+                  border-0
+                  pages__text__2 fw-bold
+                  w-100"
               >
                 +
               </button>
@@ -1622,10 +1944,12 @@
                 01
               </p>
 
-              <button class="btn btn-outline-dark
-                border-0
-                pages__text__2 fw-bold
-                w-100 px-5"
+              <button
+                type="button"
+                class="btn btn-outline-dark
+                  border-0
+                  pages__text__2 fw-bold
+                  w-100 px-5"
               >
                 —
               </button>
