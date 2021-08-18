@@ -41,15 +41,25 @@ AOS.init({
 $(function() {
   const signInModal = new bootstrap.Modal($('.js-sign-in-modal'));
   const signUpModal = new bootstrap.Modal($('.js-sign-up-modal'));
+  const videoModal = new bootstrap.Modal($('.js-video-modal'));
 
-  // signUpModal.show();
-
-  $('.js-sign-in').on('click', () => {
+  $('.js-sign-in-modal-btn').on('click', () => {
     signInModal.show();
     signUpModal.hide();
   });
-  $('.js-sign-up').on('click', () => {
+  $('.js-sign-up-modal-btn').on('click', () => {
     signInModal.hide();
     signUpModal.show();
+  });
+
+
+  $('.js-video-modal-btn').on('click', () => {
+    videoModal.show();
+  });
+
+
+  $('.js-btn-close-video').on('click',function(){
+    $('iframe',).attr('src',     
+      $('iframe').attr('src'));
   });
 });

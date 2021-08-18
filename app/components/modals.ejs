@@ -91,7 +91,7 @@
 
             <li class="col-12 mb-4">
               <a
-                href="https://www.google.com.tw/"
+                href="https://accounts.google.com/signin/v2/identifier?hl=zh-TW&passive=true&continue=https%3A%2F%2Fwww.google.com.tw%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin/"
                 class="btn btn-outline-secondary
                   w-100 py-5"
               >
@@ -101,7 +101,7 @@
 
             <li class="col-12">
               <a
-                href="http://zh-tw.facebook.com/"
+                href="https://zh-tw.facebook.com/login/web/"
                 class="btn btn-outline-secondary
                   w-100 py-5"
               >
@@ -125,7 +125,7 @@
               <button 
                 type="button"
                 class="btn btn-outline-primary
-                  js-sign-up
+                  js-sign-up-modal-btn
                   w-100 py-5"
               >
                 前往註冊
@@ -143,7 +143,7 @@
 <div
   class="modal fade js-sign-up-modal"
   tabindex="-1"
-  aria-labelledby="signInModal"
+  aria-labelledby="signUpModal"
   aria-hidden="true"
 >
   <div class="modal-dialog modal-dialog-centered">
@@ -247,7 +247,7 @@
 
             <li class="col-12 mb-4">
               <a
-                href="https://www.google.com.tw/"
+                href="https://accounts.google.com/signin/v2/identifier?hl=zh-TW&passive=true&continue=https%3A%2F%2Fwww.google.com.tw%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin/"
                 class="btn btn-outline-secondary
                   w-100 py-5"
               >
@@ -257,7 +257,7 @@
 
             <li class="col-12">
               <a
-                href="http://zh-tw.facebook.com/"
+                href="https://zh-tw.facebook.com/login/web/"
                 class="btn btn-outline-secondary
                   w-100 py-5"
               >
@@ -281,7 +281,7 @@
               <button 
                 type="button"
                 class="btn btn-outline-primary
-                  js-sign-in
+                  js-sign-in-modal-btn
                   w-100 py-5"
               >
                 前往登入
@@ -290,6 +290,52 @@
           </ul>
 
         </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div
+  class="modal fade js-video-modal"
+  tabindex="-1"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  aria-labelledby="videoModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content border">
+      <div class="modal-header border-bottom">
+        <h3 class="modal-title pages__text__2 fw-bold text-center w-100"
+        >
+          開幕對談 | 藝術展演巡禮
+        </h3>
+        <button
+          type="button"
+          class="btn-close js-btn-close-video"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+        <iframe
+          src="https://www.youtube.com/embed/hwv4-ayS_7k"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="js-video-iframe w-100 h-5xl"
+          >
+          </iframe>
+        </iframe>
+        <h4 class="fw-bold text-center mb-4">
+          臺北現代聯合總監｜Ken Hsu
+        </h4>
+        <p class="text-center">
+          獨家由藝術家、策展人、畫廊總監帶您欣賞台 北藝術特展，感受雕塑、展演及當代日常文化 之間微妙的關係。
+        </p>
       </div>
     </div>
   </div>
