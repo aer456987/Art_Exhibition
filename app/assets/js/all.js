@@ -42,7 +42,7 @@ $(function() {
   const signInModal = new bootstrap.Modal($('.js-sign-in-modal'));
   const signUpModal = new bootstrap.Modal($('.js-sign-up-modal'));
 
-  signUpModal.show();
+  // signUpModal.show();
 
   $('.js-sign-in').on('click', () => {
     signInModal.show();

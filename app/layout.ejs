@@ -16,9 +16,12 @@
 
 
   <body>
+    <!-- position-fixed z-index-999 w-100 ] -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light
-      position-fixed z-index-999
-      w-100 py-0"
+      w-100 py-0
+      border-bottom
+      z-index-999
+      <%- current == 'index' ? 'position-fixed' : '' %>"
       >
       <%- include('./components/layout/navbar.ejs') %>
     </nav>
@@ -27,20 +30,27 @@
       <%- include('./components/banner.ejs') %>
     </header>
 
-    <nav class="h-5 overflow-y-hidden
-      border-top border-bottom"
+    <nav
+      class="h-5 top-0 
+        overflow-y-hidden border-bottom
+        z-index-999
+        <%- current !== 'index' ? 'position-sticky' : '' %>"
+      <% if(current == 'cart' || current == 'order') { %> hidden <% } %>
     >
       <%- include('./components/layout/navbarCategoryFilter.ejs') %>
     </nav>
-    
-    
+
+
     <%- contents %>
     <!-- <%- include('./components/seeeeeeeModel.ejs') %> -->
 
-
-    <%- include('./components/layout/moreExhibition.ejs') %>
-    <%- include('./components/layout/subscription.ejs') %>
-    <%- include('./components/layout/footer.ejs') %>
+    <div <% if(current === 'cart'
+      || current === 'order'
+      || current === 'checkOrder') { %> hidden <% } %> >
+      <%- include('./components/layout/moreExhibition.ejs') %>
+      <%- include('./components/layout/subscription.ejs') %>
+      <%- include('./components/layout/footer.ejs') %>
+    </div>
 
 
     <%- include('./components/modals.ejs') %>
