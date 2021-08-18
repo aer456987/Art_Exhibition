@@ -1,8 +1,3 @@
-// $(function() { });
-AOS.init({
-  once: true,
-});
-
 const jsSwiper = document.querySelector('.js-swiper');
 if (jsSwiper) {
   const swiper = new Swiper('.swiper-container', {
@@ -37,3 +32,24 @@ if (jsSwiper) {
     return direction;
   };
 }
+
+AOS.init({
+  once: true,
+});
+
+
+$(function() {
+  const signInModal = new bootstrap.Modal($('.js-sign-in-modal'));
+  const signUpModal = new bootstrap.Modal($('.js-sign-up-modal'));
+
+  signUpModal.show();
+
+  $('.js-sign-in').on('click', () => {
+    signInModal.show();
+    signUpModal.hide();
+  });
+  $('.js-sign-up').on('click', () => {
+    signInModal.hide();
+    signUpModal.show();
+  });
+});

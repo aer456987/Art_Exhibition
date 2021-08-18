@@ -23,7 +23,9 @@
       <%- include('./components/layout/navbar.ejs') %>
     </nav>
 
-    <%- include('./components/banner.ejs') %>
+    <header <% if(current !== 'index') { %> hidden <% } %> >
+      <%- include('./components/banner.ejs') %>
+    </header>
 
     <nav class="h-5 overflow-y-hidden
       border-top border-bottom"
@@ -40,6 +42,8 @@
     <%- include('./components/layout/subscription.ejs') %>
     <%- include('./components/layout/footer.ejs') %>
 
+
+    <%- include('./components/modals.ejs') %>
     <%- include('./components/offcanvas.ejs') %>
 
 

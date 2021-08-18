@@ -1,0 +1,296 @@
+<div
+  class="modal fade js-sign-in-modal"
+  tabindex="-1"
+  aria-labelledby="signInModal"
+  aria-hidden="true"
+>
+
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border">
+      <div class="modal-header border-bottom">
+        <h3 class="modal-title
+          pages__text__2 fw-bold text-center
+          w-100"
+        >
+          登入
+          <span class="fw-light">
+            sign in
+          </span>
+        </h3>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form>
+          <ul class="row mb-10">
+            <li class="col-12 mb-10">
+              <label
+                for="userEmail"
+                class="form-label mb-2"
+              >
+                帳號
+              </label>
+              <input
+                type="email"
+                placeholder="請輸入 Email"
+                id="userEmail"
+                class="form-control"
+              >
+            </li>
+
+            <li class="col-12">
+              <label
+                for="userPassword"
+                class="form-label mb-2"
+              >
+                密碼
+              </label>
+
+              <input
+                type="password"
+                placeholder="請輸入密碼"
+                id="userPassword"
+                class="form-control"
+              >
+              <div class="text-end">
+                <button
+                  type="button"
+                  class="btn btn-sm
+                    border__bottom__secondary
+                    border-0 p-0 
+                    shadow-none"
+                >
+                  忘記密碼 ?
+                </button>
+              </div>
+            </li>
+
+            <!-- <li class="col-12 text-center">
+              <p class="text-danger py-4">
+                登入失敗，請確認帳號密碼。
+              </p>
+            </li> -->
+          </ul>
+
+          <ul class="row mb-10">
+            <li class="col-12  mb-4">
+              <button
+                type="submit"
+                class="btn btn-secondary
+                  w-100 py-5"
+              >
+                登入
+              </button>
+            </li>
+
+            <li class="col-12 mb-4">
+              <a
+                href="https://www.google.com.tw/"
+                class="btn btn-outline-secondary
+                  w-100 py-5"
+              >
+                Google 快速登入
+              </a>
+            </li>
+
+            <li class="col-12">
+              <a
+                href="http://zh-tw.facebook.com/"
+                class="btn btn-outline-secondary
+                  w-100 py-5"
+              >
+                Facebook 快速登入
+              </a>
+            </li>
+          </ul>
+
+          <ul class="row">
+            <li class="col-12">
+              <h3 class="modal-title
+                pages__text__2 fw-bold text-center
+                border-top py-5
+                w-100"
+              >
+                沒有帳號？
+              </h3>
+            </li>
+
+            <li class="col-12">
+              <button 
+                type="button"
+                class="btn btn-outline-primary
+                  js-sign-up
+                  w-100 py-5"
+              >
+                前往註冊
+              </button>
+            </li>
+          </ul>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div
+  class="modal fade js-sign-up-modal"
+  tabindex="-1"
+  aria-labelledby="signInModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border">
+      <div class="modal-header border-bottom">
+        <h3 class="modal-title pages__text__2 fw-bold text-center w-100"
+        >
+          註冊
+          <span class="fw-light">
+            sign up
+          </span>
+        </h3>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form>
+          <ul class="row mb-10">
+            <li class="col-12 mb-10">
+              <label
+                for="singUpUserEmail"
+                class="form-label mb-2"
+              >
+                帳號
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="email"
+                placeholder="請輸入 Email"
+                id="singUpUserEmail"
+                class="form-control"
+              >
+            </li>
+
+            <li class="col-12 mb-10">
+              <label
+                for="singUpUserPassword"
+                class="form-label mb-2"
+              >
+                密碼
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="email"
+                placeholder="請輸入密碼"
+                id="singUpUserPassword"
+                class="form-control"
+              >
+            </li>
+
+            <li class="col-12 mb-10">
+              <label
+                for="singUpUserName"
+                class="form-label mb-2"
+              >
+                用戶名稱
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="email"
+                placeholder="請輸入用戶名稱"
+                id="singUpUserName"
+                class="form-control"
+              >
+            </li>
+
+            <li class="col-12">
+              <label
+                for="singUpUserPhone"
+                class="form-label mb-2"
+              >
+                手機
+                <span class="text-danger">*</span>
+              </label>
+
+              <input
+                type="tel"
+                placeholder="請輸入手機號碼"
+                id="singUpUserPhone"
+                class="form-control"
+              >
+            </li>
+          </ul>
+
+          <ul class="row mb-10">
+            <li class="col-12  mb-4">
+              <button
+                type="submit"
+                class="btn btn-secondary
+                  w-100 py-5"
+              >
+                註冊
+              </button>
+            </li>
+
+            <li class="col-12 mb-4">
+              <a
+                href="https://www.google.com.tw/"
+                class="btn btn-outline-secondary
+                  w-100 py-5"
+              >
+                Google 快速註冊
+              </a>
+            </li>
+
+            <li class="col-12">
+              <a
+                href="http://zh-tw.facebook.com/"
+                class="btn btn-outline-secondary
+                  w-100 py-5"
+              >
+                Facebook 快速註冊
+              </a>
+            </li>
+          </ul>
+
+          <ul class="row">
+            <li class="col-12">
+              <h3 class="modal-title
+                pages__text__2 fw-bold text-center
+                border-top py-5
+                w-100"
+              >
+                已有帳號？
+              </h3>
+            </li>
+
+            <li class="col-12">
+              <button 
+                type="button"
+                class="btn btn-outline-primary
+                  js-sign-in
+                  w-100 py-5"
+              >
+                前往登入
+              </button>
+            </li>
+          </ul>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
