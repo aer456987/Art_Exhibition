@@ -27,21 +27,29 @@
 
       <div class="modal-body">
 
-        <form>
-          <ul class="row mb-10">
+        <form action="">
+          <ul class="row mb-15">
             <li class="col-12 mb-10">
               <label
                 for="userEmail"
                 class="form-label mb-2"
+                required
               >
                 帳號
               </label>
               <input
                 type="email"
+                name="Email"
                 placeholder="請輸入 Email"
                 id="userEmail"
-                class="form-control"
+                class="form-control js-user-email"
+                required
               >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
             </li>
 
             <li class="col-12">
@@ -51,13 +59,22 @@
               >
                 密碼
               </label>
-
               <input
                 type="password"
+                name="密碼"
                 placeholder="請輸入密碼"
                 id="userPassword"
-                class="form-control"
+                class="form-control js-user-password"
+                autocomplete="on"
+                pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$!%*?&]{1})[A-Za-z\d@#$!%*?&]{8,}$'
+                required
               >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
+
               <div class="text-end">
                 <button
                   type="button"
@@ -71,11 +88,9 @@
               </div>
             </li>
 
-            <!-- <li class="col-12 text-center">
-              <p class="text-danger py-4">
-                登入失敗，請確認帳號密碼。
-              </p>
-            </li> -->
+            <li class="col-12 text-center d-none">
+              <p class="js-sing-in-error-msg text-danger py-4"></p>
+            </li>
           </ul>
 
           <ul class="row mb-10">
@@ -167,7 +182,7 @@
       <div class="modal-body">
 
         <form>
-          <ul class="row mb-10">
+          <ul class="row mb-20">
             <li class="col-12 mb-10">
               <label
                 for="singUpUserEmail"
@@ -178,10 +193,17 @@
               </label>
               <input
                 type="email"
+                name="Email"
                 placeholder="請輸入 Email"
                 id="singUpUserEmail"
-                class="form-control"
+                class="form-control js-user-email"
+                required
               >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
             </li>
 
             <li class="col-12 mb-10">
@@ -193,11 +215,20 @@
                 <span class="text-danger">*</span>
               </label>
               <input
-                type="email"
+                type="password"
+                name="密碼"
                 placeholder="請輸入密碼"
                 id="singUpUserPassword"
-                class="form-control"
+                class="form-control js-user-password"
+                autocomplete="on"
+                pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$!%*?&]{1})[A-Za-z\d@#$!%*?&]{8,}$'
+                required
               >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
             </li>
 
             <li class="col-12 mb-10">
@@ -209,11 +240,20 @@
                 <span class="text-danger">*</span>
               </label>
               <input
-                type="email"
+                type="text"
+                name="用戶名稱"
                 placeholder="請輸入用戶名稱"
                 id="singUpUserName"
-                class="form-control"
+                class="form-control js-user-name"
+                pattern='^^[a-zA-Z\s\d]+$'
+                minlength="2"
+                required
               >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
             </li>
 
             <li class="col-12">
@@ -227,10 +267,19 @@
 
               <input
                 type="tel"
+                name="手機"
                 placeholder="請輸入手機號碼"
                 id="singUpUserPhone"
-                class="form-control"
+                class="form-control js-user-phone"
+                pattern="^09\d{8}$"
+                maxlength="10"
+                required
               >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
             </li>
           </ul>
 
@@ -321,15 +370,12 @@
 
       <div class="modal-body">
         <iframe
-          src="https://www.youtube.com/embed/hwv4-ayS_7k"
           title="YouTube video player"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
           class="js-video-iframe w-100 h-5xl"
-          >
-          </iframe>
-        </iframe>
+        ></iframe>
         <h4 class="fw-bold text-center mb-4">
           臺北現代聯合總監｜Ken Hsu
         </h4>

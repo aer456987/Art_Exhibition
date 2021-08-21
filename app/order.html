@@ -105,14 +105,21 @@ current: order
             </label>
             <input
               type="email"
-              class="form-control border-gray-200"
+              name="Email"
+              class="form-control js-user-email"
               id="subscriberEmail"
               placeholder="example@gmail.com"
               data-aos="fade-up"
               data-aos-duration="1100"
               data-aos-easing="ease"
               data-aos-delay="200"
+              required
             >
+            <p class="js-validate-msg
+              validate-msg
+              fs-8 text-danger text-end
+              pt-2"
+            ></p>
           </li>
 
           <li class="mb-10">
@@ -128,14 +135,23 @@ current: order
             </label>
             <input
               type="text"
-              class="form-control border-gray-200"
+              name="姓名"
+              class="form-control js-user-name"
               id="subscriberName"
               placeholder="請輸入姓名"
+              minlength="2"
               data-aos="fade-up"
               data-aos-duration="1100"
               data-aos-easing="ease"
               data-aos-delay="300"
+              pattern='^^[a-zA-Z\s\d]+$'
+              required
             >
+            <p class="js-validate-msg
+              validate-msg
+              fs-8 text-danger text-end
+              pt-2"
+            ></p>
           </li>
 
           <li class="mb-10">
@@ -151,14 +167,23 @@ current: order
             </label>
             <input
               type="tel"
-              class="form-control border-gray-200"
+              class="form-control js-user-phone"
               id="subscriberTel"
+              name="電話"
               placeholder="請輸入電話"
               data-aos="fade-up"
               data-aos-duration="1100"
               data-aos-easing="ease"
               data-aos-delay="400"
+              pattern="^09\d{8}$"
+              maxlength="10"
+              required
             >
+            <p class="js-validate-msg
+              validate-msg
+              fs-8 text-danger text-end
+              pt-2"
+            ></p>
           </li>
 
           <li>
@@ -174,7 +199,7 @@ current: order
             </label>
             <input
               type="text"
-              class="form-control border-gray-200"
+              class="form-control"
               id="couponNumber"
               placeholder="TG87526"
               data-aos="fade-up"

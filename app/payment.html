@@ -105,14 +105,22 @@ current: order
             </label>
             <input
               type="text" 
-              class="form-control border-gray-200"
+              name="信用卡號碼"
+              class="form-control js-credit-card-number"
               id="creditCardNumber"
               placeholder="Xxxx-xxxx-xxxx-xxxx"
               data-aos="fade-up"
               data-aos-duration="1100"
               data-aos-easing="ease"
               data-aos-delay="200"
+              pattern="^[\d]{4}-[\d]{4}-[\d]{4}-[\d]{4}$"
+              required
             >
+            <p class="js-validate-msg
+              validate-msg
+              fs-8 text-danger text-end
+              pt-2"
+            ></p>
           </li>
 
           <li class="mb-10">
@@ -128,14 +136,22 @@ current: order
             </label>
             <input
               type="text"
-              class="form-control border-gray-200"
+              name="有效日期"
+              class="form-control js-credit-card-date"
               id="creditCardDate"
               placeholder="(MM/YY)"
               data-aos="fade-up"
               data-aos-duration="1100"
               data-aos-easing="ease"
               data-aos-delay="300"
+              pattern="^\d{4}-[0-1]{1}\d{1}$"
+              required
             >
+            <p class="js-validate-msg
+              validate-msg
+              fs-8 text-danger text-end
+              pt-2"
+            ></p>
           </li>
 
           <li>
@@ -151,14 +167,23 @@ current: order
             </label>
             <input
               type="text"
-              class="form-control border-gray-200"
+              name="安全碼"
+              class="form-control js-credit-card-password"
               id="creditCardPassword"
               placeholder="***"
               data-aos="fade-up"
               data-aos-duration="1100"
               data-aos-easing="ease"
               data-aos-delay="400"
+              pattern="\d{3}"
+              maxlength="3"
+              required
             >
+            <p class="js-validate-msg
+              validate-msg
+              fs-8 text-danger text-end
+              pt-2"
+            ></p>
           </li>
         </ul>
 
@@ -644,7 +669,7 @@ current: order
   <div class="row justify-content-between">
     <div class="col-6 col-md-3 col-lg-2">
       <a
-        href="./cart.html"
+        href="./order.html"
         class="btn btn-outline-primary w-100"
         data-aos="fade"
         data-aos-duration="1800"
