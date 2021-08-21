@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./assets/style/all.css">
@@ -62,7 +63,12 @@
       position-absolute
       top-0 start-50
       rounded-pill
-      text-light bg-secondary"
+      text-light bg-secondary
+      animate__animated
+      animate__pulse
+      animate__infinite
+      animate__slow
+      animate__delay-2s"
     >
       3
     </span>
@@ -90,7 +96,7 @@
       <li class="nav-item mx-1">
         <a
           href="javascript:;"
-          class="js-sign-in nav-link
+          class="js-sign-in-modal-btn nav-link
             border__bottom__secondary
             my-3 px-6
             fs-7 lh-lg"
@@ -102,7 +108,7 @@
       <li class="nav-item mx-1">
         <a
           href="javascript:;"
-          class="js-sign-up nav-link
+          class="js-sign-up-modal-btn nav-link
             border__bottom__secondary
             my-3 px-6
             fs-7 lh-lg"
@@ -356,7 +362,8 @@
     </nav>
 
 
-    
+    <main>
+      
 <section class="container pt-20 pb-20">
   <div class="row
     mb-20 mb-md-16
@@ -457,14 +464,21 @@
             </label>
             <input
               type="email"
-              class="form-control border-gray-200"
+              name="Email"
+              class="form-control js-user-email"
               id="subscriberEmail"
               placeholder="example@gmail.com"
               data-aos="fade-up"
               data-aos-duration="1100"
               data-aos-easing="ease"
               data-aos-delay="200"
+              required
             >
+            <p class="js-validate-msg
+              validate-msg
+              fs-8 text-danger text-end
+              pt-2"
+            ></p>
           </li>
 
           <li class="mb-10">
@@ -480,14 +494,23 @@
             </label>
             <input
               type="text"
-              class="form-control border-gray-200"
+              name="姓名"
+              class="form-control js-user-name"
               id="subscriberName"
               placeholder="請輸入姓名"
+              minlength="2"
               data-aos="fade-up"
               data-aos-duration="1100"
               data-aos-easing="ease"
               data-aos-delay="300"
+              pattern='^^[a-zA-Z\s\d]+$'
+              required
             >
+            <p class="js-validate-msg
+              validate-msg
+              fs-8 text-danger text-end
+              pt-2"
+            ></p>
           </li>
 
           <li class="mb-10">
@@ -503,14 +526,23 @@
             </label>
             <input
               type="tel"
-              class="form-control border-gray-200"
+              class="form-control js-user-phone"
               id="subscriberTel"
+              name="電話"
               placeholder="請輸入電話"
               data-aos="fade-up"
               data-aos-duration="1100"
               data-aos-easing="ease"
               data-aos-delay="400"
+              pattern="^09\d{8}$"
+              maxlength="10"
+              required
             >
+            <p class="js-validate-msg
+              validate-msg
+              fs-8 text-danger text-end
+              pt-2"
+            ></p>
           </li>
 
           <li>
@@ -526,7 +558,7 @@
             </label>
             <input
               type="text"
-              class="form-control border-gray-200"
+              class="form-control"
               id="couponNumber"
               placeholder="TG87526"
               data-aos="fade-up"
@@ -628,7 +660,7 @@
           data-aos-delay="100"
         >
           <div class="card">
-            <div class="row ms-0">
+            <div class="row g-0">
               <div class="col-6 col-md-4
                 d-none d-sm-block
                 img-position-center"
@@ -642,7 +674,7 @@
 
               <div class="col-3 my-auto
                 d-block d-sm-none
-                img-position-center p-0"
+                img-position-center"
               >
                 <div class="ratio ratio-1x1 w-100">
                   <img
@@ -653,8 +685,8 @@
                 </div>
               </div>
 
-              <div class="col-9 col-sm-6 col-md-8  my-auto">
-                <div class="card-body">
+              <div class="col-9 col-sm-6 col-md-8 my-auto">
+                <div class="card-body ps-8">
                   <div class="row
                     justify-content-center
                     align-items-center"
@@ -697,17 +729,13 @@
                       </p>
                     </div>
 
-                    <div class="col-md-4 d-lg-block pe-0
-                      d-none"
-                    >
+                    <div class="col-md-4 d-none d-lg-block">
                       <p class="pages__text__2 fw-bold">
                         NT$350
                       </p>
                     </div>
 
-                    <div class="col-md-1 d-lg-block p-0
-                      d-none"
-                    >
+                    <div class="col-md-1 d-none d-lg-block">
                       <p class="pages__text__2
                         fw-bold text-end"
                       >
@@ -729,7 +757,7 @@
           data-aos-delay="150"
         >
           <div class="card">
-            <div class="row ms-0">
+            <div class="row g-0">
               <div class="col-6 col-md-4
                 d-none d-sm-block
                 img-position-center"
@@ -743,7 +771,7 @@
 
               <div class="col-3 my-auto
                 d-block d-sm-none
-                img-position-center p-0"
+                img-position-center"
               >
                 <div class="ratio ratio-1x1 w-100">
                   <img
@@ -754,8 +782,8 @@
                 </div>
               </div>
 
-              <div class="col-9 col-sm-6 col-md-8  my-auto">
-                <div class="card-body">
+              <div class="col-9 col-sm-6 col-md-8 my-auto">
+                <div class="card-body ps-8">
                   <div class="row
                     justify-content-center
                     align-items-center"
@@ -798,20 +826,14 @@
                       </p>
                     </div>
 
-                    <div class="col-md-4 d-lg-block pe-0
-                      d-none"
-                    >
+                    <div class="col-md-4 d-none d-lg-block">
                       <p class="pages__text__2 fw-bold">
                         NT$350
                       </p>
                     </div>
 
-                    <div class="col-md-1 d-lg-block p-0
-                      d-none"
-                    >
-                      <p class="pages__text__2
-                        fw-bold text-end"
-                      >
+                    <div class="col-md-1 d-none d-lg-block">
+                      <p class="pages__text__2 fw-bold text-end">
                         1
                       </p>
                     </div>
@@ -830,7 +852,7 @@
           data-aos-delay="200"
         >
           <div class="card">
-            <div class="row ms-0">
+            <div class="row g-0">
               <div class="col-6 col-md-4
                 d-none d-sm-block
                 img-position-center"
@@ -844,7 +866,7 @@
 
               <div class="col-3 my-auto
                 d-block d-sm-none
-                img-position-center p-0"
+                img-position-center"
               >
                 <div class="ratio ratio-1x1 w-100">
                   <img
@@ -855,8 +877,8 @@
                 </div>
               </div>
 
-              <div class="col-9 col-sm-6 col-md-8  my-auto">
-                <div class="card-body">
+              <div class="col-9 col-sm-6 col-md-8 my-auto">
+                <div class="card-body ps-8">
                   <div class="row
                     justify-content-center
                     align-items-center"
@@ -899,17 +921,13 @@
                       </p>
                     </div>
 
-                    <div class="col-md-4 d-lg-block pe-0
-                      d-none"
-                    >
+                    <div class="col-md-4 d-none d-lg-block">
                       <p class="pages__text__2 fw-bold">
                         NT$350
                       </p>
                     </div>
 
-                    <div class="col-md-1 d-lg-block p-0
-                      d-none"
-                    >
+                    <div class="col-md-1 d-none d-lg-block">
                       <p class="pages__text__2
                         fw-bold text-end"
                       >
@@ -930,7 +948,7 @@
           data-aos-delay="250"
         >
           <div class="card">
-            <div class="row ms-0">
+            <div class="row g-0">
               <div class="col-6 col-md-4
                 d-none d-sm-block
                 img-position-center"
@@ -944,7 +962,7 @@
 
               <div class="col-3 my-auto
                 d-block d-sm-none
-                img-position-center p-0"
+                img-position-center"
               >
                 <div class="ratio ratio-1x1 w-100">
                   <img
@@ -955,8 +973,8 @@
                 </div>
               </div>
 
-              <div class="col-9 col-sm-6 col-md-8  my-auto">
-                <div class="card-body">
+              <div class="col-9 col-sm-6 col-md-8 my-auto">
+                <div class="card-body ps-8">
                   <div class="row
                     justify-content-center
                     align-items-center"
@@ -999,17 +1017,13 @@
                       </p>
                     </div>
 
-                    <div class="col-md-4 d-lg-block pe-0
-                      d-none"
-                    >
+                    <div class="col-md-4 d-none d-lg-block pe-0">
                       <p class="pages__text__2 fw-bold">
                         NT$350
                       </p>
                     </div>
 
-                    <div class="col-md-1 d-lg-block p-0
-                      d-none"
-                    >
+                    <div class="col-md-1 d-none d-lg-block">
                       <p class="pages__text__2
                         fw-bold text-end"
                       >
@@ -1057,6 +1071,7 @@
   </div>
 
 </section>
+    </main>
     <!-- <div>
   <h1 class="d-block d-sm-none p-11 border text-secondary">ssm 模式</h1>
   <h1 class="d-none d-sm-block d-md-none p-11 border text-secondary">sm 模式</h1>
@@ -1298,7 +1313,7 @@
 
             <div class="input-group w-100">
               <input
-                type="text"
+                type="email"
                 class="form-control p-6"
                 name="訂閱 Email"
                 placeholder="輸入您的電子信箱"
@@ -1355,7 +1370,7 @@
         <li class="nav-item mx-1">
           <a
             href="javascript:;"
-            class="js-sign-in nav-link
+            class="js-sign-in-modal-btn nav-link
               border__bottom__secondary
               px-6
               fs-7 lh-lg"
@@ -1367,7 +1382,7 @@
         <li class="nav-item mx-1">
           <a
             href="javascript:;"
-            class="js-sign-up nav-link
+            class="js-sign-up-modal-btn nav-link
               border__bottom__secondary
               px-6
               fs-7 lh-lg"
@@ -1412,21 +1427,29 @@
 
       <div class="modal-body">
 
-        <form>
-          <ul class="row mb-10">
+        <form action="">
+          <ul class="row mb-15">
             <li class="col-12 mb-10">
               <label
                 for="userEmail"
                 class="form-label mb-2"
+                required
               >
                 帳號
               </label>
               <input
                 type="email"
+                name="Email"
                 placeholder="請輸入 Email"
                 id="userEmail"
-                class="form-control"
+                class="form-control js-user-email"
+                required
               >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
             </li>
 
             <li class="col-12">
@@ -1436,13 +1459,22 @@
               >
                 密碼
               </label>
-
               <input
                 type="password"
+                name="密碼"
                 placeholder="請輸入密碼"
                 id="userPassword"
-                class="form-control"
+                class="form-control js-user-password"
+                autocomplete="on"
+                pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$!%*?&]{1})[A-Za-z\d@#$!%*?&]{8,}$'
+                required
               >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
+
               <div class="text-end">
                 <button
                   type="button"
@@ -1455,16 +1487,10 @@
                 </button>
               </div>
             </li>
-
-            <!-- <li class="col-12 text-center">
-              <p class="text-danger py-4">
-                登入失敗，請確認帳號密碼。
-              </p>
-            </li> -->
           </ul>
 
           <ul class="row mb-10">
-            <li class="col-12  mb-4">
+            <li class="col-12 mb-4">
               <button
                 type="submit"
                 class="btn btn-secondary
@@ -1476,7 +1502,7 @@
 
             <li class="col-12 mb-4">
               <a
-                href="https://www.google.com.tw/"
+                href="https://accounts.google.com/signin/v2/identifier?hl=zh-TW&passive=true&continue=https%3A%2F%2Fwww.google.com.tw%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin/"
                 class="btn btn-outline-secondary
                   w-100 py-5"
               >
@@ -1486,7 +1512,7 @@
 
             <li class="col-12">
               <a
-                href="http://zh-tw.facebook.com/"
+                href="https://zh-tw.facebook.com/login/web/"
                 class="btn btn-outline-secondary
                   w-100 py-5"
               >
@@ -1510,7 +1536,7 @@
               <button 
                 type="button"
                 class="btn btn-outline-primary
-                  js-sign-up
+                  js-sign-up-modal-btn
                   w-100 py-5"
               >
                 前往註冊
@@ -1528,7 +1554,7 @@
 <div
   class="modal fade js-sign-up-modal"
   tabindex="-1"
-  aria-labelledby="signInModal"
+  aria-labelledby="signUpModal"
   aria-hidden="true"
 >
   <div class="modal-dialog modal-dialog-centered">
@@ -1552,7 +1578,7 @@
       <div class="modal-body">
 
         <form>
-          <ul class="row mb-10">
+          <ul class="row mb-20">
             <li class="col-12 mb-10">
               <label
                 for="singUpUserEmail"
@@ -1563,10 +1589,17 @@
               </label>
               <input
                 type="email"
+                name="Email"
                 placeholder="請輸入 Email"
                 id="singUpUserEmail"
-                class="form-control"
+                class="form-control js-user-email"
+                required
               >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
             </li>
 
             <li class="col-12 mb-10">
@@ -1578,11 +1611,20 @@
                 <span class="text-danger">*</span>
               </label>
               <input
-                type="email"
+                type="password"
+                name="密碼"
                 placeholder="請輸入密碼"
                 id="singUpUserPassword"
-                class="form-control"
+                class="form-control js-user-password"
+                autocomplete="on"
+                pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$!%*?&]{1})[A-Za-z\d@#$!%*?&]{8,}$'
+                required
               >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
             </li>
 
             <li class="col-12 mb-10">
@@ -1594,11 +1636,20 @@
                 <span class="text-danger">*</span>
               </label>
               <input
-                type="email"
+                type="text"
+                name="用戶名稱"
                 placeholder="請輸入用戶名稱"
                 id="singUpUserName"
-                class="form-control"
+                class="form-control js-user-name"
+                pattern='^^[a-zA-Z\s\d]+$'
+                minlength="2"
+                required
               >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
             </li>
 
             <li class="col-12">
@@ -1612,10 +1663,19 @@
 
               <input
                 type="tel"
+                name="手機"
                 placeholder="請輸入手機號碼"
                 id="singUpUserPhone"
-                class="form-control"
+                class="form-control js-user-phone"
+                pattern="^09\d{8}$"
+                maxlength="10"
+                required
               >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
             </li>
           </ul>
 
@@ -1632,7 +1692,7 @@
 
             <li class="col-12 mb-4">
               <a
-                href="https://www.google.com.tw/"
+                href="https://accounts.google.com/signin/v2/identifier?hl=zh-TW&passive=true&continue=https%3A%2F%2Fwww.google.com.tw%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin/"
                 class="btn btn-outline-secondary
                   w-100 py-5"
               >
@@ -1642,7 +1702,7 @@
 
             <li class="col-12">
               <a
-                href="http://zh-tw.facebook.com/"
+                href="https://zh-tw.facebook.com/login/web/"
                 class="btn btn-outline-secondary
                   w-100 py-5"
               >
@@ -1666,7 +1726,7 @@
               <button 
                 type="button"
                 class="btn btn-outline-primary
-                  js-sign-in
+                  js-sign-in-modal-btn
                   w-100 py-5"
               >
                 前往登入
@@ -1675,6 +1735,49 @@
           </ul>
 
         </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div
+  class="modal fade js-video-modal"
+  tabindex="-1"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  aria-labelledby="videoModal"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content border">
+      <div class="modal-header border-bottom">
+        <h3 class="modal-title pages__text__2 fw-bold text-center w-100"
+        >
+          開幕對談 | 藝術展演巡禮
+        </h3>
+        <button
+          type="button"
+          class="btn-close js-btn-close-video"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body">
+        <iframe
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="js-video-iframe w-100 h-5xl"
+        ></iframe>
+        <h4 class="fw-bold text-center mb-4">
+          臺北現代聯合總監｜Ken Hsu
+        </h4>
+        <p class="text-center">
+          獨家由藝術家、策展人、畫廊總監帶您欣賞台 北藝術特展，感受雕塑、展演及當代日常文化 之間微妙的關係。
+        </p>
       </div>
     </div>
   </div>

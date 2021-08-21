@@ -22852,6 +22852,10 @@ img {
   width: 100%;
 }
 
+i {
+  vertical-align: middle;
+}
+
 .w-1xl {
   width: 120px;
 }
@@ -23269,6 +23273,23 @@ img {
 
 .form__radio:checked + .form__radio__label {
   border-color: #E31277;
+}
+
+.validate-msg {
+  position: relative;
+  display: none;
+}
+
+.validate-msg::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: translateX(-25px);
+      -ms-transform: translateX(-25px);
+          transform: translateX(-25px);
+  background: url("../images/icons/validate-msg-icon.svg") center center;
+  background-size: cover;
 }
 
 .progressBar {
