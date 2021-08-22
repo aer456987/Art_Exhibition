@@ -23424,22 +23424,6 @@ i {
   background-attachment: fixed;
 }
 
-.img-position-center {
-  position: relative;
-  overflow: hidden;
-}
-
-.img-position-center img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .link__dark--hover {
   color: #000;
 }
@@ -23470,6 +23454,22 @@ i {
 .check-style-none:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.img-position-center {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-position-center img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .scrollbar::-webkit-scrollbar {
