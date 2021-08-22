@@ -17,19 +17,23 @@
   url('../fonts/NotoSansCJKtc/woff/NotoSansCJKtc-Bold.woff')
 
 @import '../../../node_modules/bootstrap/scss/functions'
-@import './helpers/variables'
+@import './utilities/variables'
 @import '../../../node_modules/bootstrap/scss/bootstrap'
 @import '../../../node_modules/aos/dist/aos'
 
-@import './helpers/mixin'
+@import './utilities/mixin'
+
 @import './base/base'
-@import './utilities/fonts'
+@import './base/typography.sass'
+
 @import './utilities/borders'
 @import './utilities/sizing'
 @import './utilities/overflow'
 @import './utilities/shadow'
 @import './utilities/util'
+
 @import './components/card'
 @import './components/form'
 @import './components/progressBar'
-@import './components/swiper'
+
+@import './vendors/swiper'
