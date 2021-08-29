@@ -250,45 +250,44 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // Control the default styling of most Bootstrap elements by modifying these
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
-
 // scss-docs-start spacer-variables-maps
+$base: 16;
 $spacer: 1rem !default;
 $spacers: (
-  0: 0,
-  1: $spacer * .125,    // 2
-  2: $spacer * .25,     // 4
-  3: $spacer * .375,    // 6
-  4: $spacer * .5,      // 8
-  5: $spacer * .625,    // 10
-  6: $spacer * .75,     // 12
-  7: $spacer * .875,    // 14
-  8: $spacer,           // 16
-  9: $spacer * 1.125,   // 18
-  10: $spacer * 1.25,   // 20
-  11: $spacer * 1.375,  // 22
-  12: $spacer * 1.5,    // 24
-  13: $spacer * 1.625,  // 26
-  14: $spacer * 1.75,   // 28
-  15: $spacer * 1.875,  // 30
-  16: $spacer * 2,      // 32
-  17: $spacer * 2.125,  // 34
-  18: $spacer * 2.25,   // 36
-  19: $spacer * 2.375,  // 38
-  20: $spacer * 2.5,    // 40
-  21: $spacer * 2.625,  // 42
-  22: $spacer * 2.75,   // 44
+  0      : 0,
+  0\.25  : $spacer * ( 2 / $base ),   // 2
+  0\.5   : $spacer * ( 4 / $base ),   // 4
+  0\.75  : $spacer * ( 6 / $base ),   // 6
+  1      : $spacer * ( 8 / $base ),   // 8
+  1\.25  : $spacer * ( 10 / $base ),  // 10
+  1\.5   : $spacer * ( 12 / $base ),  // 12
+  1\.75  : $spacer * ( 14 / $base ),  // 14
+  2      : $spacer * ( 16 / $base ),  // 16
+  2\.25  : $spacer * ( 18 / $base ),  // 18
+  2\.5   : $spacer * ( 20 / $base ),  // 20
+  2\.75  : $spacer * ( 22 / $base ),  // 22
+  3      : $spacer * ( 24 / $base ),  // 24
+  3\.25  : $spacer * ( 26 / $base ),  // 26
+  3\.5   : $spacer * ( 28 / $base ),  // 28
+  3\.75  : $spacer * ( 30 / $base ),  // 30
+  4      : $spacer * ( 32 / $base ),  // 32
+  4\.25  : $spacer * ( 34 / $base ),  // 34
+  4\.5   : $spacer * ( 36 / $base ),  // 36
+  4\.75  : $spacer * ( 38 / $base ),  // 38
+  5      : $spacer * ( 40 / $base ),  // 40
+  5\.25  : $spacer * ( 42 / $base ),  // 42
+  5\.5   : $spacer * ( 44 / $base ),  // 44
+  6      : $spacer * ( 48 / $base ),  // 48
+  6\.5   : $spacer * ( 52 / $base ),  // 52
+  7\.5   : $spacer * ( 60 / $base ),  // 60
+  8\.75  : $spacer * ( 70 / $base ),  // 70
+  10     : $spacer * ( 80 / $base ),  // 80
+  10\.75 : $spacer * ( 86 / $base ),  // 86
+  12     : $spacer * ( 96 / $base ),  // 96
+  12\.5  : $spacer * ( 100 / $base ), // 100
+  20\.75 : $spacer * ( 166 / $base ), // 166
 
-  4xxl: $spacer * 3,    // 48
-  5xl: $spacer * 3.25,  // 52
-  6xl: $spacer * 3.75,  // 60
-  7xl: $spacer * 4.375, // 70
-  8xl: $spacer * 5,     // 80
-  8xxl: 85px,           // 85
-  9xxl: 96px,           // 96
-  10xl: 100px,          // 100
-  16xl: 165px,          // 165px
-
-  n8: -16px,          // -16
+  n2: -16px,            // -16
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -455,7 +454,7 @@ $aspect-ratios: (
 $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
-$font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
+$font-family-base:            'Roboto', 'Noto-Sans-CJK-TC', sans-serif !default; // var(--#{$variable-prefix}font-sans-serif)
 $font-family-code:            var(--#{$variable-prefix}font-monospace) !default;
 
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
@@ -474,7 +473,7 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 
 $line-height-base:            1.5 !default;
-$line-height-2:              1.167 !default;  // 1.25
+$line-height-sm:              1.167 !default;  // 1.25
 $line-height-lg:              1.313 !default;  // 2
 
 $h1-font-size:                $font-size-base * 2.5 !default;  // 40

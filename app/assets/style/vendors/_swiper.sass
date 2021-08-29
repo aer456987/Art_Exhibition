@@ -2,7 +2,8 @@
   width: 100%
   height: 1300px
   transform: translateX(0px)
-  +pad
+
+  @include media-breakpoint-up(md)
     height: auto
-  +pc
+  @include media-breakpoint-up(lg)
     transform: translateX(100px) !important

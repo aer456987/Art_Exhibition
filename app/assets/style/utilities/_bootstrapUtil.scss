@@ -1,0 +1,84 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "overflow-y": (
+      responsive: true,
+      property: overflow-y,
+      class: overflow-y,
+      values: auto hidden visible scroll,
+    ),
+    "overflow-x": (
+      responsive: true,
+      property: overflow-x,
+      class: overflow-x,
+      values: auto hidden visible scroll,
+    ),
+    "min-height": (
+      responsive: true,
+      property: min-height,
+      class: min-h,
+      values: (
+        x3\.45 : 345px,
+        x3\.5  : 350px,
+      ),
+    ),
+    "background-position": (
+      property: background-position,
+      class: bg-position,
+      values: center,
+    ),
+    "background-repeat": (
+      property: background-repeat,
+      class: bg-repeat,
+      values: no-repeat,
+    ),
+    "background-size": (
+      property: background-size,
+      class: bg-size,
+      values: cover,
+    ),
+    "background-attachment": (
+      property: background-attachment,
+      class: bg-attachment,
+      values: fixed,
+    ),
+    "z-index": (
+      property: z-index,
+      class: z-index,
+      values: (999: 999),
+    ),
+
+    "width": map-merge(
+      map-get($utilities, "width"),
+      (
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "width"), "values"),
+          (
+            x1\.2  : 120px,
+            x1\.28 : 128px,
+            // x3\.5  : 350px,
+            x5\.4  : 540px,
+          ),
+        ),
+      ),
+    ),
+    "height": map-merge(
+      map-get($utilities, "height"),
+      (
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "height"), "values"),
+          (
+            x0\.53 : 53px,
+            x1\.2  : 120px,
+            x2\.56 : 256px,
+            x3\.45 : 345px,
+            x4     : 400px,
+            x5\.59 : 559px,
+          ),
+        ),
+      ),
+    ),
+  )
+)
