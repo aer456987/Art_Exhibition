@@ -47,6 +47,11 @@ $utilities: map-merge(
       class: z-index,
       values: (999: 999),
     ),
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      values: pointer,
+    ),
 
     "width": map-merge(
       map-get($utilities, "width"),
@@ -57,7 +62,6 @@ $utilities: map-merge(
           (
             x1\.2  : 120px,
             x1\.28 : 128px,
-            // x3\.5  : 350px,
             x5\.4  : 540px,
           ),
         ),
