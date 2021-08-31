@@ -23722,6 +23722,10 @@ section, header {
   overflow: hidden;
 }
 
+img {
+  max-width: 100%;
+}
+
 i {
   vertical-align: middle;
 }
