@@ -34,6 +34,7 @@ if (jsSwiper) {
 }
 
 AOS.init({
+  offset: 100,
   once: true,
 });
 
@@ -155,7 +156,7 @@ function validationCreditCardDate() {
 function validationCreditCardPassword() {
   const data = {
     inputs: $('.js-credit-card-password'),
-    rule: /^\d{4}-[0-1]{1}\d{1}$/,
+    rule: /^\d{3}$/,
     msg: '須為 3 碼數字',
   };
   validationInputFn(data);
