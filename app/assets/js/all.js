@@ -8,9 +8,11 @@ $(function() {
   resetForm();
   checkSubscriptionValue();
 
-
   const tooltipDoms = document.querySelectorAll('.js-tooltip');
   tooltipDoms.forEach(function(dom) {
     const tooltip = new bootstrap.Tooltip(dom);
   });
+
+
+  // Swal.fire('Hello world!');
 });
