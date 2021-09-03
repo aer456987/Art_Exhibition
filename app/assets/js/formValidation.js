@@ -29,9 +29,9 @@ function validationForm() {
 }
 
 
-function validationEmail() {
+function validationEmail(dom = '.js-user-email') {
   const data = {
-    inputs: document.querySelectorAll('.js-user-email'),
+    inputs: document.querySelectorAll(dom),
     rule: /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/,
     msg: '格式錯誤',
   };
@@ -169,5 +169,43 @@ function checkUserName(obj) {
     input.addClass(borderStyle);
     $(errorMsg).addClass('d-block');
     $(errorMsg).text(`${errorName}須超過兩個字以上`);
+  }
+}
+
+
+
+$('.js-subscription-input').on('input propertychange', function() {
+  const borderStyle = ['border-danger', 'animate__animated', 'animate__headShake'];
+  const btnDisabledStyle = 'btn-outline-secondary fw-bold text-light';
+  const inputValue = $(this).val();
+  const rule = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;
+  const errorName =  $(this).attr('name');
+  const errorMsg = $('.js-subscription-msg');
+  const errorCustomMsg = `${errorName} 格式錯誤`;
+
+  if (inputValue === '') {
+    $(this).removeClass(borderStyle);
+    $(errorMsg).removeClass('d-block');
+    $('.js-subscription-btn').prop('disabled', true).addClass(btnDisabledStyle);
+
+  } else if(!rule.test(inputValue)) {
+    $(this).addClass(borderStyle);
+    $(errorMsg).addClass('d-block');
+    $(errorMsg).text(errorCustomMsg);
+    $('.js-subscription-btn').prop('disabled', true).addClass(btnDisabledStyle);
+
+  } else {
+    $(this).removeClass(borderStyle);
+    $(errorMsg).removeClass('d-block');
+    $('.js-subscription-btn').prop('disabled', false).addClass(btnDisabledStyle);
+  }
+});
+function checkSubscriptionValue() {
+  const btnDisabledStyle = 'btn-outline-secondary fw-bold text-light';
+  const errorMsg = $('.js-subscription-msg');
+
+  if($('.js-subscription-input').val() === '') {
+    $('.js-subscription-btn').prop('disabled', true).addClass(btnDisabledStyle);
+    $(errorMsg).removeClass('d-block');
   }
 }

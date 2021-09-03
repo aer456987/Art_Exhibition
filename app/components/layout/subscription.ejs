@@ -32,22 +32,27 @@
             <div class="input-group w-100">
               <input
                 type="email"
-                class="form-control p-6"
-                name="訂閱 Email"
+                class="form-control js-subscription-input p-6"
+                name="Email"
                 placeholder="輸入您的電子信箱"
                 aria-label="輸入您的電子信箱"
                 aria-describedby="subscriptionEmail">
               <button
                 type="button"
                 id="subscriptionEmail"
-                class="input-group-text
+                class="js-subscription-btn
+                  input-group-text
                   btn btn-secondary
                   px-26 py-6"
               >
                 訂閱
               </button>
             </div>
-    
+            <p class="js-subscription-msg
+              validate-msg
+              fs-8 text-light text-end
+              pt-2"
+            ></p>    
           </div>
         </div>
       </div>

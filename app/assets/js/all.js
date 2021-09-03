@@ -41,4 +41,5 @@ AOS.init({
 
 $(function() {
   resetForm();
+  checkSubscriptionValue();
 });
