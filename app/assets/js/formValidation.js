@@ -250,3 +250,7 @@ function checkSubscriptionValue() {
     $(errorMsg).removeClass('d-block');
   }
 }
+
+$('.js-subscription-btn').on('click', function() {
+  $('.js-subscription-input').val('');
+});
