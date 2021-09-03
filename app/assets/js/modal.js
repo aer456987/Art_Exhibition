@@ -23,3 +23,15 @@ $('.js-video-modal-btn').on('click', () => {
 $('.js-btn-close-video').on('click', () => {
   $('iframe').attr('src', '');
 });
+
+
+$('.js-modal-login-check').on('submit', function(event) {
+  event.preventDefault();
+  signInModal.hide();
+  swalFn('登入成功');
+});
+$('.js-modal-sign-up-check').on('submit', function(event) {
+  event.preventDefault();
+  signUpModal.hide();
+  swalFn('註冊成功');
+});

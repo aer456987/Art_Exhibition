@@ -36,16 +36,19 @@ $(function() {
   });
 
 
-  $('.js-modal-login-check').on('submit', function(event) {
-    event.preventDefault();
-    signInModal.hide();
-    swalFn('登入成功');
-  });
   $('.js-modal-sign-up-check').on('submit', function(event) {
     event.preventDefault();
     signUpModal.hide();
     swalFn('註冊成功');
   });
-  
+
+  $('.js-order-form-check').on('submit', function(event) {
+    event.preventDefault();
+    location.href='./payment.html';
+  });
+  $('.js-payment-form-check').on('submit', function(event) {
+    event.preventDefault();
+    location.href='./established.html';
+  });
 
 });
