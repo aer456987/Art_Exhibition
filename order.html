@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
@@ -444,650 +445,652 @@
     </div>
   </div>
 
-  <div class="row justify-content-between
-    mb-24 mb-md-6"
-  >
-    <div class="col-md-6 col-lg-4 order-md-last
-      mb-12 mb-md-0"
+  <form class="js-form-check js-order-form-check">
+    <div class="row justify-content-between
+      mb-24 mb-md-6"
     >
-      <h2
-        class="fs-6 fw-normal
-          mb-8 mb-md-10"
-        data-aos="fade-up"
-        data-aos-duration="1100"
-        data-aos-easing="ease"
-        data-aos-delay="100"
+      <div class="col-md-6 col-lg-4 order-md-last
+        mb-12 mb-md-0"
       >
-        訂購人資訊
-      </h2>
-
-      <form class="js-form-check">
-        <ul class="mb-26">
-          <li class="mb-10">
-            <label
-              for="subscriberEmail"
-              class="form-label lh-lg"
-              data-aos="fade-up"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="150"
-            >
-              Email
-            </label>
-            <input
-              type="email"
-              name="Email"
-              class="form-control js-form-input js-user-email"
-              id="subscriberEmail"
-              placeholder="example@gmail.com"
-              data-aos="fade-up"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="200"
-              required
-            >
-            <p class="js-validate-msg
-              validate-msg
-              fs-8 text-danger text-end
-              pt-2"
-            ></p>
-          </li>
-
-          <li class="mb-10">
-            <label
-              for="subscriberName"
-              class="form-label lh-lg"
-              data-aos="fade-up"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="250"
-            >
-              姓名
-            </label>
-            <input
-              type="text"
-              name="姓名"
-              class="form-control js-form-input js-user-name"
-              id="subscriberName"
-              placeholder="請輸入姓名"
-              minlength="2"
-              data-aos="fade-up"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="300"
-              pattern='^^[a-zA-Z\s\d]+$'
-              required
-            >
-            <p class="js-validate-msg
-              validate-msg
-              fs-8 text-danger text-end
-              pt-2"
-            ></p>
-          </li>
-
-          <li class="mb-10">
-            <label
-              for="subscriberTel"
-              class="form-label lh-lg"
-              data-aos="fade-up"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="350"
-            >
-              聯絡電話
-            </label>
-            <input
-              type="tel"
-              class="form-control js-form-input js-user-phone"
-              id="subscriberTel"
-              name="電話"
-              placeholder="請輸入電話"
-              data-aos="fade-up"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="400"
-              pattern="^09\d{8}$"
-              maxlength="10"
-              required
-            >
-            <p class="js-validate-msg
-              validate-msg
-              fs-8 text-danger text-end
-              pt-2"
-            ></p>
-          </li>
-
-          <li>
-            <label
-              for="couponNumber"
-              class="form-label lh-lg"
-              data-aos="fade-up"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="450"
-            >
-              優惠碼
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              id="couponNumber"
-              placeholder="TG87526"
-              data-aos="fade-up"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="500"
-              readonly
-            >
-            <p class="mt-2
-              fs-8 lh-base text-end
-              text-primary"
-              data-aos="fade-up"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="550"
-            >
-              優惠碼已生效
-            </p>
-          </li>
-        </ul>
-
-        <ul>
-          <li class="mb-2 mb-md-3
-            d-flex justify-content-between"
-          >
-            <p
-              class="me-auto fw-normal"
-              data-aos="zoom-in"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="100"
-            >
-              小計
-            </p>
-            <p
-              class="fw-lighter"
-              data-aos="zoom-in"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="100"
-            >
-              NT$1050
-            </p>
-          </li>
-
-          <li class="mb-4 mb-md-3
-            d-flex justify-content-between"
-          >
-            <p
-              class="me-auto fw-normal"
-              data-aos="zoom-in"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="100"
-            >
-              折扣
-            </p>
-            <p
-              class="fw-lighter"
-              data-aos="zoom-in"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="100"
-            >
-              -NT$50
-            </p>
-          </li>
-
-          <li class="fs-6 fw-normal
-            d-flex justify-content-between"
-          >
-            <p
-              data-aos="zoom-in"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="100"
-            >
-              總金額
-            </p>
-            <p
-              data-aos="zoom-in"
-              data-aos-duration="1100"
-              data-aos-easing="ease"
-              data-aos-delay="100"
-            >
-              NT$1000
-            </p>
-          </li>
-        </ul>
-      </form>
-    </div>
-
-    <div class="col-md-6">
-      <ul>
-        <li
-          class="mb-10"
+        <h2
+          class="fs-6 fw-normal
+            mb-8 mb-md-10"
           data-aos="fade-up"
           data-aos-duration="1100"
           data-aos-easing="ease"
           data-aos-delay="100"
         >
-          <div class="card">
-            <div class="row g-0">
-              <div class="col-6 col-md-4
-                d-none d-sm-block
-                img-position-center"
-              >
-                <img
-                  src="./assets/images/exhibition/exhibition-3.jpg"
-                  alt="購物車-2020 台味設計展-預覽圖"
-                  class="w-100"
-                >
-              </div>
+          訂購人資訊
+        </h2>
 
-              <div class="col-3 my-auto
-                d-block d-sm-none
-                img-position-center"
+
+          <ul class="mb-26">
+            <li class="mb-10">
+              <label
+                for="subscriberEmail"
+                class="form-label lh-lg"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="150"
               >
-                <div class="ratio ratio-1x1 w-100">
+                Email
+              </label>
+              <input
+                type="email"
+                name="Email"
+                class="form-control js-form-input js-user-email"
+                id="subscriberEmail"
+                placeholder="example@gmail.com"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="200"
+                required
+              >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
+            </li>
+
+            <li class="mb-10">
+              <label
+                for="subscriberName"
+                class="form-label lh-lg"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="250"
+              >
+                姓名
+              </label>
+              <input
+                type="text"
+                name="姓名"
+                class="form-control js-form-input js-user-name"
+                id="subscriberName"
+                placeholder="請輸入姓名"
+                minlength="2"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="300"
+                pattern='^^[a-zA-Z\s\d]+$'
+                required
+              >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
+            </li>
+
+            <li class="mb-10">
+              <label
+                for="subscriberTel"
+                class="form-label lh-lg"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="350"
+              >
+                聯絡電話
+              </label>
+              <input
+                type="tel"
+                class="form-control js-form-input js-user-phone"
+                id="subscriberTel"
+                name="電話"
+                placeholder="請輸入電話"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="400"
+                pattern="^09\d{8}$"
+                maxlength="10"
+                required
+              >
+              <p class="js-validate-msg
+                validate-msg
+                fs-8 text-danger text-end
+                pt-2"
+              ></p>
+            </li>
+
+            <li>
+              <label
+                for="couponNumber"
+                class="form-label lh-lg"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="450"
+              >
+                優惠碼
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="couponNumber"
+                placeholder="TG87526"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="500"
+                readonly
+              >
+              <p class="mt-2
+                fs-8 lh-base text-end
+                text-primary"
+                data-aos="fade-up"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="550"
+              >
+                優惠碼已生效
+              </p>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="mb-2 mb-md-3
+              d-flex justify-content-between"
+            >
+              <p
+                class="me-auto fw-normal"
+                data-aos="zoom-in"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="100"
+              >
+                小計
+              </p>
+              <p
+                class="fw-lighter"
+                data-aos="zoom-in"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="100"
+              >
+                NT$1400
+              </p>
+            </li>
+
+            <li class="mb-4 mb-md-3
+              d-flex justify-content-between"
+            >
+              <p
+                class="me-auto fw-normal"
+                data-aos="zoom-in"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="100"
+              >
+                折扣
+              </p>
+              <p
+                class="fw-lighter"
+                data-aos="zoom-in"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="100"
+              >
+                -NT$50
+              </p>
+            </li>
+
+            <li class="fs-6 fw-normal
+              d-flex justify-content-between"
+            >
+              <p
+                data-aos="zoom-in"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="100"
+              >
+                總金額
+              </p>
+              <p
+                data-aos="zoom-in"
+                data-aos-duration="1100"
+                data-aos-easing="ease"
+                data-aos-delay="100"
+              >
+                NT$1350
+              </p>
+            </li>
+          </ul>
+
+      </div>
+
+      <div class="col-md-6">
+        <ul>
+          <li
+            class="mb-10"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+            data-aos-easing="ease"
+            data-aos-delay="100"
+          >
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-6 col-md-4
+                  d-none d-sm-block
+                  img-position-center"
+                >
                   <img
                     src="./assets/images/exhibition/exhibition-3.jpg"
                     alt="購物車-2020 台味設計展-預覽圖"
                     class="w-100"
                   >
                 </div>
-              </div>
 
-              <div class="col-9 col-sm-6 col-md-8 my-auto">
-                <div class="card-body ps-8">
-                  <div class="row
-                    justify-content-center
-                    align-items-center"
-                  >
-                    <div class="col-lg-7">
+                <div class="col-3 my-auto
+                  d-block d-sm-none
+                  img-position-center"
+                >
+                  <div class="ratio ratio-1x1 w-100">
+                    <img
+                      src="./assets/images/exhibition/exhibition-3.jpg"
+                      alt="購物車-2020 台味設計展-預覽圖"
+                      class="w-100"
+                    >
+                  </div>
+                </div>
 
-                      <h3 class="h6 fw-bold m-3 mb-md-2">
-                        2020 台味設計展
-                      </h3>
+                <div class="col-9 col-sm-6 col-md-8 my-auto">
+                  <div class="card-body ps-8">
+                    <div class="row
+                      justify-content-center
+                      align-items-center"
+                    >
+                      <div class="col-lg-7">
 
-                      <p class="fw-normal mb-2">
-                        01 JUN — 31 OCT
-                      </p>
+                        <h3 class="h6 fw-bold m-3 mb-md-2">
+                          2020 台味設計展
+                        </h3>
 
-                      <p class="d-none d-lg-block
-                        mb-2
+                        <p class="fw-normal mb-2">
+                          01 JUN — 31 OCT
+                        </p>
+
+                        <p class="d-none d-lg-block
+                          mb-2
+                          text-gray-300"
+                        >
+                          全票
+                        </p>
+                      </div>
+
+                      <div class="col-12 d-lg-none
+                        d-flex justify-content-between"
+                      >
+                      <p class="mb-2
                         text-gray-300"
                       >
                         全票
+                        <span class="fs-6
+                          ms-2
+                          fw-bold text-dark"
+                        >
+                          1
+                        </span>
                       </p>
-                    </div>
 
-                    <div class="col-12 d-lg-none
-                      d-flex justify-content-between"
-                    >
-                    <p class="mb-2
-                      text-gray-300"
-                    >
-                      全票
-                      <span class="fs-6
-                        ms-2
-                        fw-bold text-dark"
-                      >
-                        1
-                      </span>
-                    </p>
+                        <p class="fs-6 fw-bold">
+                          NT$350
+                        </p>
+                      </div>
 
-                      <p class="fs-6 fw-bold">
-                        NT$350
-                      </p>
-                    </div>
+                      <div class="col-md-4 d-none d-lg-block">
+                        <p class="fs-6 fw-bold">
+                          NT$350
+                        </p>
+                      </div>
 
-                    <div class="col-md-4 d-none d-lg-block">
-                      <p class="fs-6 fw-bold">
-                        NT$350
-                      </p>
-                    </div>
-
-                    <div class="col-md-1 d-none d-lg-block">
-                      <p class="fs-6
-                        fw-bold text-end"
-                      >
-                        1
-                      </p>
+                      <div class="col-md-1 d-none d-lg-block">
+                        <p class="fs-6
+                          fw-bold text-end"
+                        >
+                          1
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <li
-          class="mb-10"
-          data-aos="fade-up"
-          data-aos-duration="1100"
-          data-aos-easing="ease"
-          data-aos-delay="150"
-        >
-          <div class="card">
-            <div class="row g-0">
-              <div class="col-6 col-md-4
-                d-none d-sm-block
-                img-position-center"
-              >
-                <img
-                  src="./assets/images/exhibition/exhibition-5.jpg"
-                  alt="No.22 線上設計展-預覽圖"
-                  class="w-100"
+          <li
+            class="mb-10"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+            data-aos-easing="ease"
+            data-aos-delay="150"
+          >
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-6 col-md-4
+                  d-none d-sm-block
+                  img-position-center"
                 >
-              </div>
-
-              <div class="col-3 my-auto
-                d-block d-sm-none
-                img-position-center"
-              >
-                <div class="ratio ratio-1x1 w-100">
                   <img
                     src="./assets/images/exhibition/exhibition-5.jpg"
                     alt="No.22 線上設計展-預覽圖"
                     class="w-100"
                   >
                 </div>
-              </div>
 
-              <div class="col-9 col-sm-6 col-md-8 my-auto">
-                <div class="card-body ps-8">
-                  <div class="row
-                    justify-content-center
-                    align-items-center"
-                  >
-                    <div class="col-lg-7">
+                <div class="col-3 my-auto
+                  d-block d-sm-none
+                  img-position-center"
+                >
+                  <div class="ratio ratio-1x1 w-100">
+                    <img
+                      src="./assets/images/exhibition/exhibition-5.jpg"
+                      alt="No.22 線上設計展-預覽圖"
+                      class="w-100"
+                    >
+                  </div>
+                </div>
 
-                      <h3 class="h6 fw-bold mb-3 mb-md-2">
-                        No.22 線上設計展
-                      </h3>
+                <div class="col-9 col-sm-6 col-md-8 my-auto">
+                  <div class="card-body ps-8">
+                    <div class="row
+                      justify-content-center
+                      align-items-center"
+                    >
+                      <div class="col-lg-7">
 
-                      <p class="fw-normal mb-2">
-                        01 JUN — 31 OCT
-                      </p>
+                        <h3 class="h6 fw-bold mb-3 mb-md-2">
+                          No.22 線上設計展
+                        </h3>
 
-                      <p class="d-none d-lg-block
-                        mb-2
+                        <p class="fw-normal mb-2">
+                          01 JUN — 31 OCT
+                        </p>
+
+                        <p class="d-none d-lg-block
+                          mb-2
+                          text-gray-300"
+                        >
+                          全票
+                        </p>
+                      </div>
+
+                      <div class="col-12 d-lg-none
+                        d-flex justify-content-between"
+                      >
+                      <p class="mb-2
                         text-gray-300"
                       >
                         全票
+                        <span class="fs-6
+                          ms-2
+                          fw-bold text-dark"
+                        >
+                          1
+                        </span>
                       </p>
-                    </div>
 
-                    <div class="col-12 d-lg-none
-                      d-flex justify-content-between"
-                    >
-                    <p class="mb-2
-                      text-gray-300"
-                    >
-                      全票
-                      <span class="fs-6
-                        ms-2
-                        fw-bold text-dark"
-                      >
-                        1
-                      </span>
-                    </p>
+                        <p class="fs-6 fw-bold">
+                          NT$350
+                        </p>
+                      </div>
 
-                      <p class="fs-6 fw-bold">
-                        NT$350
-                      </p>
-                    </div>
+                      <div class="col-md-4 d-none d-lg-block">
+                        <p class="fs-6 fw-bold">
+                          NT$350
+                        </p>
+                      </div>
 
-                    <div class="col-md-4 d-none d-lg-block">
-                      <p class="fs-6 fw-bold">
-                        NT$350
-                      </p>
-                    </div>
-
-                    <div class="col-md-1 d-none d-lg-block">
-                      <p class="fs-6 fw-bold text-end">
-                        1
-                      </p>
+                      <div class="col-md-1 d-none d-lg-block">
+                        <p class="fs-6 fw-bold text-end">
+                          1
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <li
-          class="mb-10"
-          data-aos="fade-up"
-          data-aos-duration="1100"
-          data-aos-easing="ease"
-          data-aos-delay="200"
-        >
-          <div class="card">
-            <div class="row g-0">
-              <div class="col-6 col-md-4
-                d-none d-sm-block
-                img-position-center"
-              >
-                <img
-                  src="./assets/images/exhibition/exhibition-1.jpg"
-                  alt="高雄設計節-預覽圖"
-                  class="w-100"
+          <li
+            class="mb-10"
+            data-aos="fade-up"
+            data-aos-duration="1100"
+            data-aos-easing="ease"
+            data-aos-delay="200"
+          >
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-6 col-md-4
+                  d-none d-sm-block
+                  img-position-center"
                 >
-              </div>
-
-              <div class="col-3 my-auto
-                d-block d-sm-none
-                img-position-center"
-              >
-                <div class="ratio ratio-1x1 w-100">
                   <img
                     src="./assets/images/exhibition/exhibition-1.jpg"
                     alt="高雄設計節-預覽圖"
                     class="w-100"
                   >
                 </div>
-              </div>
 
-              <div class="col-9 col-sm-6 col-md-8 my-auto">
-                <div class="card-body ps-8">
-                  <div class="row
-                    justify-content-center
-                    align-items-center"
-                  >
-                    <div class="col-lg-7">
+                <div class="col-3 my-auto
+                  d-block d-sm-none
+                  img-position-center"
+                >
+                  <div class="ratio ratio-1x1 w-100">
+                    <img
+                      src="./assets/images/exhibition/exhibition-1.jpg"
+                      alt="高雄設計節-預覽圖"
+                      class="w-100"
+                    >
+                  </div>
+                </div>
 
-                      <h3 class="h6 fw-bold mb-3 mb-md-2">
-                        高雄設計節
-                      </h3>
+                <div class="col-9 col-sm-6 col-md-8 my-auto">
+                  <div class="card-body ps-8">
+                    <div class="row
+                      justify-content-center
+                      align-items-center"
+                    >
+                      <div class="col-lg-7">
 
-                      <p class="fw-normal mb-2">
-                        01 JUN — 31 OCT
-                      </p>
+                        <h3 class="h6 fw-bold mb-3 mb-md-2">
+                          高雄設計節
+                        </h3>
 
-                      <p class="d-none d-lg-block
-                        mb-2
+                        <p class="fw-normal mb-2">
+                          01 JUN — 31 OCT
+                        </p>
+
+                        <p class="d-none d-lg-block
+                          mb-2
+                          text-gray-300"
+                        >
+                          全票
+                        </p>
+                      </div>
+
+                      <div class="col-12 d-lg-none
+                        d-flex justify-content-between"
+                      >
+                      <p class="mb-2
                         text-gray-300"
                       >
                         全票
+                        <span class="fs-6
+                          ms-2
+                          fw-bold text-dark"
+                        >
+                          1
+                        </span>
                       </p>
-                    </div>
 
-                    <div class="col-12 d-lg-none
-                      d-flex justify-content-between"
-                    >
-                    <p class="mb-2
-                      text-gray-300"
-                    >
-                      全票
-                      <span class="fs-6
-                        ms-2
-                        fw-bold text-dark"
-                      >
-                        1
-                      </span>
-                    </p>
+                        <p class="fs-6 fw-bold">
+                          NT$350
+                        </p>
+                      </div>
 
-                      <p class="fs-6 fw-bold">
-                        NT$350
-                      </p>
-                    </div>
+                      <div class="col-md-4 d-none d-lg-block">
+                        <p class="fs-6 fw-bold">
+                          NT$350
+                        </p>
+                      </div>
 
-                    <div class="col-md-4 d-none d-lg-block">
-                      <p class="fs-6 fw-bold">
-                        NT$350
-                      </p>
-                    </div>
-
-                    <div class="col-md-1 d-none d-lg-block">
-                      <p class="fs-6
-                        fw-bold text-end"
-                      >
-                        1
-                      </p>
+                      <div class="col-md-1 d-none d-lg-block">
+                        <p class="fs-6
+                          fw-bold text-end"
+                        >
+                          1
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <li
-          data-aos="fade-up"
-          data-aos-duration="1100"
-          data-aos-easing="ease"
-          data-aos-delay="250"
-        >
-          <div class="card">
-            <div class="row g-0">
-              <div class="col-6 col-md-4
-                d-none d-sm-block
-                img-position-center"
-              >
-                <img
-                  src="./assets/images/exhibition/exhibition-6.jpg"
-                  alt="裝置藝術設計展-預覽圖"
-                  class="w-100"
+          <li
+            data-aos="fade-up"
+            data-aos-duration="1100"
+            data-aos-easing="ease"
+            data-aos-delay="250"
+          >
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-6 col-md-4
+                  d-none d-sm-block
+                  img-position-center"
                 >
-              </div>
-
-              <div class="col-3 my-auto
-                d-block d-sm-none
-                img-position-center"
-              >
-                <div class="ratio ratio-1x1 w-100">
                   <img
                     src="./assets/images/exhibition/exhibition-6.jpg"
                     alt="裝置藝術設計展-預覽圖"
                     class="w-100"
                   >
                 </div>
-              </div>
 
-              <div class="col-9 col-sm-6 col-md-8 my-auto">
-                <div class="card-body ps-8">
-                  <div class="row
-                    justify-content-center
-                    align-items-center"
-                  >
-                    <div class="col-lg-7">
+                <div class="col-3 my-auto
+                  d-block d-sm-none
+                  img-position-center"
+                >
+                  <div class="ratio ratio-1x1 w-100">
+                    <img
+                      src="./assets/images/exhibition/exhibition-6.jpg"
+                      alt="裝置藝術設計展-預覽圖"
+                      class="w-100"
+                    >
+                  </div>
+                </div>
 
-                      <h3 class="h6 fw-bold mb-3 mb-md-2">
-                        裝置藝術設計展
-                      </h3>
+                <div class="col-9 col-sm-6 col-md-8 my-auto">
+                  <div class="card-body ps-8">
+                    <div class="row
+                      justify-content-center
+                      align-items-center"
+                    >
+                      <div class="col-lg-7">
 
-                      <p class="fw-normal mb-2">
-                        01 JUN — 31 OCT
-                      </p>
+                        <h3 class="h6 fw-bold mb-3 mb-md-2">
+                          裝置藝術設計展
+                        </h3>
 
-                      <p class="d-none d-lg-block
-                        mb-2
+                        <p class="fw-normal mb-2">
+                          01 JUN — 31 OCT
+                        </p>
+
+                        <p class="d-none d-lg-block
+                          mb-2
+                          text-gray-300"
+                        >
+                          全票
+                        </p>
+                      </div>
+
+                      <div class="col-12 d-lg-none
+                        d-flex justify-content-between"
+                      >
+                      <p class="mb-2
                         text-gray-300"
                       >
                         全票
+                        <span class="fs-6
+                          ms-2
+                          fw-bold text-dark"
+                        >
+                          1
+                        </span>
                       </p>
-                    </div>
 
-                    <div class="col-12 d-lg-none
-                      d-flex justify-content-between"
-                    >
-                    <p class="mb-2
-                      text-gray-300"
-                    >
-                      全票
-                      <span class="fs-6
-                        ms-2
-                        fw-bold text-dark"
-                      >
-                        1
-                      </span>
-                    </p>
+                        <p class="fs-6 fw-bold">
+                          NT$350
+                        </p>
+                      </div>
 
-                      <p class="fs-6 fw-bold">
-                        NT$350
-                      </p>
-                    </div>
+                      <div class="col-md-4 d-none d-lg-block pe-0">
+                        <p class="fs-6 fw-bold">
+                          NT$350
+                        </p>
+                      </div>
 
-                    <div class="col-md-4 d-none d-lg-block pe-0">
-                      <p class="fs-6 fw-bold">
-                        NT$350
-                      </p>
-                    </div>
-
-                    <div class="col-md-1 d-none d-lg-block">
-                      <p class="fs-6
-                        fw-bold text-end"
-                      >
-                        1
-                      </p>
+                      <div class="col-md-1 d-none d-lg-block">
+                        <p class="fs-6
+                          fw-bold text-end"
+                        >
+                          1
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="row justify-content-between">
-    <div class="col-6 col-md-3 col-lg-2">
-      <div
-        data-aos="fade"
-        data-aos-duration="1800"
-        data-aos-easing="ease"
-        data-aos-delay="350"
-        data-aos-offset="0"
-      >
-        <a
-          href="./cart.html"
-          class="btn btn-outline-primary w-100"
-        >
-          返回
-        </a>
+          </li>
+        </ul>
       </div>
     </div>
 
-    <div class="col-6 col-lg-4">
-      <div
-        data-aos="fade"
-        data-aos-duration="1800"
-        data-aos-easing="ease"
-        data-aos-delay="350"
-        data-aos-offset="0"
-      >
-        <a
-          href="./payment.html"
-          class="btn btn-secondary js-form-submit-btn w-100"
+    <div class="row justify-content-between">
+      <div class="col-6 col-md-3 col-lg-2">
+        <div
+          data-aos="fade"
+          data-aos-duration="1800"
+          data-aos-easing="ease"
+          data-aos-delay="350"
+          data-aos-offset="0"
         >
-          下一步
-        </a>
+          <a
+            href="./cart.html"
+            class="btn btn-outline-primary w-100"
+          >
+            返回
+          </a>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-4">
+        <div
+          data-aos="fade"
+          data-aos-duration="1800"
+          data-aos-easing="ease"
+          data-aos-delay="350"
+          data-aos-offset="0"
+        >
+          <button
+            type="submit"
+            class="btn btn-secondary js-form-submit-btn w-100"
+          >
+            下一步
+          </button>
+        </div>
       </div>
     </div>
-  </div>
+  </form>
 
 </section>
     </main>
@@ -1530,6 +1533,7 @@
                 type="submit"
                 class="btn btn-secondary
                   js-form-submit-btn
+                  js-login-btn
                   w-100 py-5"
               >
                 登入
@@ -2236,7 +2240,7 @@
       <span class="pe-12">
         小計
       </span>
-      NT$1050
+      NT$1400
     </p>
     <a
       href="./cart.html"
@@ -2250,6 +2254,7 @@
 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
 
