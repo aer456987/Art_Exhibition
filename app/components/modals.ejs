@@ -27,7 +27,7 @@
 
       <div class="modal-body">
 
-        <form action="">
+        <form class="js-modal-login-check">
           <ul class="mb-15">
             <li class="mb-10">
               <label
@@ -42,7 +42,7 @@
                 name="Email"
                 placeholder="請輸入 Email"
                 id="userEmail"
-                class="form-control js-user-email"
+                class="form-control js-modal-login-input js-user-email"
                 required
               >
               <p class="js-validate-msg
@@ -64,7 +64,7 @@
                 name="密碼"
                 placeholder="請輸入密碼"
                 id="userPassword"
-                class="form-control js-user-password"
+                class="form-control js-modal-login-input js-user-password"
                 autocomplete="on"
                 pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$!%*?&]{1})[A-Za-z\d@#$!%*?&]{8,}$'
                 required
@@ -94,6 +94,7 @@
               <button
                 type="submit"
                 class="btn btn-secondary
+                  js-form-submit-btn
                   w-100 py-5"
               >
                 登入
@@ -177,7 +178,7 @@
 
       <div class="modal-body">
 
-        <form>
+        <form class="js-modal-sign-up-check">
           <ul class="mb-20">
             <li class="mb-10">
               <label
@@ -192,7 +193,7 @@
                 name="Email"
                 placeholder="請輸入 Email"
                 id="singUpUserEmail"
-                class="form-control js-user-email"
+                class="form-control js-modal-sign-up-input js-user-email"
                 required
               >
               <p class="js-validate-msg
@@ -215,7 +216,7 @@
                 name="密碼"
                 placeholder="請輸入密碼"
                 id="singUpUserPassword"
-                class="form-control js-user-password"
+                class="form-control js-modal-sign-up-input js-user-password"
                 autocomplete="on"
                 pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$!%*?&]{1})[A-Za-z\d@#$!%*?&]{8,}$'
                 required
@@ -240,7 +241,7 @@
                 name="用戶名稱"
                 placeholder="請輸入用戶名稱"
                 id="singUpUserName"
-                class="form-control js-user-name"
+                class="form-control js-modal-sign-up-input js-user-name"
                 pattern='^^[a-zA-Z\s\d]+$'
                 minlength="2"
                 required
@@ -266,7 +267,7 @@
                 name="手機"
                 placeholder="請輸入手機號碼"
                 id="singUpUserPhone"
-                class="form-control js-user-phone"
+                class="form-control js-modal-sign-up-input js-user-phone"
                 pattern="^09\d{8}$"
                 maxlength="10"
                 required
@@ -284,6 +285,7 @@
               <button
                 type="submit"
                 class="btn btn-secondary
+                  js-form-submit-btn
                   w-100 py-5"
               >
                 註冊

@@ -1,18 +1,25 @@
 function resetForm() {
   const allInputs = document.querySelectorAll('input');
   const allErrorMsg = document.querySelectorAll('.js-validate-msg');
+  const allSubmitBtn = document.querySelectorAll('.js-form-submit-btn');
   const classStyle = ['border-danger', 'animate__animated', 'animate__headShake'];
+  const btnDisabledStyle = 'pointer-events: none';
+  const btnDisabledClass = 'btn-outline-secondary';
 
-  allErrorMsg.forEach((msg) => {
-    $(msg).text('');
-    $(msg).removeClass('d-block');
-  });
 
   allInputs.forEach((input) => {
     $(input).val('');
     $(input).removeClass(classStyle);
   });
 
+  allErrorMsg.forEach((msg) => {
+    $(msg).text('');
+    $(msg).removeClass('d-block');
+  });
+
+  allSubmitBtn.forEach((btn) => {
+    $(btn).removeClass('btn-secondary').addClass(btnDisabledClass).attr('style', btnDisabledStyle);
+  });
 
 }
 
@@ -171,6 +178,40 @@ function checkUserName(obj) {
     $(errorMsg).text(`${errorName}須超過兩個字以上`);
   }
 }
+
+
+
+
+$('.js-form-check').on('change', function() {
+  const formInputs = document.querySelectorAll('.js-form-input');
+  checkFormValue(formInputs);
+});
+$('.js-modal-login-check').on('change', function() {
+  const formInputs = document.querySelectorAll('.js-modal-login-input');
+  checkFormValue(formInputs);
+});
+$('.js-modal-sign-up-check').on('change', function() {
+  const formInputs = document.querySelectorAll('.js-modal-sign-up-input');
+  checkFormValue(formInputs);
+});
+function checkFormValue(inputs) {
+  const btnDisabledStyle = 'pointer-events: none';
+  const btnDisabledClass = 'btn-outline-secondary';
+  const submitBtn = $('.js-form-submit-btn');
+  let inputValueTrue = 0;
+
+  inputs.forEach(function(input) {
+    if (input.value !== '') {
+      inputValueTrue += 1;
+    }
+  });
+
+  if (inputValueTrue === inputs.length) {
+    $(submitBtn).removeClass(btnDisabledClass).attr('style', '').addClass('btn-secondary');
+  } else {
+    $(submitBtn).removeClass('btn-secondary').addClass(btnDisabledClass).attr('style', btnDisabledStyle);
+  }
+};
 
 
 
