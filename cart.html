@@ -153,30 +153,36 @@
           </span>
         </h2>
 
-        <div>
-          <a
-            href="./taiwanDesignExhibition.html"
-            class="btn btn-secondary
-              me-sm-8 me-md-4
-              py-5
-              px-14 px-sm-26 px-md-24"
+        <div class="d-flex">
+          <div
             data-aos="fade-left"
             data-aos-duration="1300"
             data-aos-delay="300"
           >
-            購買票券
-          </a>
-          <a
-            href="./designExhibitionPage.html"
-            class="btn btn-outline-light
-              py-5
-              px-14 px-sm-26 px-md-24"
+            <a
+              href="./taiwanDesignExhibition.html"
+              class="btn btn-secondary
+                me-sm-8 me-md-4
+                py-5
+                px-14 px-sm-26 px-md-24"
+            >
+              購買票券
+            </a>
+          </div>
+          <div
             data-aos="fade-left"
             data-aos-duration="1300"
             data-aos-delay="400"
           >
-            詳細資訊
-          </a>
+            <a
+              href="./designExhibitionPage.html"
+              class="btn btn-outline-light
+                py-5
+                px-14 px-sm-26 px-md-24"
+            >
+              詳細資訊
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -1329,22 +1335,27 @@
             <div class="input-group w-100">
               <input
                 type="email"
-                class="form-control p-6"
-                name="訂閱 Email"
+                class="form-control js-subscription-input p-6"
+                name="Email"
                 placeholder="輸入您的電子信箱"
                 aria-label="輸入您的電子信箱"
                 aria-describedby="subscriptionEmail">
               <button
                 type="button"
                 id="subscriptionEmail"
-                class="input-group-text
+                class="js-subscription-btn
+                  input-group-text
                   btn btn-secondary
                   px-26 py-6"
               >
                 訂閱
               </button>
             </div>
-    
+            <p class="js-subscription-msg
+              validate-msg
+              fs-8 text-light text-end
+              pt-2"
+            ></p>    
           </div>
         </div>
       </div>
@@ -1413,6 +1424,21 @@
     </div>
 
 
+    <div class="position-fixed bottom-5 end-1">
+  <a
+    href="#"
+    class="d-block bg-primary text-light
+      rounded-circle rounded-2
+      transform-y-1 transition-duration-1 
+      px-5 py-5"
+  >
+    <i class="material-icons material-icons-round
+      fs-2"
+    >
+      keyboard_arrow_up
+    </i>
+  </a>
+</div>
     <div
   class="modal fade js-sign-in-modal"
   tabindex="-1"
@@ -1442,8 +1468,8 @@
 
       <div class="modal-body">
 
-        <form action="">
-          <ul class="mb-15">
+        <form class="js-modal-login-check">
+          <ul class="mb-10">
             <li class="mb-10">
               <label
                 for="userEmail"
@@ -1457,7 +1483,7 @@
                 name="Email"
                 placeholder="請輸入 Email"
                 id="userEmail"
-                class="form-control js-user-email"
+                class="form-control js-modal-login-input js-user-email"
                 required
               >
               <p class="js-validate-msg
@@ -1467,7 +1493,7 @@
               ></p>
             </li>
 
-            <li>
+            <li class="mb-15">
               <label
                 for="userPassword"
                 class="form-label mb-2"
@@ -1479,7 +1505,7 @@
                 name="密碼"
                 placeholder="請輸入密碼"
                 id="userPassword"
-                class="form-control js-user-password"
+                class="form-control js-modal-login-input js-user-password"
                 autocomplete="on"
                 pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$!%*?&]{1})[A-Za-z\d@#$!%*?&]{8,}$'
                 required
@@ -1502,38 +1528,55 @@
                 </button>
               </div>
             </li>
-          </ul>
-
-          <ul class="mb-10">
+            
             <li class="mb-4">
               <button
                 type="submit"
                 class="btn btn-secondary
+                  js-form-submit-btn
                   w-100 py-5"
               >
                 登入
               </button>
             </li>
+          </ul>
 
-            <li class="mb-4">
-              <a
-                href="https://accounts.google.com/signin/v2/identifier?hl=zh-TW&passive=true&continue=https%3A%2F%2Fwww.google.com.tw%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin/"
-                class="btn btn-outline-secondary
-                  w-100 py-5"
-              >
-                Google 快速登入
-              </a>
-            </li>
-
+          <ul class="pb-8">
             <li>
-              <a
-                href="https://zh-tw.facebook.com/login/web/"
-                class="btn btn-outline-secondary
-                  w-100 py-5"
+              <h3 class="modal-title
+                fs-6 fw-bold text-center
+                border-top py-5
+                w-100"
               >
-                Facebook 快速登入
-              </a>
+                快速登入
+              </h3>
             </li>
+            <li>
+              <ul class="d-flex justify-content-center">
+                <li class="me-8">
+                  <a
+                    href="https://accounts.google.com/signin/v2/identifier?hl=zh-TW&passive=true&continue=https%3A%2F%2Fwww.google.com.tw%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin/"
+                    class="js-tooltip text-gray-300 colorHover--secondary d-block"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Google 快速登入"
+                  >
+                    <i class="bi bi-google fs-4"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://zh-tw.facebook.com/login/web/"
+                    class="js-tooltip text-gray-300 colorHover--secondary d-block"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Facebook 快速登入"
+                  >
+                    <i class="bi bi-facebook fs-4"></i>
+                  </a>
+                </li>
+              </ul>
+            <li>
           </ul>
 
           <ul>
@@ -1592,8 +1635,8 @@
 
       <div class="modal-body">
 
-        <form>
-          <ul class="mb-20">
+        <form class="js-modal-sign-up-check">
+          <ul class="mb-10">
             <li class="mb-10">
               <label
                 for="singUpUserEmail"
@@ -1607,7 +1650,7 @@
                 name="Email"
                 placeholder="請輸入 Email"
                 id="singUpUserEmail"
-                class="form-control js-user-email"
+                class="form-control js-modal-sign-up-input js-user-email"
                 required
               >
               <p class="js-validate-msg
@@ -1630,7 +1673,7 @@
                 name="密碼"
                 placeholder="請輸入密碼"
                 id="singUpUserPassword"
-                class="form-control js-user-password"
+                class="form-control js-modal-sign-up-input js-user-password"
                 autocomplete="on"
                 pattern='^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$!%*?&]{1})[A-Za-z\d@#$!%*?&]{8,}$'
                 required
@@ -1655,7 +1698,7 @@
                 name="用戶名稱"
                 placeholder="請輸入用戶名稱"
                 id="singUpUserName"
-                class="form-control js-user-name"
+                class="form-control js-modal-sign-up-input js-user-name"
                 pattern='^^[a-zA-Z\s\d]+$'
                 minlength="2"
                 required
@@ -1667,7 +1710,7 @@
               ></p>
             </li>
 
-            <li>
+            <li class="mb-20">
               <label
                 for="singUpUserPhone"
                 class="form-label mb-2"
@@ -1681,7 +1724,7 @@
                 name="手機"
                 placeholder="請輸入手機號碼"
                 id="singUpUserPhone"
-                class="form-control js-user-phone"
+                class="form-control js-modal-sign-up-input js-user-phone"
                 pattern="^09\d{8}$"
                 maxlength="10"
                 required
@@ -1692,38 +1735,55 @@
                 pt-2"
               ></p>
             </li>
-          </ul>
 
-          <ul class="mb-10">
-            <li class="mb-4">
+            <li>
               <button
                 type="submit"
                 class="btn btn-secondary
+                  js-form-submit-btn
                   w-100 py-5"
               >
                 註冊
               </button>
             </li>
+          </ul>
 
-            <li class="mb-4">
-              <a
-                href="https://accounts.google.com/signin/v2/identifier?hl=zh-TW&passive=true&continue=https%3A%2F%2Fwww.google.com.tw%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin/"
-                class="btn btn-outline-secondary
-                  w-100 py-5"
-              >
-                Google 快速註冊
-              </a>
-            </li>
-
+          <ul class="pb-8">
             <li>
-              <a
-                href="https://zh-tw.facebook.com/login/web/"
-                class="btn btn-outline-secondary
-                  w-100 py-5"
+              <h3 class="modal-title
+                fs-6 fw-bold text-center
+                border-top py-5
+                w-100"
               >
-                Facebook 快速註冊
-              </a>
+                快速註冊
+              </h3>
             </li>
+            <li>
+              <ul class="d-flex justify-content-center">
+                <li class="me-8">
+                  <a
+                    href="https://accounts.google.com/signin/v2/identifier?hl=zh-TW&passive=true&continue=https%3A%2F%2Fwww.google.com.tw%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin/"
+                    class="js-tooltip text-gray-300 colorHover--secondary d-block"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Google 快速註冊"
+                  >
+                    <i class="bi bi-google fs-4"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://zh-tw.facebook.com/login/web/"
+                    class="js-tooltip text-gray-300 colorHover--secondary d-block"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="Facebook 快速註冊"
+                  >
+                    <i class="bi bi-facebook fs-4"></i>
+                  </a>
+                </li>
+              </ul>
+            <li>
           </ul>
 
           <ul>
