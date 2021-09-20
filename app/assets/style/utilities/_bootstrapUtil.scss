@@ -1,6 +1,13 @@
 $utilities: map-merge(
   $utilities,
   (
+    "text-shadow": (
+      property: text-shadow,
+      class: text-shadow,
+      values: (
+        1: 0 0 10px rgba($dark, .8),
+      ),
+    ),
     "overflow-y": (
       responsive: true,
       property: overflow-y,
@@ -50,7 +57,7 @@ $utilities: map-merge(
     "cursor": (
       property: cursor,
       class: cursor,
-      values: pointer,
+      values: (pointer, not-allowed),
     ),
 
     "width": map-merge(

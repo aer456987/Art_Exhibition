@@ -15,6 +15,7 @@ $(function() {
 
   $('.js-subscription-btn').on('click', function() {
     $('.js-subscription-input').val('');
+    $(this).prop('disabled', true);
     swalFn('成功訂閱');
   });
 
@@ -32,7 +33,7 @@ $(function() {
   })
   
   $('.js-add-cart').on('click', function() {
-    swalFn('[2020 台味設計展] 已加入購物車');
+    swalFn('展覽已加入購物車');
   });
 
 
@@ -51,4 +52,10 @@ $(function() {
     location.href='./established.html';
   });
 
+  $('.js-ticket-type').on('click', function() {
+    const checkedClass = 'border__bottom__hover--checked';
+
+    $('.js-ticket-type').removeClass(checkedClass);
+    $(this).addClass(checkedClass);
+  });
 });

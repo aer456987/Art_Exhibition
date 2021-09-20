@@ -67,8 +67,11 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #630834;         // $blue !default;
-$primary-dark:  #190014CC;
+// $primary:       #630834;         // $blue !default;
+// $primary:       #323453;         // $blue !default;
+$primary:       #5b727d;         // $blue !default;
+// $primary-dark:  #190014CC;
+$primary-dark:  #183d4fc2;
 $secondary:     #E31277 !default;// $gray-600
 $success:       $green !default;
 $info:          $cyan !default;
@@ -80,18 +83,18 @@ $dark:          $black !default;     // $gray-900
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
-  "primary-dark": #190014CC,
-  "secondary":  $secondary,
-  "success":    $success, 
-  "info":       $info, 
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $white,      // $light
-  "dark":       $dark,       // $dark
-  "gray-100":   $gray-200,
-  "gray-200":   $gray-400,
-  "gray-300":   #707070
+  "primary":      $primary,
+  "primary-dark": $primary-dark,
+  "secondary":    $secondary,
+  "success":      $success, 
+  "info":         $info, 
+  "warning":      $warning,
+  "danger":       $danger,
+  "light":        $white,      // $light
+  "dark":         $dark,       // $dark
+  "gray-100":     $gray-200,
+  "gray-200":     $gray-400,
+  "gray-300":     #707070
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -443,7 +446,8 @@ $aspect-ratios: (
   "1x1": 100%,
   "4x3": calc(3 / 4 * 100%),
   "16x9": calc(9 / 16 * 100%),
-  "21x9": calc(9 / 21 * 100%)
+  "21x9": calc(9 / 21 * 100%),
+  "43x32": calc(32 / 43 * 100%), // new
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list
