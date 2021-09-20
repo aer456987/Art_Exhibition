@@ -13,6 +13,7 @@ $(function () {
   });
   $('.js-subscription-btn').on('click', function () {
     $('.js-subscription-input').val('');
+    $(this).prop('disabled', true);
     swalFn('成功訂閱');
   });
   $('.js-collect-btn').on('click', function () {
@@ -28,7 +29,7 @@ $(function () {
     }
   });
   $('.js-add-cart').on('click', function () {
-    swalFn('[2020 台味設計展] 已加入購物車');
+    swalFn('展覽已加入購物車');
   });
   $('.js-modal-sign-up-check').on('submit', function (event) {
     event.preventDefault();
@@ -43,6 +44,11 @@ $(function () {
     event.preventDefault();
     location.href = './established.html';
   });
+  $('.js-ticket-type').on('click', function () {
+    var checkedClass = 'border__bottom__hover--checked';
+    $('.js-ticket-type').removeClass(checkedClass);
+    $(this).addClass(checkedClass);
+  });
 });
 "use strict";
 
@@ -51,8 +57,6 @@ function resetForm() {
   var allErrorMsg = document.querySelectorAll('.js-validate-msg');
   var allSubmitBtn = document.querySelectorAll('.js-form-submit-btn');
   var classStyle = ['border-danger', 'animate__animated', 'animate__headShake'];
-  var btnDisabledStyle = 'pointer-events: none';
-  var btnDisabledClass = 'btn-outline-secondary';
   allInputs.forEach(function (input) {
     $(input).val('');
     $(input).removeClass(classStyle);
@@ -62,7 +66,7 @@ function resetForm() {
     $(msg).removeClass('d-block');
   });
   allSubmitBtn.forEach(function (btn) {
-    $(btn).removeClass('btn-secondary').addClass(btnDisabledClass).attr('style', btnDisabledStyle);
+    $(btn).siblings('.disabled-style').removeClass('d-none');
   });
 }
 
@@ -125,7 +129,7 @@ function validationCreditCardNumber() {
   var data = {
     inputs: $('.js-credit-card-number'),
     rule: /^[\d]{4}-[\d]{4}-[\d]{4}-[\d]{4}$/,
-    msg: '須為數字，格式為 0123-4567-8900'
+    msg: '須為數字，格式為 0123-4567-8910-1112'
   };
   validationInputFn(data);
 }
@@ -133,8 +137,8 @@ function validationCreditCardNumber() {
 function validationCreditCardDate() {
   var data = {
     inputs: $('.js-credit-card-date'),
-    rule: /^\d{4}-[0-1]{1}\d{1}$/,
-    msg: '須為數字，格式為 2021-12'
+    rule: /^\d{4}\/[0-1]{1}\d{1}$/,
+    msg: '須為數字，格式為 2021/12'
   };
   validationInputFn(data);
 }
@@ -249,8 +253,6 @@ $('.js-modal-sign-up-check').on('change', function () {
 });
 
 function checkFormValue(inputs) {
-  var btnDisabledStyle = 'pointer-events: none';
-  var btnDisabledClass = 'btn-outline-secondary';
   var submitBtn = $('.js-form-submit-btn');
   var inputValueTrue = 0;
   inputs.forEach(function (input) {
@@ -260,16 +262,15 @@ function checkFormValue(inputs) {
   });
 
   if (inputValueTrue === inputs.length) {
-    $(submitBtn).removeClass(btnDisabledClass).attr('style', '').addClass('btn-secondary');
+    $(submitBtn).siblings('.disabled-style').addClass('d-none');
   } else {
-    $(submitBtn).removeClass('btn-secondary').addClass(btnDisabledClass).attr('style', btnDisabledStyle);
+    $(submitBtn).siblings('.disabled-style').removeClass('d-none');
   }
 }
 
 ;
 $('.js-subscription-input').on('input propertychange', function () {
-  var borderStyle = ['border-danger', 'animate__animated', 'animate__headShake'];
-  var btnDisabledStyle = 'btn-outline-secondary fw-bold text-light';
+  var borderStyle = ['border-danger', 'border-2', 'animate__animated', 'animate__headShake'];
   var inputValue = $(this).val();
   var rule = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;
   var errorName = $(this).attr('name');
@@ -279,25 +280,24 @@ $('.js-subscription-input').on('input propertychange', function () {
   if (inputValue === '') {
     $(this).removeClass(borderStyle);
     $(errorMsg).removeClass('d-block');
-    $('.js-subscription-btn').prop('disabled', true).addClass(btnDisabledStyle);
+    $('.js-subscription-btn').prop('disabled', true);
   } else if (!rule.test(inputValue)) {
     $(this).addClass(borderStyle);
     $(errorMsg).addClass('d-block');
     $(errorMsg).text(errorCustomMsg);
-    $('.js-subscription-btn').prop('disabled', true).addClass(btnDisabledStyle);
+    $('.js-subscription-btn').prop('disabled', true);
   } else {
     $(this).removeClass(borderStyle);
     $(errorMsg).removeClass('d-block');
-    $('.js-subscription-btn').prop('disabled', false).addClass(btnDisabledStyle);
+    $('.js-subscription-btn').prop('disabled', false);
   }
 });
 
 function checkSubscriptionValue() {
-  var btnDisabledStyle = 'btn-outline-secondary fw-bold text-light';
   var errorMsg = $('.js-subscription-msg');
 
   if ($('.js-subscription-input').val() === '') {
-    $('.js-subscription-btn').prop('disabled', true).addClass(btnDisabledStyle);
+    $('.js-subscription-btn').prop('disabled', true);
     $(errorMsg).removeClass('d-block');
   }
 }
@@ -350,39 +350,41 @@ function swalFn(msg) {
 }
 "use strict";
 
-var jsSwiper = document.querySelector('.js-swiper');
+$(function () {
+  var jsSwiper = document.querySelector('.js-swiper');
 
-if (jsSwiper) {
-  var getDirection = function getDirection() {
-    var windowWidth = window.innerWidth;
-    var direction = window.innerWidth <= 767 ? 'vertical' : 'horizontal';
-    return direction;
-  };
+  if (jsSwiper) {
+    var getDirection = function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 767 ? 'vertical' : 'horizontal';
+      return direction;
+    };
 
-  var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false
-    },
-    breakpoints: {
-      767: {
-        slidesPerView: 2
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false
       },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 30
+      breakpoints: {
+        767: {
+          slidesPerView: 2
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        }
+      },
+      direction: getDirection(),
+      on: {
+        resize: function resize() {
+          swiper.changeDirection(getDirection());
+        }
       }
-    },
-    direction: getDirection(),
-    on: {
-      resize: function resize() {
-        swiper.changeDirection(getDirection());
-      }
-    }
-  });
-  ;
-}
+    });
+    ;
+  }
+});
 //# sourceMappingURL=all.js.map
