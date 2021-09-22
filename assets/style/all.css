@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Noto-Sans-CJK-TC';
+  src: url("../fonts/NotoSansCJKtc/eot/NotoSansCJKtc-Light.eot"), url("../fonts/NotoSansCJKtc/eot/NotoSansCJKtc-Regular.eot"), url("../fonts/NotoSansCJKtc/eot/NotoSansCJKtc-Medium.eot"), url("../fonts/NotoSansCJKtc/eot/NotoSansCJKtc-Bold.eot"), url("../fonts/NotoSansCJKtc/ttf/NotoSansCJKtc-Light.ttf"), url("../fonts/NotoSansCJKtc/ttf/NotoSansCJKtc-Regular.ttf"), url("../fonts/NotoSansCJKtc/ttf/NotoSansCJKtc-Medium.ttf"), url("../fonts/NotoSansCJKtc/ttf/NotoSansCJKtc-Bold.ttf"), url("../fonts/NotoSansCJKtc/woff/NotoSansCJKtc-Light.woff"), url("../fonts/NotoSansCJKtc/woff/NotoSansCJKtc-Regular.woff"), url("../fonts/NotoSansCJKtc/woff/NotoSansCJKtc-Medium.woff"), url("../fonts/NotoSansCJKtc/woff/NotoSansCJKtc-Bold.woff");
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -50,7 +55,7 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  font-family: "Roboto", "Noto-Sans-CJK-TC", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
@@ -8168,7 +8173,7 @@ fieldset:disabled .btn {
   z-index: 1080;
   display: block;
   margin: 0;
-  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  font-family: "Roboto", "Noto-Sans-CJK-TC", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
@@ -8281,7 +8286,7 @@ fieldset:disabled .btn {
   z-index: 1070;
   display: block;
   max-width: 276px;
-  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  font-family: "Roboto", "Noto-Sans-CJK-TC", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
@@ -9510,10 +9515,6 @@ fieldset:disabled .btn {
 
 .w-x1\.2 {
   width: 120px !important;
-}
-
-.w-x1\.28 {
-  width: 128px !important;
 }
 
 .w-x5\.4 {
@@ -12464,9 +12465,6 @@ fieldset:disabled .btn {
   .w-sm-x1\.2 {
     width: 120px !important;
   }
-  .w-sm-x1\.28 {
-    width: 128px !important;
-  }
   .w-sm-x5\.4 {
     width: 540px !important;
   }
@@ -14446,9 +14444,6 @@ fieldset:disabled .btn {
   }
   .w-md-x1\.2 {
     width: 120px !important;
-  }
-  .w-md-x1\.28 {
-    width: 128px !important;
   }
   .w-md-x5\.4 {
     width: 540px !important;
@@ -16430,9 +16425,6 @@ fieldset:disabled .btn {
   .w-lg-x1\.2 {
     width: 120px !important;
   }
-  .w-lg-x1\.28 {
-    width: 128px !important;
-  }
   .w-lg-x5\.4 {
     width: 540px !important;
   }
@@ -18413,9 +18405,6 @@ fieldset:disabled .btn {
   .w-xl-x1\.2 {
     width: 120px !important;
   }
-  .w-xl-x1\.28 {
-    width: 128px !important;
-  }
   .w-xl-x5\.4 {
     width: 540px !important;
   }
@@ -20395,9 +20384,6 @@ fieldset:disabled .btn {
   }
   .w-xxl-x1\.2 {
     width: 120px !important;
-  }
-  .w-xxl-x1\.28 {
-    width: 128px !important;
   }
   .w-xxl-x5\.4 {
     width: 540px !important;
