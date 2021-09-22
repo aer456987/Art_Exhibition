@@ -51,6 +51,7 @@ let envOptions = {
       `${nodePath}/jquery/dist/jquery.slim.min.js`,
       `${nodePath}/bootstrap/dist/js/bootstrap.bundle.min.js`, // 已包含 popper.js
       `${nodePath}/aos/dist/aos.js`,
+      `${nodePath}/swiper/swiper-bundle.js`,
       // `${nodePath}/sweetalert2/src/sweetalert1.js`,
       // `${nodePath}/sweetalert2/src/sweetalert2.js`,
     ],

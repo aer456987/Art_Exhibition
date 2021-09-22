@@ -41,6 +41,7 @@
     "morgan": "^1.9.1",
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
-    "sweetalert2": "^11.1.4"
+    "sweetalert2": "^11.1.4",
+    "swiper": "^7.0.6"
   }
 }
