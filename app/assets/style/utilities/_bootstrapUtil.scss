@@ -68,7 +68,6 @@ $utilities: map-merge(
           map-get(map-get($utilities, "width"), "values"),
           (
             x1\.2  : 120px,
-            x1\.28 : 128px,
             x5\.4  : 540px,
           ),
         ),
