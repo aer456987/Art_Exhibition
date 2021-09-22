@@ -52,8 +52,7 @@ let envOptions = {
       `${nodePath}/bootstrap/dist/js/bootstrap.bundle.min.js`, // 已包含 popper.js
       `${nodePath}/aos/dist/aos.js`,
       `${nodePath}/swiper/swiper-bundle.js`,
-      // `${nodePath}/sweetalert2/src/sweetalert1.js`,
-      // `${nodePath}/sweetalert2/src/sweetalert2.js`,
+      `${nodePath}/sweetalert2/dist/sweetalert2.all.min.js`,
     ],
     concat: 'vendors.js',
     path: `${distPath}/assets/js`,
