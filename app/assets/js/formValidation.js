@@ -58,7 +58,7 @@ function validationUserName() {
       const inputDatas = {
         input: $(this),
         inputValue: $(this).val(),
-        rule: /^[A-Za-z\u4e00-\u9fa5]{2,}$/,
+        rule: /^[A-Za-z \u4e00-\u9fa5]{2,}$/,
         symbolRule: /[!@#$%^&*()_+-=`~\\\/[\]{}0-9]/,
         errorName: errorName,
       }
@@ -85,7 +85,7 @@ function validationCreditCardNumber() {
 function validationCreditCardDate() {
   const data = {
     inputs: $('.js-credit-card-date'),
-    rule: /^\d{4}\/[0-1]{1}\d{1}$/,
+    rule: /^[2-9]{1}\d{3}\/[0-1]{1}[0-9]{1}$/,
     msg: '須為數字，格式為 2021/12',
   };
   validationInputFn(data);
