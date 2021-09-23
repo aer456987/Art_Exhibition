@@ -108,7 +108,8 @@ function validationUserName() {
       var inputDatas = {
         input: $(this),
         inputValue: $(this).val(),
-        rule: /^^[a-zA-Z\s\d]+$/,
+        rule: /^[A-Za-z \u4e00-\u9fa5]{2,}$/,
+        symbolRule: /[!@#$%^&*()_+-=`~\\\/[\]{}0-9]/,
         errorName: errorName
       };
       checkUserName(inputDatas);
@@ -137,7 +138,7 @@ function validationCreditCardNumber() {
 function validationCreditCardDate() {
   var data = {
     inputs: $('.js-credit-card-date'),
-    rule: /^\d{4}\/[0-1]{1}\d{1}$/,
+    rule: /^[2-9]{1}\d{3}\/[0-1]{1}[0-9]{1}$/,
     msg: '須為數字，格式為 2021/12'
   };
   validationInputFn(data);
@@ -217,6 +218,7 @@ function checkUserName(obj) {
   var input = obj.input,
       inputValue = obj.inputValue,
       rule = obj.rule,
+      symbolRule = obj.symbolRule,
       errorName = obj.errorName;
   var errorMsg = $(input).next();
 
@@ -224,18 +226,19 @@ function checkUserName(obj) {
     input.addClass(borderStyle);
     $(errorMsg).addClass('d-block');
 
-    if (inputValue === '') {
+    if (symbolRule.test(inputValue)) {
+      console.log(symbolRule.test(inputValue));
+      $(errorMsg).text("".concat(errorName, "\u4E0D\u5F97\u542B\u7279\u6B8A\u7B26\u865F\u6216\u6578\u5B57"));
+    } else if (inputValue === '') {
       $(errorMsg).text("".concat(errorName, "\u70BA\u5FC5\u586B"));
-    } else {
-      $(errorMsg).text("".concat(errorName, "\u4E0D\u5F97\u542B\u7279\u6B8A\u7B26\u865F"));
+    } else if (inputValue.length <= 1) {
+      input.addClass(borderStyle);
+      $(errorMsg).addClass('d-block');
+      $(errorMsg).text("".concat(errorName, "\u9808\u8D85\u904E\u5169\u500B\u5B57\u4EE5\u4E0A"));
     }
-  } else if (inputValue.length >= 2) {
+  } else {
     input.removeClass(borderStyle);
     $(errorMsg).removeClass('d-block');
-  } else {
-    input.addClass(borderStyle);
-    $(errorMsg).addClass('d-block');
-    $(errorMsg).text("".concat(errorName, "\u9808\u8D85\u904E\u5169\u500B\u5B57\u4EE5\u4E0A"));
   }
 }
 
