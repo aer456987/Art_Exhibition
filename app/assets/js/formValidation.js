@@ -58,7 +58,8 @@ function validationUserName() {
       const inputDatas = {
         input: $(this),
         inputValue: $(this).val(),
-        rule: /^^[a-zA-Z\s\d]+$/,
+        rule: /^[A-Za-z\u4e00-\u9fa5]{2,}$/,
+        symbolRule: /[!@#$%^&*()_+-=`~\\\/[\]{}0-9]/,
         errorName: errorName,
       }
       checkUserName(inputDatas);
@@ -153,26 +154,26 @@ function checkInputDate(obj) {
 }
 function checkUserName(obj) {
   const borderStyle = ['border-danger', 'animate__animated', 'animate__headShake'];
-  const { input, inputValue, rule, errorName } = obj;
+  const { input, inputValue, rule, symbolRule, errorName } = obj;
   const errorMsg = $(input).next();
 
   if (!rule.test(inputValue)) {
     input.addClass(borderStyle);
     $(errorMsg).addClass('d-block');
 
-    if(inputValue === '') {
+    if(symbolRule.test(inputValue)) {
+      console.log(symbolRule.test(inputValue));
+      $(errorMsg).text(`${errorName}不得含特殊符號或數字`);
+    } else if(inputValue === '') {
       $(errorMsg).text(`${errorName}為必填`);
-    } else {
-      $(errorMsg).text(`${errorName}不得含特殊符號`);
+    } else if (inputValue.length <= 1) {
+      input.addClass(borderStyle);
+      $(errorMsg).addClass('d-block');
+      $(errorMsg).text(`${errorName}須超過兩個字以上`);
     }
-
-  } else if (inputValue.length >= 2) {
+  } else {
     input.removeClass(borderStyle);
     $(errorMsg).removeClass('d-block');
-  } else {
-    input.addClass(borderStyle);
-    $(errorMsg).addClass('d-block');
-    $(errorMsg).text(`${errorName}須超過兩個字以上`);
   }
 }
 
