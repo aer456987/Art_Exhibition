@@ -1,10 +1,10 @@
 "use strict";
 
-AOS.init({
-  offset: 100,
-  once: true
-});
 $(function () {
+  AOS.init({
+    offset: 100,
+    once: true
+  });
   resetForm();
   checkSubscriptionValue();
   var tooltipDoms = document.querySelectorAll('.js-tooltip');
