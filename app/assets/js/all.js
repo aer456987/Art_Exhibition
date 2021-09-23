@@ -1,10 +1,10 @@
-AOS.init({
-  offset: 100,
-  once: true,
-});
-
-
 $(function() {
+  AOS.init({
+    offset: 100,
+    once: true,
+  });
+  
+
   resetForm();
   checkSubscriptionValue();
 
